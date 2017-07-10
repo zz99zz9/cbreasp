@@ -232,7 +232,7 @@ rs.Open sql,conn,1,1%>
           <div class="col-md-5">
             <div class="info tra">
               <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
-              <div class="addr ellipsis ls1">Level 5, 151 Pirie Street Adelaide, SA 5000</div>
+              <div class="addr ellipsis ls1"><%=rs("qt")%></div>
               <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
               <div class="city ellipsis ls1">热点区域：<%=rs("ctdname")%></div>
               <div class="kid ellipsis ls1">物业类型：<%=rs("clxname")%> </div>
@@ -247,10 +247,48 @@ rs.Open sql,conn,1,1%>
 rs.movenext
 i=i+1
 loop
-end if
-	rs.close
-	set rs=nothing%>
+end if%>
 
+<!--pages s-->
+          <style>
+          .pages{color:#898989;margin-top:40px;margin-bottom:40px;}
+          .pages a{padding:5px 13px;border:1px solid #ebebeb;color:#898989;margin-right:10px;}
+          .pages select{border:1px solid #ebebeb;}
+</style>
+           <table width="95%" height="25"  border="0" align="center" cellpadding="0" cellspacing="0" class="pages wow fadeInUp">
+                            <tr class="url_1">
+                              <%if rs.pagecount > 0 then%>
+                              <td width="15%" align="left" valign="middle" >当前页<%=page%>/<%=rs.PageCount%></td>
+                              <%else%>
+                              <td width="15%" align="left" valign="middle" >当前页0/0</td>
+                              <%end if%>
+                              <td width="70%" align="right" ><%if page>1 then%><a href="?page=1&c=<%=cid%>">首页</a>
+
+                                  <a href="?page=<%=page -1%>&c=<%=cid%>">上一页</a>
+                                  <%end if%>
+                                <%if rs.PageCount<>1 and page<>rs.PageCount then%>
+                                  <a href="?page=<%=page +1%>&c=<%=cid%>">下一页</a>
+
+                                  <a href="?page=<%=rs.PageCount%>&c=<%=cid%>">尾页</a>
+                                  <%end if%>|转到第
+                                <select name="select" onChange="javascript:location=this.options[this.selectedIndex].value;">
+                                    <%
+          for i = 1 to rs.PageCount
+          if i = page then%>
+                                    <option value="?page=<%=i%>&c=<%=cid%>" selected><%=i%></option>
+                                    <%else%>
+                                    <option value="?page=<%=i%>&c=<%=cid%>"><%=i%></option>
+                                    <%
+          end if
+          next
+          %>
+                                </select>
+                                页</td>
+                            </tr>
+                          </table>
+                          <!--pages e-->
+                          <%	rs.close
+	set rs=nothing%>
 
       </div>
     </div>

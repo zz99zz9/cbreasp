@@ -3,7 +3,7 @@
   <head>
 <!--#include file="inc/head.asp"-->
     <link href="xgwl/css/pages/member.css" rel="stylesheet"/>
-    <!--title #{title}-->
+
   </head>
   <body>
 <!--#include file="inc/header.asp"-->

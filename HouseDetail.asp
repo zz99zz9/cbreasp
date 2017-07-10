@@ -57,7 +57,7 @@ d=rs("Description")%>
           <div class="txt">面积均价：<span class="txtv"><%=rs("jgjj")%>元/平</span></div>
           <div class="txt">项目地址：<span class="txtv"><%=rs("qt")%></span></div>
           <div class="infoc">
-            <%if rs("jgzj2")="" then%>
+            <%if rs("jgzj2")="0" or rs("jgzj2")="" then%>
             <div class="price"><%=rs("jgzj")%><em>万起</em><!---<%=rs("jgzj2")%><em>万</em>--></div>
             <%else%>
             <div class="price"><%=rs("jgzj")%><em>万</em>~<%=rs("jgzj2")%><em>万</em></div>
@@ -74,7 +74,13 @@ d=rs("Description")%>
           <ul class="icolist">
             <li class="li1 b_c hidden-xs"><img src="xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
             <li class="li3 b_c hidden-xs"><img src="xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
-            <li class="li2 b_c1"><img src="xgwl/img/housedetail_ico2.svg"/>资料下载</li>
+            <%if request.cookies("username")="" then%>
+             <li class="li2 b_c1" onclick='location.href="register.asp"'><img src="xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
+              <%else%>
+               <li class="li2 b_c1"><img src="xgwl/img/housedetail_ico2.svg"/>资料下载</li>
+          
+              <%end if%>
+           
           </ul>
         </div>
         <div class="dtxt">
@@ -361,7 +367,7 @@ set prs=nothing
         </div>
       </div>
     </div>
-
+<!--#include file="inc/pfrom.asp"-->
 <!--#include file="inc/footer.asp"-->
 <!--#include file="inc/sidebar.asp"-->
 <script src="xgwl/js/lib/swiper-2.7.6.jquery.min.js"></script>
@@ -417,8 +423,6 @@ function updateNavPosition() {
 <script> 
 var mySwiper = new Swiper('.swiper-container2',{
   slidesPerView : 'auto',
-
-
 
         parallax: true,
         speed: 600,

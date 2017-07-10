@@ -58,35 +58,35 @@ tdkid=1%>
     </div>
     <div class="part1 featured">
       <div class="container">
-        <div class="plititbor"><span class="etit">FEATURED PROPERTIES</span><a class="more hidden-xs" href="http://www.cbre.com">更多</a><span class="ctit">精选新房</span></div>
+        <div class="plititbor"><span class="etit">FEATURED PROPERTIES</span><a class="more hidden-xs" href="/houseproperty.asp">更多</a><span class="ctit">精选新房</span></div>
         <div class="row featured">
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="http://www.baidu.com">
-              <div class="pic tra"><img src="xgwl/img/temp/part1.png"/>
-                <div class="pmask tra"><span class="ls2">30000元/平</span></div>
+        <%'列表
+        set rs=Server.CreateObject("ADODB.Recordset")
+sql="select top 3 * from [Table_Product] where Passed=1 and elite=1"
+sql=sql+" and clbid='11'"
+sql=sql+" order by "
+sql=sql+"OrderId desc,articleid desc"
+rs.Open sql,conn,1,1
+i=0
+   do while not rs.eof
+%>
+
+          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="housedetail.asp?id=<%=rs("articleid")%>">
+              <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/>
+                <div class="pmask tra"><span class="ls2"><%=rs("jgjj")%>万/平</span></div>
               </div>
               <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅</div>
+                <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
+                <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
+                <div class="kid ellipsis ls1">物业类型：<%=rs("clxname")%> </div>
               </div></a></div>
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="http://www.baidu.com">
-              <div class="pic tra"><img src="xgwl/img/temp/part2.png"/>
-                <div class="pmask tra"><span class="ls2">40000元/平</span></div>
-              </div>
-              <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅</div>
-              </div></a></div>
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="http://www.baidu.com">
-              <div class="pic tra"><img src="xgwl/img/temp/part3.png"/>
-                <div class="pmask tra"><span class="ls2">40000元/平</span></div>
-              </div>
-              <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅</div>
-              </div></a></div>
+              <%
+              rs.movenext
+i=i+1
+loop
+rs.close
+set rs=nothing
+              %>
         </div>
       </div>
     </div>

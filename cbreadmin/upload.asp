@@ -9,7 +9,7 @@ if upload.ErrorID>0 then
 	response.Write upload.Description
 else
 	dim file,savpath
-	savepath = "../jll/UploadFiles"
+	savepath = "../UploadFiles"
 	for each frm in upload.forms("-1")
 	'	response.Write frm & "=" & upload.forms(frm) & "<br />"
 	next
@@ -18,9 +18,9 @@ else
 	if file.isfile then
 		result = file.saveToFile(savepath,0,true)
 		if result then
-			'response.Write "ÎÄ¼ş'" & file.LocalName & "'ÉÏ´«³É¹¦£¬±£´æÎ»ÖÃ'" & server.MapPath(savepath & "/" & file.filename) & "',ÎÄ¼ş´óĞ¡" & file.size & "×Ö½Ú<br />"
+			'response.Write "æ–‡ä»¶'" & file.LocalName & "'ä¸Šä¼ æˆåŠŸï¼Œä¿å­˜ä½ç½®'" & server.MapPath(savepath & "/" & file.filename) & "',æ–‡ä»¶å¤§å°" & file.size & "å­—èŠ‚<br />"
 			response.write "<script>window.opener.document."&upload.forms("FormName")&"."&upload.forms("EditName")&".value='"&replace(savepath,"../","") & "/" & file.filename&"'</script>"
-			response.write "<script language='javascript'>window.alert('ÎÄ¼şÉÏ´«³É¹¦!');window.close();</script>"
+			response.write "<script language='javascript'>window.alert('æ–‡ä»¶ä¸Šä¼ æˆåŠŸ!');window.close();</script>"
 		else
 			response.Write file.Exception & "<br />"
 		end if
@@ -30,16 +30,16 @@ else
 	if file.isfile then
 		result = file.saveToFile(savepath,1,true)
 		if result then
-	'		response.Write "ÎÄ¼ş'" & file.LocalName & "'ÉÏ´«³É¹¦£¬±£´æÎ»ÖÃ'" & server.MapPath(savepath & "/" & file.filename) & "',ÎÄ¼ş´óĞ¡" & file.size & "×Ö½Ú<br />"
+	'		response.Write "æ–‡ä»¶'" & file.LocalName & "'ä¸Šä¼ æˆåŠŸï¼Œä¿å­˜ä½ç½®'" & server.MapPath(savepath & "/" & file.filename) & "',æ–‡ä»¶å¤§å°" & file.size & "å­—èŠ‚<br />"
 			response.write "<script>window.opener.document."&upload.forms("FormName")&"."&upload.forms("EditName")&".value='"&file.filename&"'</script>"
 			response.write "<script>window.opener.document."&upload.forms("FormName")&"."&upload.forms("EditName")&".value='"&savepath & "/" & file.filename&"'</script>"
-			response.write "<script language='javascript'>window.alert('ÎÄ¼şÉÏ´«³É¹¦!');window.close();</script>"
+			response.write "<script language='javascript'>window.alert('æ–‡ä»¶ä¸Šä¼ æˆåŠŸ!');window.close();</script>"
 		else
 			response.Write file.Exception & "<br />"
 		end if
 	end if
 	
-	Response.Write "³É¹¦±£´æµÄÎÄ¼ş¸öÊı£º" & Upload.QuickSave("file1",savepath) & "¸ö"
+	Response.Write "æˆåŠŸä¿å­˜çš„æ–‡ä»¶ä¸ªæ•°ï¼š" & Upload.QuickSave("file1",savepath) & "ä¸ª"
 	
 end if
 set upload = nothing
