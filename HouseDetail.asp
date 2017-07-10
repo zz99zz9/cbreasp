@@ -62,7 +62,7 @@ d=rs("Description")%>
             <%else%>
             <div class="price"><%=rs("jgzj")%><em>万</em>~<%=rs("jgzj2")%><em>万</em></div>
             <%end if%>
-            <span class="cbtn tra">抢购房源</span>
+            <span class="cbtn tra" onclick="openPform();">抢购房源</span>
           </div>
         </div>
       </div>
@@ -332,7 +332,9 @@ set prs=nothing
         <div class="swiper-button-white arrow-right2">&gt;</div>
       </div>
       </div>
-          <%rs.close
+
+          <%
+          rs.close
             	set rs=nothing%>
       <div class="dinfo" id="f5">
         <div class="dtit">其他推荐</div>
@@ -372,6 +374,8 @@ set prs=nothing
 <!--#include file="inc/sidebar.asp"-->
 <script src="xgwl/js/lib/swiper-2.7.6.jquery.min.js"></script>
 <!--<script src="xgwl/js/lib/swiper-3.4.2.jquery.min.js"></script>-->
+<script src="xgwl/js/dfrom.js"></script>
+<script src="xgwl/js/pfrom.js"></script>
 <!--新轮播js-->
 
 <script>

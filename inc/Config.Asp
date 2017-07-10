@@ -1,33 +1,13 @@
-﻿<%
+<%
 dim SqlLocalName
 dim SqlUserName
 Dim SqlPassword
 Dim SqlDataBaseName
 
-dim ser
-ser=1
-
-if ser=1 then
-
-SqlLocalName="cnazcsqlsrv01.database.chinacloudapi.cn"            '链接用IP,本地用LOCAL,,远程用IP  测试:(local)
-
-SqlUserName="srvadmin"                  '用户名  测试:sa
-
-SqlPassword="*De3gTZP8eA>?Xx>"              '用户密码  测试:123456
-
+SqlLocalName="(local)"            '链接用IP,本地用LOCAL,,远程用IP  测试:(local)
+SqlUserName="sa"                  '用户名  测试:sa
+SqlPassword="123456"              '用户密码  测试:123456
 SqlDataBaseName="cbre"            '数据库名称  测试:cbre
-
-else
-
-SqlLocalName="cnazcsqlsrv01.database.chinacloudapi.cn"            '链接用IP,本地用LOCAL,,远程用IP  测试:(local)
-
-SqlUserName="srvadmin"                  '用户名  测试:sa
-
-SqlPassword="*De3gTZP8eA>?Xx>"              '用户密码  测试:123456
-
-SqlDataBaseName="cbre"            '数据库名称  测试:cbre
-
-end if
 
 connstr="Provider=SqlOLEDB;User ID="&SqlUserName&";Password="&SqlPassword&";Initial cataLog="&SqlDataBaseName&"; Data source="&SqlLocalName&";"
 Set Conn=Server.CreateObject("ADODB.Connection")

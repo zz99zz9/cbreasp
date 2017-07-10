@@ -239,11 +239,38 @@ function checkwrint22(v){
 
 	}
 }
+function checkwrint222(v){
+
+		if ($(v).val()==""||$(v).val()=="手机号码"){ 
+		$(v).addClass("no");
+		$(v).removeClass("ok");
+		$(v).next(".err").html("× 请输入手机号码");//手机号码不能为空
+
+	}else if(!reg2.test($(v).val())){
+		$(v).addClass("no");
+		$(v).removeClass("ok");
+		$(v).next(".err").html("× 请检查手机号码是否正确");//请检查手机号码是否正确
+
+	}else{
+
+              
+			
+		$(v).removeClass("no");
+		$(v).addClass("ok");
+	$(v).next(".err").html("");
+
+	}
+	
+}
 function checkwrint3(v){
+		var reg1 = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/; // 验证邮箱正则    
 		if ($(v).val()==""||$(v).val()=="邮箱地址"){ 
 		$(v).addClass("no");
 		$(v).next(".err").html("× 请输入邮箱地址");//邮箱地址不能为空
-
+}else if(!reg1.test($(v).val())){
+		$(v).addClass("no");
+		$(v).removeClass("ok");
+		$(v).next(".err").html("× 请检查邮箱地址是否正确");//请检查手机号码是否正确
 
 	}else{
 		$(v).removeClass("no");

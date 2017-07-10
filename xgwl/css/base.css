@@ -67,7 +67,6 @@ body{background:#ededed;}
 .searchbor .inputbor .sbtn{width:110px;background-color:#006A4D;border:0;text-align:center;line-height:45px;color:#fff;letter-spacing: 2px !important;font-weight:100;display:block;float:right;cursor:pointer;}
 .searchbor .inputbor .sbtn:hover{background-color:#66C010;}
 .searchbor .inputbor .sint{width:420px;border:0;padding-left:10px;padding-right:10px;outline:0;}
-
 .searchbor .inputbor .sarr{width: 0;margin-left:25px;height: 0;border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 7px solid #fff;display: block;}
 
 /* 底部悬浮表单 */
