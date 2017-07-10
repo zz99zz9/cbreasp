@@ -1,0 +1,83 @@
+/* 轮播图 */
+#carousel-example-generic .carousel-inner .item{height:400px;}
+#carousel-example-generic .carousel-indicators li{background-color:#fff;}
+
+/* 轮播图上面的基本信息介绍 */
+.baseinfo{line-height:200%;height:385px;width:350px;background-color:#fff;opacity:0.9;position:absolute;top:8px;right:50%;margin-right:-470px;padding:25px;}
+.baseinfo .tit{font-size:24px;color:#000;line-height:30px;vertical-align:bottom;}
+.baseinfo .tit .status1{background:#66c010;color:#fff;border-radius:5px;font-size:14px;margin-left:15px;width:70px;height:28px;display:block;text-align:center;float:right;}
+.baseinfo .country{font-size:18px;color:#000;line-height:200%;}
+.baseinfo .txt{font-size:14px;color:#000;}
+.baseinfo .txt .txtv{font-size:12px;color:#4a4a4a;}
+.baseinfo .price{font-size:36px;color:#006B4C;line-height:190%;margin-bottom:5px;}
+.baseinfo .price em{font-size:24px;}
+.baseinfo .cbtn{width:50%;height:40px;display: block;font-size: 24px;line-height: 40px;padding: 0;margin:0 auto;}/*position:absolute;bottom:28px;left:50%;margin-left:-25%;*/
+.baseinfo .infoc{text-align:center;}
+
+/* 项目导航 */
+.housenav{height:80px;line-height:40px;background-color:#fff;padding-top:20px;margin:50px 0;}
+.housenav a.topLink{float:left;font-size:20px;color:#9b9b9b;display:block;margin-left:40px;margin-right:10px;cursor:pointer;}
+.housenav a.topLink:hover{color:#66c010;}
+.housenav a.topLink.on{border-bottom:8px solid #006B4C;color:#006B4C;}
+.housenav .tel{font-size:18px;color:#006B4C;float:right;margin-right:30px;}
+.housenav .tel:hover{color:#66c010;}
+
+/* 项目介绍区块 */
+.dinfo{background-color:#fff;position:relative;border:#f5f5f5;box-shadow:0px 0px 3px 1px rgba(0,0,0,0.07);color:#4a4a4a;margin-bottom:40px;}
+.dinfo .dtit{font-size:24px;padding:20px 20px 10px 40px;;border-bottom:1px solid #d4d4d4;}
+.dinfo .dtxt{font-size:14px;padding:30px 40px;line-height:180%;position:relative;}
+.dinfo .dtxt img{margin:10px auto;max-width:100%;}
+.dinfo .dtxt h3{font-size:20px;color:#000;line-height:40px;margin:0;padding:0;}
+/*户型图样式*/
+          .swiper-container2{width:100%;position:relative;overflow:hidden;}
+          .swiper-container2 .swiper-wrapper{height:420px;text-align:center;}
+          .swiper-container2 .swiper-wrapper .swiper-slide{width:300px;}
+          .swiper-container2 .swiper-wrapper .swiper-slide .tit{padding-left:20px;padding-right:20px;text-align:center;}
+          .swiper-container2 .swiper-wrapper .swiper-slide .txt{padding-left:20px;padding-right:20px;text-align:center;}
+          .dtxt .arrow-left2{position:absolute;top:150px;left:10px;font-family:'宋体';font-size:30px;cursor:pointer;z-index:200;}
+          .dtxt .arrow-right2{position:absolute;top:150px;right:10px;font-family:'宋体';font-size:30px;cursor:pointer;z-index:200;}
+          .swiper-container2 .ovhi{width:100%;}
+          .hxtpic img{height:240px;max-width:300px;}
+
+
+/* 计算器、咨询、汇率 */
+/*.dinfo .icolist{width:123px;left:-43px;position:absolute;left:-43px;top:0;}
+.dinfo .icolist li{height:43px;background:#999;padding:9px;margin-bottom:3px;}
+.dinfo .icolist .li1{background-color:#00A6DC;}
+.dinfo .icolist .li2{background-color:#FFDF00;}
+.dinfo .icolist .li3{background-color:#7EBC0D;}*/
+/* 放在tit里的计算器、下载、汇率 */
+.dtit .icolist{position:absolute;top:20px;right:20px;font-size:14px;font-weight:200;}
+.dtit .icolist li{float:left;background-color:#006b4c;color:#fff;padding:5px 12px;margin-left:10px;}
+.dtit .icolist li img{height:15px;margin-right:5px;}
+.dtit .cbtn{width:100px;float:right;}
+
+
+/* 户型图 */
+.hxtlist{height:300px;}
+.hxtlist li{float:left;text-align:center;width:300px;}
+.hxtlist li .tit{font-size:18px;}
+.hxtlist li .txt{font-size:12px;}
+
+/* 其他项目推荐-引用了二手房的样式 */
+.morehouse a.li{width:100%;display:block;min-height:100px;margin-bottom:40px;}
+.morehouse a.li .pic{position:relative;}
+.morehouse a.li .pic .pmask{text-align:center;line-height:200px;opacity:0;height:100%;width:100%;background-color:rgba(0,107,77,0);position:absolute;top:0;left:0;}
+.morehouse a.li .pic .pmask span{color:#fff;font-size:24px;font-weight:100;}
+.morehouse a.li .info{padding:20px;padding-left:0;}
+.morehouse a.li .info a{color:#fff;font-weight:100;}
+
+.morehouse a.li .info .tit{font-size:20px;color:#000;}
+.morehouse a.li .info .addr{font-size:14px;color:#000;}
+.morehouse a.li .info .city{color:#000;font-weight:300;font-size:18px;line-height:180%;}
+.morehouse a.li .info .kid{color:#000;font-weight:300;font-size:14px;}
+.morehouse a.li .info .price{color:#006A4D;font-size:24px;}
+
+.morehouse a.li:hover .pic .pmask{background-color:rgba(0,107,77,0.7);opacity:1;}
+@media (max-width: 768px) {
+    .baseinfo{line-height:200%;height:385px;width:90%;background-color:#fff;opacity:0.9;position:absolute;top:30px;right:50%;margin-right:-45%;padding:25px;}
+    .housenav a.topLink{font-size:0.8em;margin-left:10px;margin-right:10px;}
+    .dinfo .dtit{padding:10px;font-size:1.3em;}
+    .dinfo .dtxt{padding:10px;}
+    .dtit .icolist{top:10px;}
+}

@@ -1,0 +1,124 @@
+/**************************/
+/*        整站通用         */
+/**************************/
+.col-xg-2{width:20%;padding:15px;float:left;}
+.container{width:1000px;}
+body{background:#ededed;}
+.cbtn{padding:5px 12px;background-color:#006A4D;color:#fff;text-align:center;font-size:14px;cursor:pointer;}
+.cbtn1{padding:5px 12px;background-color:#fff;color:#006A4D;text-align:center;font-size:14px;cursor:pointer;}
+.cbtn:hover{background-color:#66C010;}
+.cbtn1:hover{background-color:#66C010;color:#fff;}
+/* sidebar */
+.sidebar{position:fixed;bottom:50px;right:50px;z-index:102;}
+.sidebar li{cursor:pointer;width:43px;height:43px;margin-bottom:2px;line-height:43px;text-align:center;background-color:#d8d8d8;}
+.sidebar li:hover{background-color:#66c010;}
+.sidebar li img{}
+.sidebar .backtop{background-color:#006A4D;}
+
+
+/* 通用通栏标题 */
+.plititbor{margin-bottom:50px;border-bottom:1px solid #cecece;text-align:center;line-height:50px;position:relative;height:50px;}
+.plititbor .etit{font-size:20px;color:#006A4D;text-align:center;}
+.plititbor .ctit{font-size:20px;height:40px;line-height:40px;font-weight:200;color:#4a4a4a;text-align:center;background-color:#ededed;position:absolute;bottom:-30px;left:50%;margin-left:-75px;width:150px;}
+.plititbor .more{float:right;color:#9d9d9d;font-weight:100;position:absolute;right:0;top:0;}
+.plititbor .more:hover{color:#006A4D;}
+/* 底部通用 */
+.footer{background-color:#006A4D;padding-top:40px;padding-bottom:40px;}
+.footer .fright{}
+.footer .fright .fnav{border-bottom:1px solid #66C010;padding-bottom:20px;margin-bottom:20px;}
+.footer .fright .fnav a{color:#fff;font-weight:100;margin-right:30px;}
+.footer .fright .fnav a:hover{color:#66C010;}
+.footer .fright .flinks{clear:both;display:block;}
+.footer .fright .flinks a{color:#66c010;font-weight:100;margin-right:20px;}
+.footer .fright .flinks a:hover{color:#fff;}
+.footer .fright .sns{clear:both;display:block;float:left;margin-top:20px;margin-bottom:20px;}
+.footer .fright .sns a{color:#fff;font-size:25px;width:40px;margin-right:15px;position:relative;}
+.footer .fright .sns a:hover{color:#66C010;}
+/* 栏目页顶图 */
+.led{font-weight:100;padding-top:20px;color:#fff;background-size:cover;height:190px;text-align:center;}
+.led .h1{font-weight:400;font-size:36px;}
+.led .h2{font-weight:400;font-size:20px;}
+/**************************/
+/*        顶部通用         */
+/**************************/
+.header{height:35px;background-color:#000;}
+.header .logo{margin-top:7px;float:left;margin-right:70px;width:90px;margin-left:20px;}
+/*导航部份*/
+.header .nav1{float:left;margin-top:8px;}
+.header .nav1 a.li{float:left;color:#fff;margin-right:50px;}
+.header .nav2{float:right;margin-top:8px;}
+.header .nav2 a.li{float:left;color:#fff;margin-right:30px;}
+/* 首页焦点图 */
+.ed{position:relative;margin-bottom:25px;}
+#carousel-example-generic .carousel-inner .item{height:400px;background-size:cover;}
+#carousel-example-generic .carousel-inner .item .carousel-caption{}
+#carousel-example-generic .carousel-inner .item .carousel-caption h1{margin-bottom:22% !important;line-height:120%;}
+#carousel-example-generic .carousel-indicators li{border-radius:0;margin-left:8px;margin-right:8px;}
+#carousel-example-generic .carousel-indicators li.active{background-color:#66C010;border:1px solid #66C010;height:11px;width:11px;}
+
+/* 焦点图中的搜索 */
+.searchbor{position:absolute;bottom:60px;width:530px;left:50%;margin-left:-265px;}
+.searchbor ul{margin-bottom:25px;}
+.searchbor ul li{color:#fff;float:left;margin-left:20px;margin-right:20px;font-weight:100;;cursor:pointer;}
+.searchbor ul li.on,.searchbor ul li:hover{font-weight:bold;}
+
+.searchbor input,.searchbor button{height:45px;line-height:45px;}
+.searchbor .inputbor{position:relative;}
+.searchbor .inputbor .sbtn{width:110px;background-color:#006A4D;border:0;text-align:center;line-height:45px;color:#fff;letter-spacing: 2px !important;font-weight:100;display:block;float:right;cursor:pointer;}
+.searchbor .inputbor .sbtn:hover{background-color:#66C010;}
+.searchbor .inputbor .sint{width:420px;border:0;padding-left:10px;padding-right:10px;outline:0;}
+
+.searchbor .inputbor .sarr{width: 0;margin-left:25px;height: 0;border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 7px solid #fff;display: block;}
+
+/* 底部悬浮表单 */
+.bform{background-color:#fff;color:#4a4a4a;padding-top:21px;height:85px;position:fixed;bottom:0;left:0;width:100%;z-index:100;}
+.bform .tel{font-size:24px;color:#006A4D;}
+.bform .ftit{font-size:18px;}
+.bform .lab{font-size:14px;margin-right:5px;}
+.bform .cbreform{margin-right:15px;width:80px;height:25px;}
+.bform .cbreform:focus{outline:1px #66c010 solid;}
+.bform .fbtn{background-color:#006A4D;color:#fff;padding:5px 13px;cursor:pointer;}
+.bform .fbtn:hover{background-color:#66c010;}
+.bform .ftel{width:100px;}
+.bform .container{position:relative;}
+.bform .container i.bclose{background-color:rgba(126,211,33,0.7);font-size:20px;height:36px;cursor:pointer;width:36px;position:absolute;top:-37px;left:965px;z-index:110;border-radius:18px;color:#fff;line-height:36px;text-align:center;}
+.bform .container i.bclose:hover{background:#006A4D;}
+.openbform{border-top:1px solid #006a4d;border-left:1px solid #006a4d;border-right:1px solid #006a4d;padding:5px 20px;color:#006A4D;background-color:#fff;position:fixed;bottom:0px;right:50px;border-top-left-radius: 5px;border-top-right-radius: 5px;font-weight:bold;cursor:pointer;}
+
+/*更多楼盘*/
+.dinfo{margin-bottom:20px;margin-top:30px;}
+.dinfo .dtit{font-size:25px;}
+.dinfo .dtxt{color:#666;}
+.dinfo .tit{font-size:20px;color:#000;}
+.dinfo .addr{font-size:14px;color:#000;}
+.dinfo .city{color:#000;font-weight:300;font-size:18px;line-height:180%;}
+.dinfo .kid{color:#000;font-weight:300;font-size:14px;}
+.dinfo .price{color:#006A4D;font-size:24px;}
+/*.searchbor .inputbor .sint:focus{border:1px solid #006A4D;border-right:0;}*/
+
+@media(min-width:768px){}
+
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width:@screen-sm-min) {}
+
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width:@screen-md-min) {}
+
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
+@media (min-width:@screen-lg-min) {}
+@media (max-width: 768px) {
+.container{width:100%;}
+#carousel-example-generic .carousel-inner .item .carousel-caption h1{font-size:1.8em;margin-bottom:17% !important;margin-left:0px;margin-right:0px;line-height:130%;}
+#carousel-example-generic .carousel-inner .item{height:300px;}
+#carousel-example-generic .carousel-inner{overflow:inherit;}
+.header .logo{margin-left:10px;margin-top:12px;width:100px;}
+.header{height:50px;}
+.fleft{text-align:center;}
+.col-xg-2{width:50%;padding:15px;float:left;}
+}
+
+
+
+
+
+

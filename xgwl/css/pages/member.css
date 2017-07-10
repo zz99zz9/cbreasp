@@ -1,0 +1,21 @@
+.mform{width:378px;margin:70px auto;position:relative;}
+.mform .mtit{font-size:36px;color:#4a4a4a;margin-bottom:20px;}
+.mform .mtit a{font-size:14px;color:#66c010;float:right;padding-top:20px;}
+.mform .mtit a:hover{color:#006a4d;}
+.mform .cbreint{border:#d4d4d4 1px solid;color:#9d9d9d;font-size:16px;background-color:#fff;font-weight:200;outline:0;width:100%;height:50px;padding-left:20px;font-size:16px;}
+.mform .cbreint:focus,.mform .cbreint.ok{border:1px #66c010 solid;}
+.mform .cbreint.no{border:1px #ff0000 solid;}
+.mform .msend{outline:0;border-radius:5px;border:1px solid #d4d4d4;position:absolute;top:78px;right:25px;background-color:#fff;color:#9b9b9b;height:38px;width:136px;font-size:16px;font-weight:300;}
+.mform .msend:hover{border:1px solid #66c010;color:#66c010;}
+.mform .err{color:#ff0000;font-size:14px;line-height:25px;padding-left:10px;height:25px;}
+.mform .cbtn{width:60%;margin: 0 auto;height:65px;line-height:65px;font-size:20px;padding:0;margin-bottom:20px;}
+.mform .reg{color:#9d9d9d;text-align:center;}
+.mform .reg a{color:#006a4d;}
+.mform .reg a:hover{color:#66c010;}
+
+@media (max-width: 768px) {
+.mform{width:100%;}
+.mform .mtit{font-size:22px;}
+.mform .mtit a{padding-top:5px;}
+.mform .msend{top:65px;right:20px;}
+}

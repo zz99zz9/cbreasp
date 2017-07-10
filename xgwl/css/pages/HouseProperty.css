@@ -1,0 +1,43 @@
+.main{min-height:500px;margin-bottom:40px;}
+body{background:#fff;}
+.led{background-image:url('../../img/houseproperty/ed.png');}
+.seabor{margin-top:20px;margin-bottom:10px;}
+.cbreselect{width:100%;height:35px;border-radius:0;}
+.seabor .btn-group{width:100%;}
+.seabor .btn-sea{width:100%;}
+/* 列表 */
+/*.main a.li{width:100%;display:block;min-height:100px;margin-bottom:40px;}
+.main a.li .pic{position:relative;}
+.main a.li .pic .pmask{text-align:center;line-height:200px;opacity:0;height:100%;width:100%;background-color:rgba(0,107,77,0);position:absolute;top:0;left:0;}
+.main a.li .pic .pmask span{color:#fff;font-size:24px;font-weight:100;}
+.main a.li .info{padding:20px;padding-left:0;}
+.main a.li .info a{color:#fff;font-weight:100;}
+
+.main a.li .info .tit{font-size:20px;color:#000;}
+.main a.li .info .addr{font-size:14px;color:#000;}
+.main a.li .info .city{color:#000;font-weight:300;font-size:18px;line-height:180%;}
+.main a.li .info .kid{color:#000;font-weight:300;font-size:14px;}
+.main a.li .info .price{color:#006A4D;font-size:24px;}
+
+.main a.li:hover .pic .pmask{background-color:rgba(0,107,77,0.7);opacity:1;}*/
+
+.main a.li{width:100%;display:block;min-height:100px;border-bottom:1px solid #d2d2d2;padding-bottom:20px;padding-top:20px;margin-left:0;margin-right:0;}
+.main a.li .col-md-4{padding-left:0 !important;}
+.main a.li .pic{position:relative;}
+.main a.li .pic .pmask{text-align:center;line-height:200px;opacity:0;height:100%;width:100%;background-color:rgba(0,107,77,0);position:absolute;top:0;left:0;}
+.main a.li .pic .pmask span{color:#fff;font-size:24px;font-weight:100;}
+.main a.li .info{}
+.main a.li .info a{color:#fff;font-weight:100;}
+
+.main a.li .info .tit{font-size:20px;color:#000;margin-bottom:10px;}
+.main a.li .info .addr{font-size:14px;color:#000;}
+.main a.li .info .city{color:#000;font-weight:300;font-size:18px;line-height:180%;}
+.main a.li .info .kid{color:#000;font-weight:300;font-size:14px;}
+.main a.li .price{font-size:20px;color:#4a4a4a;margin-top:80px;}
+.main a.li .price .pn{color:#006A4D;font-size:24px;}
+.main a.li:hover{background-color:#FBFBFB;border-bottom:1px solid #d2d2d2;}
+
+@media (max-width: 768px) {
+    .main a.li .price{margin-top:20px;}
+}
+

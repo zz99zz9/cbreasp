@@ -1,0 +1,187 @@
+<%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
+<html>
+  <head>
+<!--#include File="Inc/FuncTion.Asp"-->
+<!--#Include File="Inc/config.Asp"-->
+<!--#Include File="Inc/Inc.Asp"-->
+    <!--#include file="inc/head.asp"-->
+<%dim tdkid
+tdkid=1%>
+<!--#include file="inc/tdk.asp"-->
+    <link href="xgwl/css/pages/index.css" rel="stylesheet"/>
+  </head>
+  <body>
+<!--#include file="inc/header.asp"-->
+    <div class="ed">
+      <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+
+        <div class="carousel-inner" role="listbox">
+          <%Set prs= Server.CreateObject("ADODB.Recordset")
+        psql="select top 3 * From [links] where wid=1 order by oid desc,ID desc"
+        prs.open psql,conn,1,1
+        i=0%>
+        <%do while not prs.eof%>
+           <div class="item <%if i=0 then%>active<%end if%>" onclick="window.location.href='<%=prs("url")%>';" style="background:url(<%=prs("file")%>);">
+<div class="carousel-caption">
+             <h1><%=prs("stit")%></h1>
+             </div>
+              <!--<p class="tra"><%=prs("stxt")%></p>
+               <a href="<%=prs("url")%>" class="tra a"><span>查看详情</span><em class="more-arr">&gt;</em></a>
+            <em class="bgmask tra"></em>-->
+          </div>
+         <%
+        	i=i+1
+        prs.movenext
+        	loop
+        prs.close
+        set prs=nothing
+        %>
+          
+        </div><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+      </div>
+      <div class="searchbor hidden-sm hidden-xs">
+        <ul>
+          <li class="v1 on">新房</li>
+          <li class="v2">二手房</li>
+          <li class="v3">市场报告</li>
+        </ul>
+        <div class="inputbor"><i class="sarr tra"></i>
+          <input class="sint" type="text" placeholder="请输入区域、项目名称开始搜索"/>
+          <input class="skid" type="hidden" value="1"/><span class="sbtn">开始搜索</span>
+        </div>
+      </div>
+    </div>
+    <div class="part1 featured">
+      <div class="container">
+        <div class="plititbor"><span class="etit">FEATURED PROPERTIES</span><a class="more hidden-xs" href="http://www.cbre.com">更多</a><span class="ctit">精选新房</span></div>
+        <div class="row featured">
+          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="http://www.baidu.com">
+              <div class="pic tra"><img src="xgwl/img/temp/part1.png"/>
+                <div class="pmask tra"><span class="ls2">30000元/平</span></div>
+              </div>
+              <div class="info tra">
+                <div class="tit ellipsis ls1">124 South College Street</div>
+                <div class="city ellipsis ls1">国家/伦敦</div>
+                <div class="kid ellipsis ls1">物业类型：住宅/别墅</div>
+              </div></a></div>
+          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="http://www.baidu.com">
+              <div class="pic tra"><img src="xgwl/img/temp/part2.png"/>
+                <div class="pmask tra"><span class="ls2">40000元/平</span></div>
+              </div>
+              <div class="info tra">
+                <div class="tit ellipsis ls1">124 South College Street</div>
+                <div class="city ellipsis ls1">国家/伦敦</div>
+                <div class="kid ellipsis ls1">物业类型：住宅/别墅</div>
+              </div></a></div>
+          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="http://www.baidu.com">
+              <div class="pic tra"><img src="xgwl/img/temp/part3.png"/>
+                <div class="pmask tra"><span class="ls2">40000元/平</span></div>
+              </div>
+              <div class="info tra">
+                <div class="tit ellipsis ls1">124 South College Street</div>
+                <div class="city ellipsis ls1">国家/伦敦</div>
+                <div class="kid ellipsis ls1">物业类型：住宅/别墅</div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="part2 featured">
+      <div class="container">
+        <div class="plititbor"><span class="etit">HOT SECOND-HAND HOUSE</span><a class="more hidden-xs" href="http://www.cbre.com">更多</a><span class="ctit">热门二手房</span></div>
+        <div class="row second">
+          <div class="col-md-3 col-sm-3"><a class="li tra b_c wow fadeInUp animated" href="#">
+              <div class="pic tra"><img src="xgwl/img/temp/part22.png"/>
+                <div class="price tra ls1">30000元
+                  <div class="parr"></div>
+                </div>
+              </div>
+              <div class="info tra">
+                <div class="tit ellipsis">124 South College Street</div>
+                <div class="city ellipsis">国家/伦敦 伦敦一区</div>
+                <div class="finfo ellipsis">2室2厅 120平方</div>
+              </div></a></div>
+          <div class="col-md-3 col-sm-3"><a class="li tra b_c wow fadeInUp animated" href="#">
+              <div class="pic tra"><img src="xgwl/img/temp/part21.png"/>
+                <div class="price tra ls1">30000元
+                  <div class="parr"></div>
+                </div>
+              </div>
+              <div class="info tra">
+                <div class="tit ellipsis">124 South College Street</div>
+                <div class="city ellipsis">国家/伦敦 伦敦一区</div>
+                <div class="finfo ellipsis">2室2厅 120平方</div>
+              </div></a></div>
+          <div class="col-md-3 col-sm-3"><a class="li tra b_c wow fadeInUp animated" href="#">
+              <div class="pic tra"><img src="xgwl/img/temp/part23.png"/>
+                <div class="price tra ls1">30000元
+                  <div class="parr"></div>
+                </div>
+              </div>
+              <div class="info tra">
+                <div class="tit ellipsis">124 South College Street</div>
+                <div class="city ellipsis">国家/伦敦 伦敦一区</div>
+                <div class="finfo ellipsis">2室2厅 120平方</div>
+              </div></a></div>
+          <div class="col-md-3 col-sm-3"><a class="li tra b_c wow fadeInUp animated" href="#">
+              <div class="pic tra"><img src="xgwl/img/temp/part24.png"/>
+                <div class="price tra ls1">30000元
+                  <div class="parr"></div>
+                </div>
+              </div>
+              <div class="info tra">
+                <div class="tit ellipsis">124 South College Street</div>
+                <div class="city ellipsis">国家/伦敦 伦敦一区</div>
+                <div class="finfo ellipsis">2室2厅 120平方</div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+    <div class="part3">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="lean wow fadeInUp animated">
+              <div class="info ls2">从投资销售和租赁交易到外包和咨询服务，与CBRE，它的优势为我们服务的每个客户。</div><br/><a class="abtn tra" href="#">学到更多</a>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="leaned b_c tra wow fadeInUp animated"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="part4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 wow fadeInUp animated"><a class="li1">
+              <div class="pic"><img src="xgwl/img/Research_Collage 4-17-900x660.jpg"/></div>
+              <div class="info ls1">
+                <div class="tit">我们的里程碑</div>
+                <div class="txt">CBRE被广泛认可为商业房地产的最重要权力。</div>
+              </div></a></div>
+          <div class="col-md-4 wow fadeInUp animated"><a class="li2">
+              <div class="pic"><img src="xgwl/img/Milestones_Collage 900x660.png"/></div>
+              <div class="info ls1">
+                <div class="tit">CBRE职业</div>
+                <div class="txt">凭借在销售和IT方面的工程和安全方面的职位，CBRE使您能够将您的职业发挥到目标。在美国各地办公室探索机会。</div>
+              </div></a></div>
+          <div class="col-md-4 wow fadeInUp animated"><a class="li3">
+              <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
+              <div class="info ls1">
+                <div class="tit">CBRE年度报告</div>
+                <div class="txt">我们最新的“年度报告”重点介绍了2016年的许多成功案例，以及CBRE战略的更新。</div>
+              </div></a></div>
+        </div>
+      </div>
+    </div>
+
+    <!--<iframe id="portal" src="http://iframe.ondicomdigital.com/cbre-cn/?lang=cn&amp;projectID=a049000000LTRw0&amp;projectName=TestProject&amp;retUrl=http%3A%2F%2Fmydomain%2Fregister%2Fdefault.aspx%3Fsk%3Dsuccess%23thankyou" width="100%" height="500" frameborder="0" scrolling="no"></iframe>-->
+<!--#include file="inc/footer.asp"-->
+<!--#include file="inc/sidebar.asp"-->
+  </body>
+</html>
