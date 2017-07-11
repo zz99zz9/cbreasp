@@ -36,7 +36,7 @@ d=rs("Description")%>
         </ol>
         <div class="carousel-inner" role="listbox">
 
-           <div class="item active" style="background:url(<%=rs("defaultpicurl2")%>);"></div>
+           <div class="item active" style="background:url(<%if rs("defaultpicurl2")<>"" then%><%=rs("defaultpicurl2")%><%else%>UploadFiles/201707111951239041.jpg<%end if%>);"></div>
 
         </div>
         <div class="baseinfo"> 

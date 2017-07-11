@@ -3,7 +3,7 @@
 dim upload
 set upload = new AnUpLoad
 upload.Exe = "*"
-upload.MaxSize = 2 * 1024 * 1024 '2M
+upload.MaxSize = 20 * 1024 * 1024 '20M
 upload.GetData()
 if upload.ErrorID>0 then 
 	response.Write upload.Description
@@ -39,7 +39,7 @@ else
 		end if
 	end if
 	
-	Response.Write "成功保存的文件个数：" & Upload.QuickSave("file1",savepath) & "个"
+	'Response.Write "成功保存的文件个数：" & Upload.QuickSave("file1",savepath) & "个"
 	
 end if
 set upload = nothing
