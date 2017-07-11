@@ -4,11 +4,12 @@ ul.nav a{float:left;margin-left:35px;height:50px;line-height:65px;font-size:14px
 ul.nav a.on{color:#006A4D;font-weight:bold;border-bottom:5px solid #006A4D;}
 .map{border:1px solid #f5f5f5;}
 .map img{width:100%;}
-.info{padding:20px;text-align:center;height:40px;background-size:cover;}
+.info{padding:20px;text-align:center;height:65px;background-size:cover;background-color:#f5f5f5;}
 .info .tit{font-size:24px;color:#fff;}
 .info .txt{font-size:12px;color:#fff;font-weight:200;margin-bottom:20px;}
 .info .cbtn{font-weight:200;}
 .info .cbtn:hover{color:#fff;}
+
 
 /**/
 .hlist{margin-top:20px;height:310px;overflow:auto;}
@@ -35,7 +36,8 @@ body{background:#fff;}
 .main a.li .pic{position:relative;}
 .main a.li .pic .pmask{text-align:center;line-height:200px;opacity:0;height:100%;width:100%;background-color:rgba(0,107,77,0);position:absolute;top:0;left:0;}
 .main a.li .pic .pmask span{color:#fff;font-size:24px;font-weight:100;}
-.main a.li .info{}
+.main a.li:hover .info{background-color:#66c010;color:#fff;}
+.main a.li:hover .info .tit{color:#fff;}
 .main a.li .info a{color:#fff;font-weight:100;position:relative}
 .main a.li .info .tit{font-size:20px;color:#000;margin-bottom:10px;}
 .main a.li .info .txt{color:#333;}

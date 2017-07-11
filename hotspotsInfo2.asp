@@ -56,7 +56,7 @@ rsnew.Open sqlnew,conn,1,1%>
         do while not rsnew.eof and i<rsnew.PageSize
         %>
         <div class="col-md-4">
-        <a class="li tra wow fadeInUp animated row b_c" href="<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>hotspotsview.asp?id=<%=rsnew("prod_id")%><%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
+        <a class="li tra wow fadeInUp animated row" href="<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>hotspotsview.asp?id=<%=rsnew("prod_id")%><%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
           
             <div class="pic tra"><img src="<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></div>
                         <div class="info tra">
