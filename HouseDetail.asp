@@ -35,19 +35,9 @@ d=rs("Description")%>
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
         </ol>
         <div class="carousel-inner" role="listbox">
-          <%Set prs= Server.CreateObject("ADODB.Recordset")
-        psql="select top 1 * From [links] where wid=1 order by oid desc,ID desc"
-        prs.open psql,conn,1,1
-        i=0%>
-        <%do while not prs.eof%>
-           <div class="item <%if i=0 then%>active<%end if%>" onclick="window.location.href='<%=prs("url")%>';" style="background:url(<%=prs("file")%>);"></div>
-         <%
-        	i=i+1
-        prs.movenext
-        	loop
-        prs.close
-        set prs=nothing
-        %>
+
+           <div class="item active" style="background:url(<%=rs("defaultpicurl2")%>);"></div>
+
         </div>
         <div class="baseinfo"> 
           <div class="tit"><%=rs("entitle")%></div>
