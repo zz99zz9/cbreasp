@@ -134,10 +134,10 @@ sql="select * from [class_fj] where cid="&fj&" order by oid desc"
 rs.open sql,conn,1,1
 fjname=rs("cname")
 end if
-if fjname="" then fjname="预算"%>
+if fjname="" then fjname="价格区间"%>
               <button class="btn btn-default btn-sea dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=fjname%></button>
               <ul class="dropdown-menu" role="menu">
-                <%if fj<>0 then%><li><a href='?<%call seaurl(bc,sc,0,lx,lb,order,1)%>'>全部预算</a></li><%end if%>
+                <%if fj<>0 then%><li><a href='?<%call seaurl(bc,sc,0,lx,lb,order,1)%>'>全部价格区间</a></li><%end if%>
  <%
 set rs=Server.CreateObject("ADODB.Recordset")
 sql="select * from [class_fj] order by oid desc"
@@ -249,7 +249,7 @@ rs.Open sql,conn,1,1%>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="price ls2">均价  <span class="pn"><%=rs("jgjj")%></span>万/m²</div>
+            <div class="price ls2">均价  <span class="pn"><%=rs("jgjj")%></span>万元/m²</div>
           </div></a>
 <!------------>
 

@@ -9,7 +9,7 @@ body{background:#ededed;}
 .cbtn:hover{background-color:#66C010;}
 .cbtn1:hover{background-color:#66C010;color:#fff;}
 /* sidebar */
-.sidebar{position:fixed;bottom:50px;right:50px;z-index:102;}
+.sidebar{position:fixed;bottom:50%;right:50px;z-index:102;margin-bottom:-100px;}
 .sidebar li{cursor:pointer;width:43px;height:43px;margin-bottom:2px;line-height:43px;text-align:center;background-color:#d8d8d8;}
 .sidebar li:hover{background-color:#66c010;}
 .sidebar li img{}
@@ -71,14 +71,14 @@ body{background:#ededed;}
 .searchbor .inputbor .sarr{width: 0;margin-left:25px;height: 0;border-left: 7px solid transparent;border-right: 7px solid transparent;border-bottom: 7px solid #fff;display: block;}
 
 /* 底部悬浮表单 */
-.bform{background-color:#fff;color:#4a4a4a;padding-top:21px;height:85px;position:fixed;bottom:0;left:0;width:100%;z-index:100;}
-.bform .tel{font-size:24px;color:#006A4D;}
-.bform .ftit{font-size:18px;}
-.bform .lab{font-size:14px;margin-right:5px;}
+.bform{ /*background: linear-gradient(#006A4D,#66c010);*/background-color:rgba(0,108,76,0.8);color:#4a4a4a;padding-top:30px;height:85px;position:fixed;bottom:0;left:0;width:100%;z-index:100;}
+.bform .tel{font-size:24px;color:#fff;}
+.bform .ftit{font-size:18px;color:#fff;}
+.bform .lab{font-size:14px;margin-right:5px;color:#fff;}
 .bform .cbreform{margin-right:15px;width:80px;height:25px;}
 .bform .cbreform:focus{outline:1px #66c010 solid;}
-.bform .fbtn{background-color:#006A4D;color:#fff;padding:5px 13px;cursor:pointer;}
-.bform .fbtn:hover{background-color:#66c010;}
+.bform .fbtn{background-color:#66c010;;color:#fff;padding:5px 13px;cursor:pointer;}
+.bform .fbtn:hover{background-color:#02bf7f}
 .bform .ftel{width:100px;}
 .bform .container{position:relative;}
 .bform .container i.bclose{background-color:rgba(126,211,33,0.7);font-size:20px;height:36px;cursor:pointer;width:36px;position:absolute;top:-37px;left:965px;z-index:110;border-radius:18px;color:#fff;line-height:36px;text-align:center;}
