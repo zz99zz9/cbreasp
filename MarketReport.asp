@@ -58,7 +58,7 @@ rsnew.Open sqlnew,conn,1,1%>
                   <div class="txt"><%=left(RemoveHTML(rsnew("prod_detailen")),260)%></div><a class="cbtn tra" href='MarketReportMore.asp?id=<%=rsnew("prod_id")%>'>阅读更多</a>
                 </div>
                 <div class="col-md-3">
-                  <div class="pic"><a class="b_c" href='MarketReportMore.asp?id=<%=rsnew("prod_id")%>'><img src="xgwl/img/marketreport.png"/></a></div>
+                  <div class="pic"><a class="b_c" href='MarketReportMore.asp?id=<%=rsnew("prod_id")%>'><img src="<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></a></div>
                 </div>
               </li>
  <%rsnew.movenext
