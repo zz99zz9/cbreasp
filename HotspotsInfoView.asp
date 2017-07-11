@@ -61,40 +61,7 @@ end if  %>
                                                 <%   	rsnew.close
                                     	set rsnew=nothing%>
                                         
-                                              <div class="dinfo" id="f5">
-        <div class="dtit">热门推荐</div>
-        <div class="dtxt row morehouse">
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated b_c" href="#">
-              <div class="pic tra"><img src="xgwl/img/temp/part1.png"/></div>
-              <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="addr ellipsis ls1">Level 5, 151 Pirie Street Adelaide, SA 5000</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅 </div>
-                <div class="price ls2">30000元/平</div>
-              </div></a></div>
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated b_c" href="#">
-              <div class="pic tra"><img src="xgwl/img/temp/part2.png"/></div>
-              <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="addr ellipsis ls1">Level 5, 151 Pirie Street Adelaide, SA 5000</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅 </div>
-                <div class="price ls2">40000元/平</div>
-              </div></a></div>
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated b_c" href="#">
-              <div class="pic tra"><img src="xgwl/img/temp/part3.png"/></div>
-              <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="addr ellipsis ls1">Level 5, 151 Pirie Street Adelaide, SA 5000</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅 </div>
-                <div class="price ls2">40000元/平</div>
-              </div></a></div>
-        </div>
-      </div>
-
-</div>
+  <!--#include file="inc/hothouses.asp"-->
 
     
     
