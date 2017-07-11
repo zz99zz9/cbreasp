@@ -17,8 +17,9 @@ tdkid=5%>
         <div class="col-md-12">
           <ul class="nav">
             <a class="on" href="hotspots.asp">伦敦</a>
-            <a href="hotspots2.asp">墨尔本</a>
+            
             <a  href="hotspots3.asp">悉尼</a>
+            <a href="hotspots2.asp">墨尔本</a>
           </ul>
         </div>
       </div>

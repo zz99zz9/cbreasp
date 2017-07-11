@@ -29,7 +29,7 @@ d=rsnew("Description")%>
 <!--#include file="inc/header.asp"-->
     <div class="led"> 
       <div class="h1">News</div>
-      <div class="h2">新闻中心</div>
+      <div class="h2">最新资讯</div>
     </div>
     <div class="main"> 
       <div class="container">

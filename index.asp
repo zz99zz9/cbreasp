@@ -42,7 +42,8 @@ tdkid=1%>
         set prs=nothing
         %>
           
-        </div><a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+        </div>
+        <!--<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span><span class="sr-only">Next</span></a>-->
       </div>
       <div class="searchbor hidden-sm hidden-xs">
         <ul>
@@ -174,7 +175,7 @@ set rs=nothing
               <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">研究报告</div>
-                <div class="txt"></div>
+                <div class="txt">深度洞察 权威报告<br>助力做出投资决策</div>
               </div></a></div>
         </div>
       </div>
