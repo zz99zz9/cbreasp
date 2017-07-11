@@ -173,7 +173,7 @@ rs.close
     <input name="PicAlt" type="text" id="PicAlt" class="form-control col-sm-6">
     </div>
   </div>
-    <%if classid>20 and classid<30 then%>
+
     <div class="form-group row">
         <label for="url" class="col-sm-2 control-label text-right xglab">跳转网址</label>
         <div class="col-sm-7 ">
@@ -232,7 +232,7 @@ End Function
 
     </div>
   </div>
-  <%end if%>
+
   <div class="form-group row">
       <label for="content1" class="col-sm-2 control-label text-right xglab">摘要</label>
       <div class="col-sm-7 ">
