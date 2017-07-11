@@ -194,7 +194,7 @@ rs.close
     </div>
   </div>
   <div class="form-group row">
-    <label for="DefaultPicUrl" class="col-sm-2 control-label text-right xglab">项目LOGO</label>
+    <label for="DefaultPicUrl" class="col-sm-2 control-label text-right xglab">项目大图</label>
     <div class="col-sm-7 row">
       <div class="col-sm-7"><input name="DefaultPicUrl2" type="text" id="DefaultPicUrl2" class="form-control col-sm-6" value="<%=ors("DefaultPicUrl2")%>"></div>
         <div class="col-sm-3"><input type="button" name="Submit12" value="上传图片" class="form-control col-sm-2" onClick="window.open('Yr_UpFile.Asp?formname=myform&editname=DefaultPicUrl2&uppath=images/guanggao&filelx=jpg','','status=no,scrollbaRs=no,top=20,left=110,width=420,height=165')"></div>
