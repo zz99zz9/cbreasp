@@ -78,7 +78,7 @@ i=0
               <div class="info tra">
                 <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
                 <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
-                <div class="kid ellipsis ls1">物业类型：<%=rs("clxname")%> </div>
+                <div class="kid ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
               </div></a></div>
               <%
               rs.movenext
@@ -90,7 +90,7 @@ set rs=nothing
         </div>
       </div>
     </div>
-    <div class="part2 featured">
+    <div class="part2 featured hidden">
       <div class="container">
         <div class="plititbor"><span class="etit">HOT SECOND-HAND HOUSE</span><a class="more hidden-xs" href="http://www.cbre.com">更多</a><span class="ctit">热门二手房</span></div>
         <div class="row second">
