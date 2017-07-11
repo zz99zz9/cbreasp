@@ -52,7 +52,7 @@ body{background:#ededed;}
 .ed{position:relative;margin-bottom:25px;}
 #carousel-example-generic .carousel-inner .item{height:400px;background-size:cover;}
 #carousel-example-generic .carousel-inner .item .carousel-caption{}
-#carousel-example-generic .carousel-inner .item .carousel-caption h1{margin-bottom:22% !important;line-height:120%;}
+#carousel-example-generic .carousel-inner .item .carousel-caption h1{margin-bottom:28% !important;line-height:120%;font-size:45px !important;}
 #carousel-example-generic .carousel-indicators li{border-radius:0;margin-left:8px;margin-right:8px;}
 #carousel-example-generic .carousel-indicators li.active{background-color:#66C010;border:1px solid #66C010;height:11px;width:11px;}
 
