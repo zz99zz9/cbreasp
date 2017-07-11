@@ -10,9 +10,14 @@ body{background:#ededed;}
 .cbtn1:hover{background-color:#66C010;color:#fff;}
 /* sidebar */
 .sidebar{position:fixed;bottom:50%;right:50px;z-index:102;margin-bottom:-100px;}
-.sidebar li{cursor:pointer;width:43px;height:43px;margin-bottom:2px;line-height:43px;text-align:center;background-color:#d8d8d8;}
+.sidebar li{cursor:pointer;width:43px;height:43px;margin-bottom:2px;line-height:43px;text-align:center;background-color:#d8d8d8;position:relative;}
 .sidebar li:hover{background-color:#66c010;}
 .sidebar li img{}
+.sidebar li .qr{width:150px;height:150px;position:absolute;top:-53px;left:-180px;opacity: 0;visibility:hidden;}
+.sidebar li:hover .qr{opacity:1;left:-150px;visibility:visible;}
+.sidebar li .qr img{width:100%;}
+.sidebar li .t400{height:43px;width:140px;background:#66C010;color:#fff;position:absolute;top:0px;left:-170px;font-size:20px;opacity: 0;visibility:hidden;}
+.sidebar li:hover .t400{left:-140px;opacity:1;visibility:visible;}
 .sidebar .backtop{background-color:#006A4D;}
 
 
