@@ -1,9 +1,9 @@
 /* 轮播图 */
-#carousel-example-generic .carousel-inner .item{height:400px;}
+#carousel-example-generic .carousel-inner .item{height:450px;}
 #carousel-example-generic .carousel-indicators li{background-color:#fff;}
 
 /* 轮播图上面的基本信息介绍 */
-.baseinfo{line-height:200%;height:385px;width:350px;background-color:#fff;opacity:0.9;position:absolute;top:8px;right:50%;margin-right:-470px;padding:25px;}
+.baseinfo{line-height:200%;height:385px;width:350px;background-color:#fff;opacity:0.9;position:absolute;top:15px;right:50%;margin-right:-470px;padding:25px;}
 .baseinfo .tit{font-size:24px;color:#000;line-height:30px;vertical-align:bottom;}
 .baseinfo .country .status1{background:#66c010;color:#fff;border-radius:5px;font-size:14px;margin-left:15px;width:70px;height:28px;display:block;text-align:center;float:right;line-height:200%;}
 .baseinfo .country{font-size:18px;color:#000;line-height:200%;}
