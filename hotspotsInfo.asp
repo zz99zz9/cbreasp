@@ -5,7 +5,8 @@
 <!--#Include File="Inc/config.Asp"-->
 <!--#Include File="Inc/Inc.Asp"-->
 <!--#include file="inc/head.asp"-->
-    <link href="xgwl/css/pages/news.css" rel="stylesheet"/>
+
+    <link href="xgwl/css/pages/hotspots.css" rel="stylesheet"/>
                <%dim tdkid
 tdkid=5%>
 <!--#include file="inc/tdk.asp"-->
@@ -14,7 +15,7 @@ tdkid=5%>
     <!--数据链接-->
     <%dim cid
 cid=request.QueryString("c")
-if cid="" then cid=25
+if cid="" then cid=20
     set rsnew=Server.CreateObject("ADODB.Recordset")
 	  if cid<>"" then
 	  call SafeRequest(cid)
@@ -27,11 +28,20 @@ rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
 <!--#include file="inc/header.asp"-->
     <div class="led"> 
-      <div class="h1">Investment hotspots</div>
+      <div class="h1">Area Guite</div>
       <div class="h2">投资热区</div>
+    </div>
+     <div class="container">
+
+        
+    <div class="skid">
+            <span class='ctit'><a class=" li on" href="hotspotsInfo.asp">伦敦</a><a class="li"  href="hotspotsInfo2.asp">悉尼</a></span>
+ 
+    </div>
     </div>
     <div class="main"> 
       <div class="container">
+        <div class="row">
   <%
         if rsnew.bof and rsnew.eof then
         response.write("暂无内容")
@@ -45,23 +55,24 @@ rsnew.Open sqlnew,conn,1,1%>
         i=0
         do while not rsnew.eof and i<rsnew.PageSize
         %>
-        <a class="li tra wow fadeInUp animated row" href="<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>newsview.asp?id=<%=rsnew("prod_id")%><%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
-          <div class="col-md-4">
-            <div class="pic tra"><img src="xgwl/img/temp/part1.png"/><!--<%=rsnew("prod_pic")%>--></div>
-          </div>
-          <div class="col-md-8">
-            <div class="info tra">
+        <div class="col-md-4">
+        <a class="li tra wow fadeInUp animated row b_c" href="<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>hotspotsview.asp?id=<%=rsnew("prod_id")%><%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
+          
+            <div class="pic tra"><img src="<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></div>
+                        <div class="info tra">
               <div class="tit ellipsis ls1"><%=rsnew("prod_name")%><!--<%=formatdatetime(rsnew("prod_date"),2)%>--></div>
-              <div class="txt ellipsis5 ls1"><%=left(RemoveHTML(rsnew("prod_detailen")),260)%></div>
-              <div class="btn btn-default nbtn">阅读详情</div>
+             <!-- <div class="txt ellipsis5 ls1"><%=left(RemoveHTML(rsnew("prod_detailen")),260)%></div>-->
+
             </div>
-          </div></a>
+          
+</a></div>
 
                     <%rsnew.movenext
         	i=i+1
             loop
         	end if
      %>
+     </div>
      <!--pages s-->
           <style>
           .pages{color:#898989;margin-top:40px;margin-bottom:40px;}

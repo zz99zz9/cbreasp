@@ -374,7 +374,6 @@ rs.close
                                               <input class="form-control" type="text" id="hx" value="<%=oRs("hx")%>">
         </div>-->
         <div class="col-sm-4 input-group">
-
                                               <span class="input-group-addon">地址</span>
                                               <input class="form-control" type="text" id="qt" value="<%=oRs("qt")%>">
         </div>
