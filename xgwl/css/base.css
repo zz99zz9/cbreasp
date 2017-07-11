@@ -41,12 +41,12 @@ body{background:#ededed;}
 /**************************/
 /*        顶部通用         */
 /**************************/
-.header{height:35px;background-color:#000;}
-.header .logo{margin-top:7px;float:left;margin-right:70px;width:90px;margin-left:20px;}
+.header{height:45px;background-color:#000;}
+.header .logo{margin-top:12px;float:left;margin-right:10px;width:90px;margin-left:20px;}
 /*导航部份*/
-.header .nav1{float:left;margin-top:8px;}
+.header .nav1{float:left;margin-top:14px;color:#fff;}
 .header .nav1 a.li{float:left;color:#fff;margin-right:50px;}
-.header .nav2{float:right;margin-top:8px;}
+.header .nav2{float:right;margin-top:14px;}
 .header .nav2 a.li{float:left;color:#fff;margin-right:30px;}
 /* 首页焦点图 */
 .ed{position:relative;margin-bottom:25px;}
