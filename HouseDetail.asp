@@ -272,7 +272,8 @@ set prs=nothing
     <%
     dim wz 
     if rs("wz")<>"" then
-    wz=split(rs("wz"),",") 
+    wza=replace(rs("wz"),"，",",")
+    wz=split(wza,",") 
     else
     wz=split("51.515123,-0.114588",",")
     end if

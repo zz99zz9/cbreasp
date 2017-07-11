@@ -169,7 +169,7 @@ set rs=nothing
               <div class="pic"><img src="xgwl/img/Milestones_Collage 900x660.png"/></div>
               <div class="info ls1">
                 <div class="tit">最新资讯</div>
-                <div class="txt">网罗最新资讯，时时分享市场动态</div>
+                <div class="txt">网罗最新活动资讯，实时分享市场动态</div>
               </div></a></div>
           <div class="col-md-4 wow fadeInUp animated"><a class="li3">
               <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
