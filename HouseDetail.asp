@@ -30,7 +30,7 @@ d=rs("Description")%>
     <div class="housepic">
       <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
         <ol class="carousel-indicators">
-          <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
+          <li class="active hidden" data-target="#carousel-example-generic" data-slide-to="0"></li>
           <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
         </ol>
