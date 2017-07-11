@@ -319,7 +319,7 @@ set prs=nothing
         <%do while not prs.eof%>
               <div class="swiper-slide hxtpic"><img src="<%=prs("file")%>"/>
               <div class="tit"><%=prs("tit")%></div>
-              <div class="txt"><%=replace(prs("txt"),"&gt;",">")%><br><%=prs("jg")%></div>
+              <!--<div class="txt"><%=replace(prs("txt"),"&gt;",">")%><br><%=prs("jg")%></div>-->
   </div>
          <%
         	i=i+1

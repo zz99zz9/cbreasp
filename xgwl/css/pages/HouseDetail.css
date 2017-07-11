@@ -30,7 +30,7 @@
 .dinfo .dtxt h3{font-size:20px;color:#000;line-height:40px;margin:0;padding:0;}
 /*户型图样式*/
           .swiper-container2{width:100%;position:relative;overflow:hidden;}
-          .swiper-container2 .swiper-wrapper{height:420px;text-align:center;}
+          .swiper-container2 .swiper-wrapper{height:320px;text-align:center;}
           .swiper-container2 .swiper-wrapper .swiper-slide{width:300px;padding:0 20px;}
           .swiper-container2 .swiper-wrapper .swiper-slide .tit{padding-left:20px;padding-right:20px;text-align:center;}
           .swiper-container2 .swiper-wrapper .swiper-slide .txt{padding-left:20px;padding-right:20px;text-align:center;}
