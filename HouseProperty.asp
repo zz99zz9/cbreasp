@@ -158,8 +158,14 @@ rs.close
           <div class="col-xg-2">
             <div class="btn-group">
               <%if order="1" then 
-              ordername="价格排序"
+              ordername="总价低到高"
               elseif order="2" then 
+              ordername="总价高到低"
+              elseif order="3" then 
+              ordername="均价低到高"
+              elseif order="4" then 
+              ordername="均价高到低"
+              elseif order="5" then 
               ordername="发布时间排序"
               end if
               if ordername="" then ordername="排序"
@@ -167,8 +173,12 @@ rs.close
               <button class="btn btn-default btn-sea dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=ordername%></button>
               <ul class="dropdown-menu" role="menu">
                 <%if order<>0 then%><li><a href='?<%call seaurl(bc,sc,fj,lx,lb,0,1)%>'>默认排序</a></li><%end if%>
-                <li><a href='?<%call seaurl(bc,sc,fj,lx,lb,1,1)%>'>价格排序</a></li>
-                <li> <a href='?<%call seaurl(bc,sc,fj,lx,lb,2,1)%>'>发布时间排序</a></li>
+                <li><a href='?<%call seaurl(bc,sc,fj,lx,lb,1,1)%>'>总价低到高</a></li>
+                <li> <a href='?<%call seaurl(bc,sc,fj,lx,lb,2,1)%>'>总价高到低</a></li>
+                <li><a href='?<%call seaurl(bc,sc,fj,lx,lb,3,1)%>'>均价低到高</a></li>
+                <li> <a href='?<%call seaurl(bc,sc,fj,lx,lb,4,1)%>'>均价高到低</a></li>
+                <li><a href='?<%call seaurl(bc,sc,fj,lx,lb,5,1)%>'>发布时间排序</a></li>
+               
               </ul>
             </div>
           </div>
@@ -194,15 +204,15 @@ select case order
 	case 0
 	'sql=sql+"updatetime desc,Elite,"
 	case 1
-	sql=sql+"jgjj,"
-	case 2
-	sql=sql+"updatetime desc,"
-	case 3
-	sql=sql+"updatetime desc,"
-	case 4
 	sql=sql+"jgzj,"
-	case 5
+	case 2
+	sql=sql+"jgzj desc,"
+	case 3
 	sql=sql+"jgjj,"
+	case 4
+	sql=sql+"jgjj desc,"
+	case 5
+	sql=sql+"updatetime desc,"
 	case 6
 	sql=sql+"updatetime,"
 end select
