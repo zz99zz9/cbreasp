@@ -28,12 +28,12 @@ tdkid=3%>
           </div>
         </div>
         <div class="col-md-4">
-          <div class="rightbtn b_c tra">
+          <div class="rightbtn b_c tra" onclick='openPform(1);'>
             <div class="tit">我想卖</div>
             <div class="txt2">我们一直在寻找想要成为我们动态</div>
 
           </div>
-          <a class="rightbtn rightbtn2 b_c tra" href="Resale.asp">
+          <a class="rightbtn rightbtn2 b_c tra" href="javascript:openPform(1);"><!--Resale.asp-->
             <div class="tit">我想买</div>
             <div class="txt2">我们一直在寻找想要成为我们动态</div>
        
@@ -41,7 +41,10 @@ tdkid=3%>
         </div>
       </div>
     </div>
+        <!--#include file="inc/pfrom.asp"-->
 <!--#include file="inc/footer.asp"-->
 <!--#include file="inc/sidebar.asp"-->
+<script src="xgwl/js/dfrom.js"></script>
+<script src="xgwl/js/pfrom.js"></script>
   </body>
 </html>
