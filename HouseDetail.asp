@@ -279,13 +279,24 @@ set prs=nothing
             </div>
         </div>
     </div>
+    <%
+    dim wz 
+    if rs("wz")<>"" then
+    wz=split(rs("wz"),",") 
+    else
+    wz=split("51.515123,-0.114588",",")
+    end if
+    %>
     <script type='text/javascript'>
         var qualityValue = 80;
         var showMap = +'1';
         var mapZoom = 12;
         var propertyLocation = '<%=rs("qt")%>';
-        var property_LAT = 33.6857;
-        var property_LONG = -117.826;
+        //51.515123，
+        var property_LAT = <%=wz(0)%>;
+        var property_LONG = <%=wz(1)%>;
+        //var property_LAT = 33.6857;
+        //var property_LONG = -117.826;
         $(show_google_map);
     </script>
           <!--地图结束-->
