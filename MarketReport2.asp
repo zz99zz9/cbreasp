@@ -14,7 +14,7 @@ tdkid=7%>
     <!--数据链接-->
     <%dim cid
 cid=request.QueryString("c")
-cid=17
+cid=16
     set rsnew=Server.CreateObject("ADODB.Recordset")
 	  if cid<>"" then
 	  call SafeRequest(cid)
@@ -27,11 +27,11 @@ rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
 <!--#include file="inc/header.asp"-->
     <div class="led"> 
-      <div class="h1">Market Report</div>
+      <div class="h1">Research Report</div>
       <div class="h2">市场报告</div>
     </div>
     <div class="container">
-      <div class="skid"><span class="ctit"> <a class="li" href="MarketReport.asp">英国</a><a class="li on" href="MarketReport2.asp">美国</a><a class="li" href="MarketReport3.asp">澳洲</a></span></div>
+      <div class="skid"><span class="ctit"> <a class="li" href="MarketReport.asp">澳洲</a><a class="li on" href="MarketReport2.asp">英国</a><a class="li" href="MarketReport3.asp">全球</a></span></div>
     </div>
     <div class="main"> 
       <div class="container">
@@ -108,24 +108,15 @@ rsnew.Open sqlnew,conn,1,1%>
             <div class="pages wow fadeInUp animated hidden"><a class="tra" href="#">上一页</a><a class="tra on" href="#">1</a><a class="tra" href="#">2</a><a class="tra" href="#">3</a><a class="tra" href="#">4</a><a class="tra" href="#">5</a><a class="tra" href="#">下一页    </a></div>
           </div>
           <div class="col-md-3">
-            <div class="login">
-              <%if request.cookies("username")="" then%>
-              <div class="tit">登录或注册查看下载报告</div><a class="cbtn" href="/Login.asp">登录</a><a class="cbtn" href="/Register.asp">注册</a>
-              <%else%>
-              <div class="tit">当前登录用户 <%=request.cookies("username")%></div><a class="cbtn" href="/quit.asp">安全退出</a>
-              <%end if%>
-            </div>
-            <div class="contact">
-              <div class="tit">想了解更多请联系我们</div><a class="cbtn1" href='#'>联系我们</a>
-            </div>
-            <div class="aboutmore">
-              <div class="tit">了解更多资讯</div><a class="cbtn" href='/news.asp'>查看更多</a>
-            </div>
+<!--#include file="inc/rightReport.asp"-->
           </div>
         </div>
       </div>
     </div>
+    <!--#include file="inc/pfrom.asp"-->
 <!--#include file="inc/footer.asp"-->
 <!--#include file="inc/sidebar.asp"-->
+<script src="xgwl/js/dfrom.js"></script>
+<script src="xgwl/js/pfrom.js"></script>
   </body>
 </html>

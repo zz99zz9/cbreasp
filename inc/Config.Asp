@@ -14,7 +14,7 @@ SqlDataBaseName="cbre"            '数据库名称  测试:cbre
 else
 SqlLocalName="(local)"            '链接用IP,本地用LOCAL,,远程用IP  测试:(local) 
  SqlUserName="sa"                  '用户名  测试:sa 
-SqlPassword="*123456"              '用户密码  测试:123456 
+SqlPassword="123456"              '用户密码  测试:123456 
 SqlDataBaseName="cbre"            '数据库名称  测试:cbre 
 end if
 

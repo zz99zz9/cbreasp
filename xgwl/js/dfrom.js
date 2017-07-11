@@ -12,15 +12,9 @@ function getLength(str){
 	var reg1 = /^(\w-*\.*)+@(\w-?)+(\.\w{2,})+$/; // 验证邮箱正则    
     var reg2 = /^1\d{10}$/;     //验证手机号正则
 //注册表单提交
-$("#regmobile").blur(function(){
-checkwrint2(this);
-});
-$("#regcheck").blur(function(){
-checkwrint6(this);
-	});
-$("#regname").blur(function(){
-checkwrint1(this);
-	});
+$("#regmobile").blur(function(){checkwrint2(this);});
+$("#regcheck").blur(function(){checkwrint6(this);});
+$("#regname").blur(function(){checkwrint1(this);});
 $("#regpassword").blur(function(){
 checkwrint4(this);
 	});
@@ -343,6 +337,34 @@ function checkwrint6(v){
 		$(v).addClass("no");
 		$(v).removeClass("ok");
 		$(v).next(".err").html("× 验证码错误");//名称不能多于8个字符
+
+	}else {
+		$(v).removeClass("no");
+		$(v).addClass("ok");
+		$(v).next(".err").html("");
+}
+	}
+
+function checkwrint7(v){
+	    var reg = /[^\w\u4e00-\u9fa5]/g;    // 验证用户名正则 
+		if ($(v).val()==""||$(v).val()=="您的姓名"){ 
+		$(v).addClass("no");
+		$(v).removeClass("ok");
+		$(v).next(".err").html("× 请填写内容");//名称不能为空
+	}else if(reg.test($(v).val())){
+		$(v).addClass("no");
+		$(v).removeClass("ok");
+		$(v).next(".err").html("× 填写内容不能含有非法字符");//名称不能含有非法字符
+
+	}else if(getLength($(v).val())<3){
+		$(v).addClass("no");
+		$(v).removeClass("ok");
+		$(v).next(".err").html("× 填写内容不能少于3个字符");//名称不能少于4个字符
+
+	}else if(getLength($(v).val())>100){
+		$(v).addClass("no");
+		$(v).removeClass("ok");
+		$(v).next(".err").html("× 填写内容不能多于100个字符");//名称不能多于16个字符
 
 	}else {
 		$(v).removeClass("no");

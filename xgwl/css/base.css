@@ -95,6 +95,19 @@ body{background:#ededed;}
 .dinfo .price{color:#006A4D;font-size:24px;}
 /*.searchbor .inputbor .sint:focus{border:1px solid #006A4D;border-right:0;}*/
 
+/* 联系我们报名表单 */
+.pform{width:450px;height:520px;position:fixed;z-index:200;top:50%;left:50%;margin-left:-225px;margin-top:-250px;background:#fff;border:1px solid #999;padding:20px 50px;display:none;}
+.pform .cbreint{border:#d4d4d4 1px solid;color:#9d9d9d;font-size:16px;background-color:#fff;font-weight:200;outline:0;width:100%;height:50px;padding-left:20px;font-size:16px;}
+.pform .cbreint:focus,.pform .cbreint.ok{border:1px #66c010 solid;}
+.pform .cbreint.no{border:1px #ff0000 solid;}
+.pform h2{font-size:33px;color:#006A4D;text-align:center;font-weight:300px;}
+.pform .pbtn:hover{background-color:#66c010;}
+.pform i.pclose{font-size:30px;height:36px;cursor:pointer;width:36px;position:absolute;top:10px;left:90%;z-index:110;border-radius:18px;color:#999;line-height:36px;text-align:center;}
+.pform i.pclose:hover{color:#000;}
+.pform .err{color:#ff0000;font-size:14px;line-height:25px;padding-left:10px;height:25px;}
+.pform .pbtn{width:100%;margin: 0 auto;height:50px;line-height:50px;font-size:20px;padding:0;margin-bottom:20px;display:block;cursor:pointer;background-color:#006A4D;text-align:center;color:#fff;margin-top:20px;}
+
+
 @media(min-width:768px){}
 
 /* 小屏幕（平板，大于等于 768px） */

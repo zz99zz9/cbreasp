@@ -54,23 +54,23 @@
 
                       </ul>
                   </li>
-<!--                                     <li class="sub-menu nav7">
+                                     <li class="sub-menu nav7">
                                         <a href="javascript:;" class="">
                                             <i class="icon-tasks"></i>
-                                            <span>代表项目</span>
+                                            <span>投资热区</span>
                                             <span class="arrow"></span>
                                         </a>
                                         <ul class="sub">
-                                <li class="nav7-20"><a class="" href="Prod_list.Asp?Prod_Type=20">国内房产项目列表</a></li>
-                                <li class="nav7-20a"><a class="" href="Prod_add.asp?Prod_Type=20">增添国内房产项目</a></li>
-                               <li class="nav7-21"><a class="" href="Prod_list.Asp?Prod_Type=21">国外房产项目列表</a></li>
-                                <li class="nav7-21a"><a class="" href="Prod_add.asp?Prod_Type=21">增添国外房产项目</a></li>
-                                <li class="nav7-22"><a class="" href="Prod_list.Asp?Prod_Type=22">国内代表项目列表</a></li>
-                                <li class="nav7-22a"><a class="" href="Prod_add.asp?Prod_Type=22">增添国内代表项目</a></li>
-                               <li class="nav7-23"><a class="" href="Prod_list.Asp?Prod_Type=23">国外代表项目列表</a></li>
-                                <li class="nav7-23a"><a class="" href="Prod_add.asp?Prod_Type=23">增添国外代表项目</a></li>
+                                <li class="nav7-20"><a class="" href="Prod_list.Asp?Prod_Type=20">伦敦热区列表</a></li>
+                                <li class="nav7-20a"><a class="" href="Prod_add.asp?Prod_Type=20">增添伦敦热区</a></li>
+                               <li class="nav7-21"><a class="" href="Prod_list.Asp?Prod_Type=21">悉尼热区列表</a></li>
+                                <li class="nav7-21a"><a class="" href="Prod_add.asp?Prod_Type=21">增添悉尼热区</a></li>
+                                <li class="nav7-22"><a class="" href="Prod_list.Asp?Prod_Type=22">墨尔本热区列表</a></li>
+                                <li class="nav7-22a"><a class="" href="Prod_add.asp?Prod_Type=22">增添墨尔本热区</a></li>
+                              <!-- <li class="nav7-23"><a class="" href="Prod_list.Asp?Prod_Type=23">国外代表项目列表</a></li>
+                                <li class="nav7-23a"><a class="" href="Prod_add.asp?Prod_Type=23">增添国外代表项目</a></li>-->
                                         </ul>
-                                    </li>-->
+                                    </li>
   <li class="sub-menu nav4">
                       <a href="javascript:;" class="">
                           <i class="icon-tasks"></i>
@@ -114,20 +114,15 @@ rs.close
                           <span class="arrow"></span>
                       </a>
                       <ul class="sub">
+                      <li class="nav5-18"><a class="" href="Prod_list.Asp?Prod_Type=18">澳洲市场报告列表</a></li>
+                          <li class="nav5-18a"><a class="" href="Prod_add.asp?Prod_Type=18">增添澳洲市场报告</a></li>
 <li class="nav5-16"><a class="" href="Prod_list.Asp?Prod_Type=16">英国市场报告列表</a></li>
                           <li class="nav5-16a"><a class="" href="Prod_add.asp?Prod_Type=16">增添英国市场报告</a></li>
-
-
-<li class="nav5-17"><a class="" href="Prod_list.Asp?Prod_Type=17">美国市场报告列表</a></li>
-                          <li class="nav5-17a"><a class="" href="Prod_add.asp?Prod_Type=17">增添美国市场报告</a></li>
-
-
-<li class="nav5-18"><a class="" href="Prod_list.Asp?Prod_Type=18">澳洲市场报告列表</a></li>
-                          <li class="nav5-18a"><a class="" href="Prod_add.asp?Prod_Type=18">增添澳洲市场报告</a></li>
-
-
+<li class="nav5-17"><a class="" href="Prod_list.Asp?Prod_Type=17">全球市场报告列表</a></li>
+                          <li class="nav5-17a"><a class="" href="Prod_add.asp?Prod_Type=17">增添全球市场报告</a></li>
                       </ul>
                   </li>
+
                     <li class="sub-menu nav6">
                                         <a href="javascript:;" class="">
                                             <i class="icon-tasks"></i>
