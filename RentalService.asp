@@ -30,17 +30,20 @@ tdkid=4%>
           <div class="left">
             <div class="title">想要租房</div>
             <div class="txt2">我们一直在寻找想要成为我们动态，快节奏的组织的一部分的卓越的专业人士。在我们的全球办事处之一查看职业机会。</div>
-            <div class="cbtn">联系我们</div>
+            <div class="cbtn" onclick='openPform(1);'>联系我们</div>
           </div>
           <div class="h20"></div>
-          <div class="right">
+          <div class="right hidden">
             <div class="title">出租指南</div>
             <div class="txt2"> <a href="#">伦敦住宅出租房东指南</a><br/><a href="#">伦敦住宅出租房东指南</a><br/><a href="#">伦敦住宅出租房东指南</a></div>
           </div>
         </div>
       </div>
     </div>
+        <!--#include file="inc/pfrom.asp"-->
 <!--#include file="inc/footer.asp"-->
 <!--#include file="inc/sidebar.asp"-->
+<script src="xgwl/js/dfrom.js"></script>
+<script src="xgwl/js/pfrom.js"></script>
   </body>
 </html>
