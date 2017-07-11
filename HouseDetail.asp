@@ -54,7 +54,7 @@ d=rs("Description")%>
           <div class="country"><%=rs("bigclassname")%> / <%=rs("smallclassname")%></div>
           <div class="txt">所属热区：<span class="txtv"><%=rs("ctdname")%></span></div>
           <div class="txt">物业类型：<span class="txtv"><%=rs("ckfsname")%></span></div>
-          <div class="txt">面积均价：<span class="txtv"><%=rs("jgjj")%>元/平</span></div>
+          <div class="txt">面积均价：<span class="txtv"><%=rs("jgjj")%>万元/平</span></div>
           <div class="txt">项目地址：<span class="txtv"><%=rs("qt")%></span></div>
           <div class="infoc">
             <%if rs("jgzj2")="0" or rs("jgzj2")="" then%>
@@ -72,8 +72,8 @@ d=rs("Description")%>
       <div class="dinfo" id="f1">
         <div class="dtit">项目介绍
           <ul class="icolist">
-            <li class="li1 b_c hidden-xs"><img src="xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
-            <li class="li3 b_c hidden-xs"><img src="xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
+            <li class="li1 b_c hidden-xs hidden"><img src="xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
+            <li class="li3 b_c hidden-xs hidden"><img src="xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
             <%if request.cookies("username")="" then%>
              <li class="li2 b_c1" onclick='location.href="register.asp"'><img src="xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
               <%else%>

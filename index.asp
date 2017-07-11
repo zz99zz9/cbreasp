@@ -52,7 +52,7 @@ tdkid=1%>
           <li class="v3">市场报告</li>
         </ul>
         <div class="inputbor"><i class="sarr tra"></i>
-          <input class="sint" type="text" placeholder="请输入区域、项目名称开始搜索"/>
+          <input class="sint" type="text" placeholder="请输入国家，如英国、澳大利亚等，或项目名称"/>
           <input class="skid" type="hidden" value="1"/><span class="sbtn">开始搜索</span>
         </div>
       </div>

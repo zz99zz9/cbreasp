@@ -11,17 +11,17 @@ $(".searchbor ul li").click(function(){
       skid=1;
       stab.find('.inputbor .sarr').css('margin-left','25px');
       stab.find('.inputbor .skid').val(1);
-      stab.find('.inputbor .sint').attr('placeholder','请输入区域、项目名称开始搜索');
+      stab.find('.inputbor .sint').attr('placeholder','请输入国家，如英国、澳大利亚等，或项目名称');
     }else if(v2>-1){
       skid=2;
       stab.find('.inputbor .sarr').css('margin-left','102px');
       stab.find('.inputbor .skid').val(2);
-      stab.find('.inputbor .sint').attr('placeholder','请输入区域、项目名称开始搜索');
+      stab.find('.inputbor .sint').attr('placeholder','请输入国家，如英国、澳大利亚等，或项目名称');
     }else if(v3>-1){
         skid=3;
       stab.find('.inputbor .sarr').css('margin-left','190px');
       stab.find('.inputbor .skid').val(3);
-      stab.find('.inputbor .sint').attr('placeholder','请输入需要查找的关键词');
+      stab.find('.inputbor .sint').attr('placeholder','请输入国家，如英国、澳大利亚等');
     };
 });
 $(".searchbor .inputbor .sbtn").click(function(){
