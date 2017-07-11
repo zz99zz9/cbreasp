@@ -245,7 +245,7 @@ rs.Open sql,conn,1,1%>
               <div class="addr ellipsis ls1"><%=rs("qt")%></div>
               <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
               <div class="city ellipsis ls1">热点区域：<%=rs("ctdname")%></div>
-              <div class="kid ellipsis ls1">物业类型：<%=rs("clxname")%> </div>
+              <div class="kid ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
             </div>
           </div>
           <div class="col-md-3">
