@@ -31,12 +31,12 @@ d=rs("Description")%>
       <div class="carousel slide" id="carousel-example-generic" data-ride="carousel">
         <ol class="carousel-indicators">
           <li class="active" data-target="#carousel-example-generic" data-slide-to="0"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-          <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+          <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
         </ol>
         <div class="carousel-inner" role="listbox">
           <%Set prs= Server.CreateObject("ADODB.Recordset")
-        psql="select top 3 * From [links] where wid=1 order by oid desc,ID desc"
+        psql="select top 1 * From [links] where wid=1 order by oid desc,ID desc"
         prs.open psql,conn,1,1
         i=0%>
         <%do while not prs.eof%>
@@ -100,7 +100,7 @@ d=rs("Description")%>
 
 .view .swiper-container {
 	width: 100%;
-	height: 490px;
+	height: 540px;
 }
 .view .swiper-container img{
 	width: 100%;
