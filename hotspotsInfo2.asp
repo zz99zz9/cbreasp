@@ -28,7 +28,7 @@ rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
 <!--#include file="inc/header.asp"-->
     <div class="led"> 
-      <div class="h1">Area Guite</div>
+      <div class="h1">Area Guide</div>
       <div class="h2">投资热区</div>
     </div>
      <div class="container">
