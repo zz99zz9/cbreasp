@@ -50,8 +50,8 @@ d=rs("Description")%>
         %>
         </div>
         <div class="baseinfo"> 
-          <div class="tit"><%=rs("entitle")%><span class="status1"><%=rs("clxname")%></span></div>
-          <div class="country"><%=rs("bigclassname")%> / <%=rs("smallclassname")%></div>
+          <div class="tit"><%=rs("entitle")%></div>
+          <div class="country"><%=rs("bigclassname")%> / <%=rs("smallclassname")%><span class="status1"><%=rs("clxname")%></span></div>
           <div class="txt">所属热区：<span class="txtv"><%=rs("ctdname")%></span></div>
           <div class="txt">物业类型：<span class="txtv"><%=rs("ckfsname")%></span></div>
           <div class="txt">面积均价：<span class="txtv"><%=rs("jgjj")%>万元/平</span></div>
@@ -350,33 +350,36 @@ set prs=nothing
       <div class="dinfo" id="f5">
         <div class="dtit">其他推荐</div>
         <div class="dtxt row morehouse">
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated b_c" href="#">
-              <div class="pic tra"><img src="xgwl/img/temp/part1.png"/></div>
+                <%'列表
+        set rs=Server.CreateObject("ADODB.Recordset")
+sql="select top 3 * from [Table_Product] where Passed=1 and elite=1"
+sql=sql+" and clbid='11'"
+sql=sql+" order by "
+sql=sql+"OrderId desc,articleid desc"
+rs.Open sql,conn,1,1
+i=0
+   do while not rs.eof
+%>
+
+          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated b_c" href="housedetail.asp?id=<%=rs("articleid")%>">
+              <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/></div>
               <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="addr ellipsis ls1">Level 5, 151 Pirie Street Adelaide, SA 5000</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅 </div>
-                <div class="price ls2">30000元/平</div>
+                <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
+                <div class="addr ellipsis ls1"><%=rs("qt")%></div>
+                <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
+                <div class="kid ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
+                <div class="price ls2"><%=rs("jgjj")%>万/平</div>
               </div></a></div>
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated b_c" href="#">
-              <div class="pic tra"><img src="xgwl/img/temp/part2.png"/></div>
-              <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="addr ellipsis ls1">Level 5, 151 Pirie Street Adelaide, SA 5000</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅 </div>
-                <div class="price ls2">40000元/平</div>
-              </div></a></div>
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated b_c" href="#">
-              <div class="pic tra"><img src="xgwl/img/temp/part3.png"/></div>
-              <div class="info tra">
-                <div class="tit ellipsis ls1">124 South College Street</div>
-                <div class="addr ellipsis ls1">Level 5, 151 Pirie Street Adelaide, SA 5000</div>
-                <div class="city ellipsis ls1">国家/伦敦</div>
-                <div class="kid ellipsis ls1">物业类型：住宅/别墅 </div>
-                <div class="price ls2">40000元/平</div>
-              </div></a></div>
+
+              <%
+              rs.movenext
+i=i+1
+loop
+rs.close
+set rs=nothing
+              %>
+
+ 
         </div>
       </div>
     </div>
