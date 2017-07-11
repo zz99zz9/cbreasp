@@ -175,7 +175,7 @@ set rs=nothing
               <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">研究报告</div>
-                <div class="txt"></div>
+                <div class="txt">深度洞察 权威报告<br>助力做出投资决策</div>
               </div></a></div>
         </div>
       </div>

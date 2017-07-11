@@ -48,11 +48,12 @@ body{background:#ededed;}
 .header .nav1 a.li{float:left;color:#fff;margin-right:50px;}
 .header .nav2{float:right;margin-top:14px;}
 .header .nav2 a.li{float:left;color:#fff;margin-right:30px;}
+.header .nav2 a.li:hover{background-color:#333;}
 /* 首页焦点图 */
 .ed{position:relative;margin-bottom:25px;}
 #carousel-example-generic .carousel-inner .item{height:400px;background-size:cover;}
 #carousel-example-generic .carousel-inner .item .carousel-caption{}
-#carousel-example-generic .carousel-inner .item .carousel-caption h1{margin-bottom:28% !important;line-height:120%;font-size:45px !important;}
+#carousel-example-generic .carousel-inner .item .carousel-caption h1{margin-bottom:180px !important;line-height:120%;font-size:45px !important;}
 #carousel-example-generic .carousel-indicators li{border-radius:0;margin-left:8px;margin-right:8px;}
 #carousel-example-generic .carousel-indicators li.active{background-color:#66C010;border:1px solid #66C010;height:11px;width:11px;}
 
