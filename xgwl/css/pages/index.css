@@ -38,3 +38,6 @@
 .part4 .li3 .info{background-image:url('../../img/static-bg-img-4.jpg');background-position:0px 0px;}
 .part4 .info .tit{font-size:26px;padding-bottom:20px;}
 .part4 .info .txt{font-size:16px;}
+.part4 .info .infobtn{position:absolute;bottom:70px;left:20px;font-size:14px;}
+.part4 .info .arr{font-family:'宋体';}
+.part4 a:hover .info .arr{font-family:'宋体';padding-left:5px;}

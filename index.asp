@@ -159,28 +159,30 @@ set rs=nothing
     <div class="part4">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 wow fadeInUp animated"><a class="li1">
+          <div class="col-md-4 wow fadeInUp animated b_h tra"><a class="li1" href="hotspotsInfo.asp">
               <div class="pic"><img src="xgwl/img/Research_Collage 4-17-900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">投资热区</div>
                 <div class="txt">聚焦投资热点，甄选潜力区域</div>
+                <div class="infobtn">了解详情 <span class="arr tra">&gt;</span></div>
               </div></a></div>
-          <div class="col-md-4 wow fadeInUp animated"><a class="li2">
+          <div class="col-md-4 wow fadeInUp animated b_h tra"><a class="li2" href="news.asp">
               <div class="pic"><img src="xgwl/img/Milestones_Collage 900x660.png"/></div>
               <div class="info ls1">
                 <div class="tit">最新资讯</div>
                 <div class="txt">网罗最新活动资讯，实时分享市场动态</div>
+                <div class="infobtn">了解详情 <span class="arr tra">&gt;</span></div>
               </div></a></div>
-          <div class="col-md-4 wow fadeInUp animated"><a class="li3">
+          <div class="col-md-4 wow fadeInUp animated b_h tra"><a class="li3" href="MarketReport.asp">
               <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">研究报告</div>
                 <div class="txt">深度洞察 权威报告<br>助力做出投资决策</div>
+                <div class="infobtn">了解详情 <span class="arr tra">&gt;</span></div>
               </div></a></div>
         </div>
       </div>
     </div>
-
     <!--<iframe id="portal" src="http://iframe.ondicomdigital.com/cbre-cn/?lang=cn&amp;projectID=a049000000LTRw0&amp;projectName=TestProject&amp;retUrl=http%3A%2F%2Fmydomain%2Fregister%2Fdefault.aspx%3Fsk%3Dsuccess%23thankyou" width="100%" height="500" frameborder="0" scrolling="no"></iframe>-->
 <!--#include file="inc/footer.asp"-->
 <!--#include file="inc/sidebar.asp"-->
