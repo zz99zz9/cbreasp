@@ -47,7 +47,7 @@ rsnew.Open sqlnew,conn,1,1%>
         %>
         <a class="li tra wow fadeInUp animated row" href="<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>newsview.asp?id=<%=rsnew("prod_id")%><%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
           <div class="col-md-4">
-            <div class="pic tra"><img src="xgwl/img/temp/part1.png"/><!--<%=rsnew("prod_pic")%>--></div>
+            <div class="pic tra"><img src="<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></div>
           </div>
           <div class="col-md-8">
             <div class="info tra">

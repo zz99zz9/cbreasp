@@ -25,8 +25,9 @@
 .part3 .row{padding-left:15px;padding-right:15px;}
 .part3 .row .col-md-6{padding:0;}
 .lean{text-align:center;float:left;width:100%;height:365px;background-size:cover;background-image:url('../../img/static-bg-img-1.jpg');padding:40px;}
-.lean .info{font-size:26px;color:#fff;text-align:center;margin-bottom:20px;font-weight:100;}
-.lean .abtn{padding:6px 12px;background:#fff;color:#006A4D;font-size:14px;margin-top:10px;}
+.lean .info{font-size:26px;color:#fff;text-align:center;margin-bottom:20px;font-weight:100;padding-top:35px;}
+.lean .abtn{padding:9px 17px;background:#fff;color:#006A4D;font-size:14px;margin-top:10px;margin:20px 10px;}
+.lean .abtn2{padding:9px 19px;}
 .lean .abtn:hover{background-color:#66C010;color:#fff;}
 .leaned{cursor:pointer;float:right;height:365px;width:100%;background-size:cover;background-image:url('../../img/Web_collage_Updated.png')}
 /* 首页底部三栏 */
@@ -35,4 +36,5 @@
 .part4 .li1 .info{background-image:url('../../img/static-bg-img-2.jpg');background-position:0px 0px;}
 .part4 .li2 .info{background-image:url('../../img/static-bg-img-3.jpg');color:#444;font-weight:200;}
 .part4 .li3 .info{background-image:url('../../img/static-bg-img-4.jpg');background-position:0px 0px;}
-.part4 .info .tit{font-size:26px;}
+.part4 .info .tit{font-size:26px;padding-bottom:20px;}
+.part4 .info .txt{font-size:16px;}

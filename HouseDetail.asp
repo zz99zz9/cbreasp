@@ -62,7 +62,7 @@ d=rs("Description")%>
             <%else%>
             <div class="price"><%=rs("jgzj")%><em>万</em>~<%=rs("jgzj2")%><em>万</em></div>
             <%end if%>
-            <span class="cbtn tra" onclick="openPform();">抢购房源</span>
+            <span class="cbtn tra" onclick="openPform(1);"><%if rs("clxid")=7 then%>抢购房源<%else%>联系我们<%end if%></span>
           </div>
         </div>
       </div>

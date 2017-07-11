@@ -146,7 +146,7 @@ set rs=nothing
         <div class="row">
           <div class="col-md-6">
             <div class="lean wow fadeInUp animated">
-              <div class="info ls2">从投资销售和租赁交易到外包和咨询服务，与CBRE，它的优势为我们服务的每个客户。</div><br/><a class="abtn tra" href="#">学到更多</a>
+              <div class="info ls2">从投资交易和租赁服务，<br>为您的资产增值和您的投资收益保驾护航。</div><br/><a class="abtn tra" href="RentalService.asp">租赁服务</a> <a class="abtn tra abtn2" href="ResaleInfo.asp">二 手 房</a>
             </div>
           </div>
           <div class="col-md-6">
@@ -161,20 +161,20 @@ set rs=nothing
           <div class="col-md-4 wow fadeInUp animated"><a class="li1">
               <div class="pic"><img src="xgwl/img/Research_Collage 4-17-900x660.jpg"/></div>
               <div class="info ls1">
-                <div class="tit">我们的里程碑</div>
-                <div class="txt">CBRE被广泛认可为商业房地产的最重要权力。</div>
+                <div class="tit">投资热区</div>
+                <div class="txt">聚焦投资热点，甄选潜力区域</div>
               </div></a></div>
           <div class="col-md-4 wow fadeInUp animated"><a class="li2">
               <div class="pic"><img src="xgwl/img/Milestones_Collage 900x660.png"/></div>
               <div class="info ls1">
-                <div class="tit">CBRE职业</div>
-                <div class="txt">凭借在销售和IT方面的工程和安全方面的职位，CBRE使您能够将您的职业发挥到目标。在美国各地办公室探索机会。</div>
+                <div class="tit">最新资讯</div>
+                <div class="txt">网罗最新资讯，时时分享市场动态</div>
               </div></a></div>
           <div class="col-md-4 wow fadeInUp animated"><a class="li3">
               <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
               <div class="info ls1">
-                <div class="tit">CBRE年度报告</div>
-                <div class="txt">我们最新的“年度报告”重点介绍了2016年的许多成功案例，以及CBRE战略的更新。</div>
+                <div class="tit">研究报告</div>
+                <div class="txt"></div>
               </div></a></div>
         </div>
       </div>

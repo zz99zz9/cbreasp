@@ -23,7 +23,7 @@ tdkid=3%>
           <div class="left">
             <!--<div class="title">二手房</div>-->
             <div class="txt">
-             <!---->
+             <% call sHowInfo(1)%>
             </div>
           </div>
         </div>
