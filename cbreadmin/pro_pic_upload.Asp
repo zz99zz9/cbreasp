@@ -1,4 +1,4 @@
-<!--#include FILE="../inc/configgit.asp"-->
+<!--#include FILE="../inc/config.asp"-->
 <!--#include file="UpLoad_Class.asp"-->
 <%
 proid=request("proid")
