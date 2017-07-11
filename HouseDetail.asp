@@ -100,7 +100,7 @@ d=rs("Description")%>
 
 .view .swiper-container {
 	width: 100%;
-	height: 490px;
+	height: 540px;
 }
 .view .swiper-container img{
 	width: 100%;
