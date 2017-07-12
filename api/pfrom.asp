@@ -6,16 +6,13 @@
         lyemail=request("lyemail")
         lytext=request("lytext")
         lyqq=request("lyqq")
+        lYsex=request("lYsex")
 
-        set rs=Server.CreateObject("ADODB.Recordset")
-rs.Open "select * from [lyb] where lytel='"&lytel&"' and lytel='"&lytel&"'",conn,1,3
-	If not(rs.Eof And rs.Bof) Then
-	 Response.Write("has")
-	response.end()
-    else
-    conn.execute"INSERT INTO [lyb] (lyname,lytel,lyemail,lytext,lyqq) VALUES ('"&lyname&"','"&lytel&"','"&lyemail&"','"&lytext&"','"&lyqq&"')"
+
+
+    conn.execute"INSERT INTO [lyb] (lyname,lytel,lyemail,lytext,lyqq,lYsex) VALUES ('"&lyname&"','"&lytel&"','"&lyemail&"','"&lytext&"','"&lyqq&"','"&lYsex&"')"
     Response.Write("ok")
-	end if
+
 	rs.close
 	set rs=nothing
         %>

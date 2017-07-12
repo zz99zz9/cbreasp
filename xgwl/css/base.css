@@ -63,7 +63,7 @@ body{background:#ededed;}
 #carousel-example-generic .carousel-indicators li.active{background-color:#66C010;border:1px solid #66C010;height:11px;width:11px;}
 
 /* 焦点图中的搜索 */
-.searchbor{position:absolute;bottom:60px;width:530px;left:50%;margin-left:-265px;}
+.searchbor{position:absolute;bottom:60px;width:530px;left:50%;margin-left:-265px;z-index:12;}
 .searchbor ul{margin-bottom:25px;}
 .searchbor ul li{color:#fff;float:left;margin-left:20px;margin-right:20px;font-weight:100;;cursor:pointer;}
 .searchbor ul li.on,.searchbor ul li:hover{font-weight:bold;}

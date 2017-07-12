@@ -134,7 +134,8 @@ rs.close
                                             <li class="nav6-2"><a class="" href="Prod_add.asp?Prod_Type=8">发布销售团队</a></li>-->
                                             <li class="nav6-2"><a class="" href="member.asp">查看注册用户</a></li>
                                             <li class="nav6-3"><a class="" href="lyb.asp">查看用户留言</a></li>
-                                             <li class="nav6-4"><a class="" href="lyb2.asp">投资意向报表</a></li>
+                                             <li class="nav6-4"><a class="" href="lyb1.asp">页底报名表</a></li>
+                                             <li class="nav6-5"><a class="" href="lyb2.asp">投资意向报名表</a></li>
                                         </ul>
                                     </li>
 <!--  -->                <li class="sub-menu nav8">
