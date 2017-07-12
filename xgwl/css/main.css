@@ -25,13 +25,6 @@
 /*End*/
 
 /*主要CSS*/
-body {
-	margin: 0px;
-	padding: 0px;
-	background-color: #ffffff;
-	font-family: 'Source Sans Pro', sans-serif;
-}
-
 #header{
 	background-color: #3f8dbf;
 	float: left;
@@ -312,6 +305,7 @@ transform: translateY(-4px) rotate(0deg);
 	padding-top: 30px;
 	padding-bottom: 80px;
 	display: none;
+	z-index:3000;
 }
 .mobile-inner-nav a{
 	display: inline-block;

@@ -71,7 +71,7 @@ if key<>"" then%>
             <div class="info tra">
               <div class="tit ellipsis ls1"><%=rsnew("prod_name")%><!--<%=formatdatetime(rsnew("prod_date"),2)%>--></div>
               <div class="txt ellipsis5 ls1"><%=left(RemoveHTML(rsnew("prod_detailen")),260)%></div>
-              <div class="btn btn-default nbtn">阅读详情</div>
+              <div class="btn btn-default nbtn hidden-xs">阅读详情</div>
             </div>
           </div></a>
 

@@ -7,7 +7,7 @@
 <link href="xgwl/css/xgwl.css" rel="stylesheet"/>
 <link href="xgwl/css/base.css" rel="stylesheet"/>
 <link href="xgwl/css/list.css" rel="stylesheet"/>
-<!--<link href="xgwl/css/main.css" rel="stylesheet" type="text/css"/>
+<link href="xgwl/css/main.css" rel="stylesheet" type="text/css"/>
 	<style>
 	.mobile-inner-nav a{
 		-webkit-animation-duration: 0.5s;
@@ -17,7 +17,7 @@
 		-webkit-animation-name: returnToNormal;
 		animation-name: returnToNormal;
 	}
-			
+		
 	@-webkit-keyframes returnToNormal {
 	  0% {
 	    opacity: 0;
@@ -45,4 +45,4 @@
 	            transform: none;
 	  }
 	}
-	</style>-->
+	</style>
