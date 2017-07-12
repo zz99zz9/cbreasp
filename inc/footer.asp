@@ -17,9 +17,10 @@
     </div>
 
     <!--#include file="bottomfrom.asp"-->
-    <!--<script src="xgwl/js/lib/jquery.js"></script>-->
-    <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+   <script src="xgwl/js/lib/jquery.js"></script>
+    <script src="xgwl/js/lib/bootstrap.min.js"></script>
+    <！-- <script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+     <script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
     <script src="xgwl/js/lib/swiper-2.7.6.jquery.min.js"></script>
     <script src="xgwl/js/lib/wow.min.js"></script>
     <script src="xgwl/js/base.js"></script>

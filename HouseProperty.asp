@@ -189,6 +189,20 @@ rs.close
       <div class="container">
         
         <%'列表
+             set rsc=Server.CreateObject("ADODB.Recordset")
+sql="select count(*) as counter from [Table_Product] where Passed=1"
+if bc<>0 and bc<>"" then sql=sql+" and bigclassid="&bc
+if sc<>0 and sc<>"" then sql=sql+" and smallclassid="&sc
+if fj<>0 and fj<>"" then sql=sql+" and cfjid='"&fj&"'"
+if lx<>0 and lx<>"" then sql=sql+" and clxid='"&lx&"'"
+if lb<>0 and lb<>"" then sql=sql+" and clbid='"&lb&"'"
+if key<>"" then sql=sql+" and (entitle like '%"&key&"%' or content like '%"&key&"%' or content1 like '%"&key&"%' or bigclassname like '%"&key&"%' or smallclassname like '%"&key&"%' or ctdname like '%"&key&"%' or ckfsname like '%"&key&"%')"
+ sql=sql+" and clbid='11'"
+ rsc.Open sql,conn,1,1
+ dim counter
+counter=rsc("counter")
+rsc.close
+set rsc=nothing
         set rs=Server.CreateObject("ADODB.Recordset")
 sql="select * from [Table_Product] where Passed=1"
 if bc<>0 and bc<>"" then sql=sql+" and bigclassid="&bc
@@ -196,7 +210,7 @@ if sc<>0 and sc<>"" then sql=sql+" and smallclassid="&sc
 if fj<>0 and fj<>"" then sql=sql+" and cfjid='"&fj&"'"
 if lx<>0 and lx<>"" then sql=sql+" and clxid='"&lx&"'"
 if lb<>0 and lb<>"" then sql=sql+" and clbid='"&lb&"'"
-if key<>"" then sql=sql+" and (title like '%"&key&"%' or content like '%"&key&"%' or content1 like '%"&key&"%')"
+if key<>"" then sql=sql+" and (entitle like '%"&key&"%' or content like '%"&key&"%' or content1 like '%"&key&"%' or bigclassname like '%"&key&"%' or smallclassname like '%"&key&"%' or ctdname like '%"&key&"%' or ckfsname like '%"&key&"%')"
 
  sql=sql+" and clbid='11'"
 sql=sql+" order by "
@@ -219,6 +233,11 @@ end select
 sql=sql+"OrderId desc,articleid desc"
 
 rs.Open sql,conn,1,1%>
+<%
+if key<>"" then%>
+以为您找到关于 "<%=key%>" 的 <%=counter%> 条相关记录
+<%end if
+%>
 
 <%
     if rs.bof and rs.eof then
