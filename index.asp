@@ -150,7 +150,7 @@ set rs=nothing
               <div class="info ls2">从投资交易和租赁服务，<br>为您的资产增值和您的投资收益保驾护航。</div><br/><a class="abtn tra" href="RentalService.asp">租赁服务</a> <a class="abtn tra abtn2" href="ResaleInfo.asp">二 手 房</a>
             </div>
           </div>
-          <div class="col-md-6">
+          <div class="col-md-6 hidden-xs">
             <div class="leaned b_c tra wow fadeInUp animated"></div>
           </div>
         </div>

@@ -13,4 +13,5 @@
         </div><i class="bclose tra fa fa-close fa-stack-1x"> </i>
       </div>
     </div>
-        <div class='openbform b_h hiddex-xs'>成为会员</div>
+        <div class='openbform b_h hidden-xs'>成为会员</div>
+        <a href='tel:4008209899' class='boottomtel'>全国热线 4008209899</a>
