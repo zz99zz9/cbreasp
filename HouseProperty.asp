@@ -235,7 +235,7 @@ sql=sql+"OrderId desc,articleid desc"
 rs.Open sql,conn,1,1%>
 <%
 if key<>"" then%>
-以为您找到关于 "<%=key%>" 的 <%=counter%> 条相关记录
+已为您找到关于 "<%=key%>" 的 <%=counter%> 条相关记录
 <%end if
 %>
 
