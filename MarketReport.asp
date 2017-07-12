@@ -43,7 +43,7 @@ rsnew.Open sqlnew,conn,1,1%>
     <%
 if key<>"" then%>
 <div class="container"><br>
-以为您找到关于 "<%=key%>" 的 <%=counter%> 条相关记录
+已为您找到关于 "<%=key%>" 的 <%=counter%> 条相关记录
 </div>
 <%end if
 %>
