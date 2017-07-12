@@ -8,6 +8,7 @@
     <link href="xgwl/css/pages/news.css" rel="stylesheet"/>
     <!--数据链接-->
 <%pro_id=request.QueryString("id")
+
 call SafeRequest(pro_id)
 set rsnew=Server.CreateObject("ADODB.Recordset")
 sql="select * from [prod] where prod_id="&pro_id
@@ -53,7 +54,7 @@ mystr=replace(mystr,"，",",")
 mystr=split(mystr,",")
 for i=0 to ubound(mystr)
 'if i>0 then response.write" \ "
-response.write "<a href='newssearch.asp?k="&mystr(i)&"' class='tipsinfo' target='_blank'>"&mystr(i)&"</a>"
+response.write "<a href='news.asp?key="&mystr(i)&"' class='tipsinfo' target='_blank'>"&mystr(i)&"</a>"
 next
 end if  %>
 </div>

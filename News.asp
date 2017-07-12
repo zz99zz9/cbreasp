@@ -15,6 +15,18 @@ tdkid=6%>
     <%dim cid
 cid=request.QueryString("c")
 cid=25
+key=request.QueryString("key")
+    set rsc=Server.CreateObject("ADODB.Recordset")
+
+	  call SafeRequest(cid)
+	  sqlnew="select count(*) as counter from [prod] where classid="&cid
+	
+    sqlnew=sqlnew+" and prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%'"
+
+rsc.Open sqlnew,conn,1,1
+counter=rsc("counter")
+    rsc.close
+    set rsc=nothing
     set rsnew=Server.CreateObject("ADODB.Recordset")
 	  if cid<>"" then
 	  call SafeRequest(cid)
@@ -22,6 +34,7 @@ cid=25
 	  else
 	  sqlnew="select * from [prod] "
 	  end if
+    sqlnew=sqlnew+" and prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%'"
 	  sqlnew=sqlnew+" order by oid desc,prod_id desc"
 rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
@@ -32,6 +45,11 @@ rsnew.Open sqlnew,conn,1,1%>
     </div>
     <div class="main"> 
       <div class="container">
+      <%
+if key<>"" then%>
+已为您找到关于 "<%=key%>" 的 <%=counter%> 条相关记录
+<%end if
+%>
   <%
         if rsnew.bof and rsnew.eof then
         response.write("暂无内容")
