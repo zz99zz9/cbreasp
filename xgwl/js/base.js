@@ -31,6 +31,20 @@ $(".searchbor .inputbor .sbtn").click(function(){
         sint:tab.find('.sint').val()
     }
     console.log(sdata);
+    if(sdata.sint!=undefined&&sdata.sint!=""&&sdata.sint!=null){
+         if(sdata.skid==1){
+             window.location.href='HouseProperty.asp?key='+sdata.sint
+         }
+         if(sdata.skid==2){
+             alert("二手房内容整理中……")
+         }
+         if(sdata.skid==3){
+             window.location.href='MarketReport.asp?key='+sdata.sint
+         }
+    }else{
+        alert("请输入搜索关键词！")
+        $(".sint").focus();
+    }
 })
 //底部表单相关
 //打开表单

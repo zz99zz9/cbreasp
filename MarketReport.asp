@@ -12,9 +12,18 @@ tdkid=7%>
   </head>
   <body>
     <!--数据链接-->
-    <%dim cid
+    <%dim cid,key,counter
 cid=request.QueryString("c")
 cid=18
+key=request.QueryString("key")
+ set rsc=Server.CreateObject("ADODB.Recordset")
+ sqlnew="select count(*) as counter from [prod] where classid="&cid&" and prod_name like '%"&key&"%'"
+ rsc.Open sqlnew,conn,1,1
+counter=rsc("counter")
+rsc.close
+set rsc=nothing
+
+
     set rsnew=Server.CreateObject("ADODB.Recordset")
 	  if cid<>"" then
 	  call SafeRequest(cid)
@@ -22,6 +31,7 @@ cid=18
 	  else
 	  sqlnew="select * from [prod] "
 	  end if
+    if key<>"" then sqlnew=sqlnew+" and prod_name like '%"&key&"%'"
 	  sqlnew=sqlnew+" order by oid desc,prod_id desc"
 rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
@@ -30,6 +40,13 @@ rsnew.Open sqlnew,conn,1,1%>
       <div class="h1">Research Report</div>
       <div class="h2">市场报告</div>
     </div>
+    <%
+if key<>"" then%>
+<div class="container"><br>
+以为您找到关于 "<%=key%>" 的 <%=counter%> 条相关记录
+</div>
+<%end if
+%>
     <div class="container">
       <div class="skid"><span class="ctit"> <a class="li on" href="MarketReport.asp">澳洲</a><a class="li" href="MarketReport2.asp">英国</a><a class="li" href="MarketReport3.asp">全球</a></span></div>
     </div>
