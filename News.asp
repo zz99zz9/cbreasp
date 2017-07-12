@@ -21,7 +21,7 @@ key=request.QueryString("key")
 	  call SafeRequest(cid)
 	  sqlnew="select count(*) as counter from [prod] where classid="&cid
 	
-    sqlnew=sqlnew+" and prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%'"
+    sqlnew=sqlnew+" and (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
 
 rsc.Open sqlnew,conn,1,1
 counter=rsc("counter")
@@ -34,7 +34,7 @@ counter=rsc("counter")
 	  else
 	  sqlnew="select * from [prod] "
 	  end if
-    sqlnew=sqlnew+" and prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%'"
+    sqlnew=sqlnew+" and (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
 	  sqlnew=sqlnew+" order by oid desc,prod_id desc"
 rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
