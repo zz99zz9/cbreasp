@@ -10,7 +10,7 @@
 dim i
 dim sql,rs
 
-sql="select * From [lyb] where lyqq='2' order by lyid desc"
+sql="select * From [lyb] where lyqq='1' order by lyid desc"
 
 Set rs= Server.CreateObject("ADODB.Recordset")
 rs.open sql,conn,1,1
@@ -39,19 +39,19 @@ rs.open sql,conn,1,1
 <thead>
           <tr > 
           
-            <th width="40"><strong>楼盘ID</strong></th>
+            <!--<th width="40"><strong>活动ID</strong></th>-->
             <th width="60" ><strong>姓名</strong></th>
             <th width="70" ><strong>电话</strong></th>
-            <th width="70" class="hidden-phone"><strong>邮箱</strong></td>
+            <th width="70" class="hidden-phone"><strong>意向国家</strong></td>
             
-            <th width="170"  class="hidden-phone"><strong>意向说明</strong></th>
+            <th width="170"  class="hidden-phone"><strong>所在城市</strong></th>
 <th width="50" ><strong>报名时间</strong></th>
            <th width="48" ><strong>操作</strong></th>
           </tr></thead>
           <tbody>
           <%do while not rs.eof%>
           <tr > 
-            <td ><a href="../housedetail.asp?id=<%=rs("lysex")%>" target="_blank"><%=rs("lysex")%></a></td>
+            <!--<td ><a href="../newsview.asp?id=<%=rs("lyqq")%>" target="_blank"><%=rs("lyqq")%></a></td>-->
             <td ><%=rs("lyname")%></td>
             <td ><%=rs("lytel")%></td>
             <td class="hidden-phone"><%=rs("lyemail")%></td>
@@ -99,7 +99,7 @@ end if
 
 
 $(".nav6").addClass('active');
-$(".nav6-5").addClass('active');
+$(".nav6-4").addClass('active');
 
 function ConfirmDel()
 {
