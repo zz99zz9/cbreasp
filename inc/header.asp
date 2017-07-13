@@ -6,7 +6,7 @@
 
 <!--效果html开始-->
 
-		          <div class="mobile-inner-header header"><a href="/"><img class="logo" src="../xgwl/img/logo2.svg"/></a>
+		          <div class="mobile-inner-header header hidden-md hidden-sm  hidden-lg"><a href="/"><img class="logo" src="../xgwl/img/logo2.svg"/></a>
 		            <div class="mobile-inner-header-icon mobile-inner-header-icon-out"><span></span><span></span></div>
 		          </div>
 		          <div class="mobile-inner-nav">
