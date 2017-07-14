@@ -261,14 +261,16 @@ if key<>"" then%>
           <div class="col-md-5">
             <div class="info tra">
               <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
-              <div class="addr ellipsis ls1"><%=rs("qt")%></div>
+              
               <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
               <div class="city ellipsis ls1">热点区域：<%=rs("ctdname")%></div>
-              <div class="kid ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
+              <div class="city ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
+              <div class="city ellipsis ls1"><%=rs("qt")%></div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="price ls2">均价  <span class="pn"><%=rs("jgjj")%></span>万元/m²</div>
+            <div class="price ls2">均价  <span class="pn"><%=rs("jgjj")%></span>万元/m²<br>总价  <span class="pn"><%=rs("jgzj")%></span>万起</div>
+             
           </div></a>
 <!------------>
 

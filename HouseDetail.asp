@@ -65,9 +65,9 @@ d=rs("Description")%>
             <li class="li1 b_c hidden-xs hidden"><img src="xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
             <li class="li3 b_c hidden-xs hidden"><img src="xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
             <%if request.cookies("username")="" then%>
-             <li class="li2 b_c1" onclick='location.href="register.asp"'><img src="xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
+             <li class="li2 b_c1 hidden" onclick='location.href="register.asp"'><img src="xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
               <%else%>
-               <li class="li2 b_c1"><img src="xgwl/img/housedetail_ico2.svg"/>资料下载</li>
+               <li class="li2 b_c1 hidden"><img src="xgwl/img/housedetail_ico2.svg"/>资料下载</li>
           
               <%end if%>
            

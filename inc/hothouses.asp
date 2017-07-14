@@ -16,9 +16,10 @@ i=0
               <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/></div>
               <div class="info tra">
                 <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
-                <div class="addr ellipsis ls1"><%=rs("qt")%></div>
+                
                 <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
-                <div class="kid ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
+                <div class="city ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
+                <div class="city ellipsis ls1"><%=rs("qt")%></div>
                 <div class="price ls2"><%=rs("jgjj")%>万/平</div>
               </div></a></div>
 
