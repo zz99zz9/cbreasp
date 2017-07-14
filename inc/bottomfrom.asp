@@ -14,4 +14,7 @@
       </div>
     </div>
         <div class='openbform b_h hidden-xs'>成为会员</div>
-        <a href='tel:4008209899' class='boottomtel'>全国热线 4008209899</a>
+        <div class='boottomtel'>
+        <a href='tel:4008209899' class='tel'>4008 209 899</a>
+        <a href='javascript:openPform(1);' class='fd'>预约留言</a>
+        </div>
