@@ -252,11 +252,13 @@ if key<>"" then%>
     rs.AbsolutePage=page '设置本页页码
     i=0
     do while not rs.eof and i<rs.PageSize
+    if rs("clxid")=11 then sss=1
+    if rs("clxid")=12 then sss=2
     %>
     <!------------>
         <a class="li tra wow fadeInUp animated row" href="housedetail.asp?id=<%=rs("articleid")%>">
           <div class="col-md-4">
-            <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/></div>
+            <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/><span class="status<%=sss%>"></span></div>
           </div>
           <div class="col-md-5">
             <div class="info tra">
