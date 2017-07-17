@@ -271,7 +271,7 @@ if key<>"" then%>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="price ls2">均价  <span class="pn"><%=rs("jgjj")%></span>万元/m²<br>总价  <span class="pn"><%=rs("jgzj")%></span>万起</div>
+            <div class="price ls2">均价  <span class="pn"><%=rs("jgjj")%></span>元/m²<br>总价  <span class="pn"><%=rs("jgzj")%></span>万元/套起</div>
              
           </div></a>
 <!------------>
