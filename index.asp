@@ -1,14 +1,14 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <html>
   <head>
-<!--#include File="Inc/FuncTion.Asp"-->
-<!--#Include File="Inc/config.Asp"-->
-<!--#Include File="Inc/Inc.Asp"-->
-    <!--#include file="inc/head.asp"-->
+<!--#include File="./Inc/FuncTion.Asp"-->
+<!--#Include File="./Inc/config.Asp"-->
+<!--#Include File="./Inc/Inc.Asp"-->
+    <!--#include file="./inc/head.asp"-->
 <%dim tdkid
 tdkid=1%>
-<!--#include file="inc/tdk.asp"-->
-    <link href="xgwl/css/pages/index.css" rel="stylesheet"/>
+<!--#include file="./inc/tdk.asp"-->
+    <link href="/xgwl/css/pages/index.css" rel="stylesheet"/>
   </head>
   <body>
 <!--#include file="inc/header.asp"-->
@@ -166,14 +166,14 @@ set rs=nothing
                 <div class="txt">聚焦投资热点，甄选潜力区域</div>
                 <div class="infobtn">了解详情 <span class="arr tra">&gt;</span></div>
               </div></a></div>
-          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li2" href="news.html">
+          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li2" href="news/27/1.html">
               <div class="pic"><img src="xgwl/img/Milestones_Collage 900x660.png"/></div>
               <div class="info ls1">
                 <div class="tit">最新资讯</div>
                 <div class="txt">网罗最新活动资讯，实时分享市场动态</div>
                 <div class="infobtn">了解详情 <span class="arr tra">&gt;</span></div>
               </div></a></div>
-          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li3" href="MarketReport.html">
+          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li3" href="MarketReport/18/1.html">
               <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">研究报告</div>
@@ -184,7 +184,9 @@ set rs=nothing
       </div>
     </div>
     <!--<iframe id="portal" src="http://iframe.ondicomdigital.com/cbre-cn/?lang=cn&amp;projectID=a049000000LTRw0&amp;projectName=TestProject&amp;retUrl=http%3A%2F%2Fmydomain%2Fregister%2Fdefault.aspx%3Fsk%3Dsuccess%23thankyou" width="100%" height="500" frameborder="0" scrolling="no"></iframe>-->
-<!--#include file="inc/footer.asp"-->
-<!--#include file="inc/sidebar.asp"-->
+<!--#include file="inc/pfrom.asp"-->
+    <!--#include file="./inc/footer.asp"-->
+<!--#include file="./inc/sidebar.asp"-->
+<script src="xgwl/js/pfrom.js"></script>
   </body>
 </html>

@@ -22,8 +22,10 @@
         <div class="reg">没有帐户，立即&nbsp;<a href="/Register.asp">注册</a></div>
       </div>
     </div>
+    <!--#include file="inc/pfrom.asp"-->
 <!--#include file="inc/footer.asp"-->
 <!--#include file="inc/sidebar.asp"-->
 <script src="xgwl/js/dfrom.js"></script>
+<script src="xgwl/js/pfrom.js"></script>
   </body>
 </html>

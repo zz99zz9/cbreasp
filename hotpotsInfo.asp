@@ -107,7 +107,10 @@ rsnew.Open sqlnew,conn,1,1%>
                                     	set rsnew=nothing%>
       </div>
     </div>
+     <!--#include file="inc/pfrom.asp"-->
 <!--#include file="inc/footer.asp"-->
 <!--#include file="inc/sidebar.asp"-->
+<script src="/xgwl/js/dfrom.js"></script>
+<script src="/xgwl/js/pfrom.js"></script>
   </body>
 </html>

@@ -8,5 +8,5 @@
               <div class="tit">了解更多</div><a class="cbtn1" href='javascript:openPform(1);' >联系我们</a>
             </div>
             <div class="aboutmore">
-              <div class="tit">更多资讯</div><a class="cbtn" href='/news.html'>查看更多</a>
+              <div class="tit">更多资讯</div><a class="cbtn" href='/news/27/1.html'>查看更多</a>
             </div>

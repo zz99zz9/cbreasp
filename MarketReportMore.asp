@@ -31,6 +31,8 @@ d=rsnew("Description")%>
       <div class="h1">Market Report</div>
       <div class="h2">市场报告</div>
     </div>
+
+    <div class="mbx hidden-xs"><div class="container"><a href="/">首页</a> &gt; <a href="/marketreport/<%=rsnew("classid")%>/1.html"><%call showName("class_prod",rsnew("classid"),"cid","cname")%>市场报告</a> &gt; <a href="/newsview/<%=pro_id%>.html"><%=rsnew("prod_name")%></a> </div></div>
     <div class="container"></div>
     <div class="h50"></div>
     <div class="main"> 
@@ -38,6 +40,9 @@ d=rsnew("Description")%>
         <div class="row">
           <div class="col-md-9">
             <h1><%=rsnew("prod_name")%></h1>
+            <!-- sharebar button begin -->
+<div class="bshare-custom icon-medium" ><div class="bsPromo bsPromo2"></div><a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a><a title="分享到新浪微博" class="bshare-sinaminiblog" href="javascript:void(0);"></a><a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);"></a><a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);"></a><a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">51.7K</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+<!-- sharebar button end -->
             <div class="txt"><%=RemoveHTML(rsnew("prod_detailen"))%></div>
             <%if request.cookies("username")="" then%>
             <a class="cbtn down" href='/Login.html' target='_blank'>登录后即可下载</a>

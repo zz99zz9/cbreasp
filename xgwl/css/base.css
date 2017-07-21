@@ -9,6 +9,9 @@ body{background:#ededed;}
 .cbtn:hover{background-color:#66C010;}
 .cbtn1:hover{background-color:#66C010;color:#fff;}
 .copyright{color:#fff;clear:both;}
+.mbx{height:50px;line-height:50px;background-color:#fff;border-bottom:1px solid #f5f5f5;}
+.mbx a{color:#4a4a4a;}
+.mbx .bshare-custom{float:right;margin-top:12px;}
 /* sidebar */
 .sidebar{position:fixed;bottom:50%;right:50px;z-index:102;margin-bottom:-100px;}
 .sidebar li{cursor:pointer;width:43px;height:43px;margin-bottom:2px;line-height:43px;text-align:center;background-color:#d8d8d8;position:relative;}

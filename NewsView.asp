@@ -32,6 +32,7 @@ d=rsnew("Description")%>
       <div class="h1">News</div>
       <div class="h2">最新资讯</div>
     </div>
+        <div class="mbx hidden-xs"><div class="container"><a href="/">首页</a> &gt; <a href="/news/<%=rsnew("classid")%>/1.html"><%call showName("class_prod",rsnew("classid"),"cid","cname")%></a> &gt; <a href="/newsview/<%=pro_id%>.html"><%=rsnew("prod_name")%></a></div></div>
     <div class="main"> 
       <div class="container">
 
@@ -54,7 +55,7 @@ mystr=replace(mystr,"，",",")
 mystr=split(mystr,",")
 for i=0 to ubound(mystr)
 'if i>0 then response.write" \ "
-response.write "<a href='news.asp?key="&mystr(i)&"' class='tipsinfo' target='_blank'>"&mystr(i)&"</a>"
+response.write "<a href='news.html?key="&mystr(i)&"' class='tipsinfo' target='_blank'>"&mystr(i)&"</a>"
 next
 end if  %>
 </div>
@@ -69,7 +70,10 @@ end if  %>
 
       </div>
     </div>
+    <!--#include file="inc/pfrom.asp"-->
 <!--#include file="./inc/footer.asp"-->
 <!--#include file="./inc/sidebar.asp"-->
+<script src="/xgwl/js/dfrom.js"></script>
+<script src="/xgwl/js/pfrom.js"></script>
   </body>
 </html>

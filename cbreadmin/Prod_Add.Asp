@@ -372,16 +372,17 @@ End Function
   <script type="text/javascript">
 //导航菜单
 
-<%if classid>15 and classid<20 then%>
+<%if classid>19 and classid<25 then%>
+
+$(".nav7").addClass('active');
+$(".nav7-<%=classid%>").addClass('active');
+<%elseif classid>15 and classid<19  then%>
 
 $(".nav5").addClass('active');
-$(".nav5-<%=classid%>a").addClass('active');
-<%elseif classid>19 and classid<30 then%>
-$(".nav7").addClass('active');
-$(".nav7-<%=classid%>a").addClass('active');
-<%else%>
+$(".nav5-<%=classid%>").addClass('active');
+<%elseif classid>24 then%>
 $(".nav4").addClass('active');
-$(".nav4-<%=classid%>a").addClass('active');
+$(".nav4-<%=classid%>").addClass('active');
 <%end if%>
 </script>
 <script type="text/javascript" src="ajax/prod.js"></script>
