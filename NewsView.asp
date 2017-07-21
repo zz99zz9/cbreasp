@@ -1,11 +1,11 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <html>
   <head>
-  <!--#include File="Inc/FuncTion.Asp"-->
-<!--#Include File="Inc/config.Asp"-->
-<!--#Include File="Inc/Inc.Asp"-->
-<!--#include file="inc/head.asp"-->
-    <link href="xgwl/css/pages/news.css" rel="stylesheet"/>
+  <!--#include File="./Inc/FuncTion.Asp"-->
+<!--#Include File="./Inc/config.Asp"-->
+<!--#Include File="./Inc/Inc.Asp"-->
+<!--#include file="./inc/head.asp"-->
+    <link href="/xgwl/css/pages/news.css" rel="stylesheet"/>
     <!--数据链接-->
 <%pro_id=request.QueryString("id")
 
@@ -27,7 +27,7 @@ d=rsnew("Description")%>
   </head>
   <body>
 
-<!--#include file="inc/header.asp"-->
+<!--#include file="./inc/header.asp"-->
     <div class="led"> 
       <div class="h1">News</div>
       <div class="h2">最新资讯</div>
@@ -62,14 +62,14 @@ end if  %>
                                                 <%   	rsnew.close
                                     	set rsnew=nothing%>
                                         
-          <!--#include file="inc/hothouses.asp"-->
+          <!--#include file="./inc/hothouses.asp"-->
 
     
     
 
       </div>
     </div>
-<!--#include file="inc/footer.asp"-->
-<!--#include file="inc/sidebar.asp"-->
+<!--#include file="./inc/footer.asp"-->
+<!--#include file="./inc/sidebar.asp"-->
   </body>
 </html>

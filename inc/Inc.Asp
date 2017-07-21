@@ -331,7 +331,7 @@ posql="select Top 1 * from [prod] where classid="&NewsType&" and prod_id>"&NewsI
 
 PoRs.Open posql,conn,1,1
   if Not PoRs.eof then 
-  Content =Content & "<a Href='?id="&PoRs("prod_id")&"' title='"&PoRs("prod_name")&"'>"&left(PoRs("prod_name"),17)&"</a>"
+  Content =Content & "<a Href='"&PoRs("prod_id")&".html' title='"&PoRs("prod_name")&"'>"&left(PoRs("prod_name"),17)&"</a>"
   Else
   Content =Content & "没有了!"
   End if
@@ -346,7 +346,7 @@ set NoRs=Server.CreateObject("ADODB.Recordset")
 NoRs.Open "select Top 1 * from [prod] where classid="&NewsType&" and prod_id<"&NewsId&" order by prod_id desc",conn,1,1
   if Not NoRs.eof then 
 
-  Content =Content & "<a Href='?id="&NoRs("prod_id")&"' title='"&NoRs("prod_name")&"'>"&left(NoRs("prod_name"),17)&"</a>"
+  Content =Content & "<a Href='"&NoRs("prod_id")&".html' title='"&NoRs("prod_name")&"'>"&left(NoRs("prod_name"),17)&"</a>"
   Else
   Content =Content & "没有了!"
   End if
@@ -420,9 +420,10 @@ set oRs=Nothing
 Response.write Content
 End sub
 '-----------------------房源搜索条件---------------------------
-  sub seaurl(bc,sc,fj,lx,lb,order,page)
+  sub seaurl(bc,sc,fj,lx,lb,order,page,key)
   '国家，城市，片区，类型，类别，排序，翻页
-  response.write("bc="&bc&"&sc="&sc&"&fj="&fj&"&lx="&lx&"&lb="&lb&"&order="&order&"&page="&page)
+  'response.write("bc="&bc&"&sc="&sc&"&fj="&fj&"&lx="&lx&"&lb="&lb&"&order="&order&"&page="&page)
+    response.write("/houseproperty/"&bc&"/"&sc&"/"&fj&"/"&lx&"/"&lb&"/"&order&"/"&page&"/"&key&".html")
   end sub
   
 '----------------------两数字对比----------------------------

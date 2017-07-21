@@ -75,7 +75,7 @@ $('#bbtn').click(function(){
         alert("请正确输入手机号！")
         $("#bmobile").focus();
     }else{
-        $.post("api/lyb.asp",bform,
+        $.post("/api/lyb.asp",bform,
             function(data,status){
                 if(status=="success"){
 				   if(data=='has'){
@@ -90,7 +90,7 @@ $('#bbtn').click(function(){
                 }
             });
     }
-console.log(bform)
+//console.log(bform)
 })
 //判断客户端是电脑还是移动设备
 if(navigator.userAgent.match(/(iPhone|iPod|iPad|Android|ios)/i)){
@@ -104,7 +104,7 @@ $(document).ready(function () {
         new WOW().init();
     };
   $('[data-toggle="tooltip"]').tooltip()
-  console.log("最后更新日期2017.6.25 by 任刚");
+  console.log("最后更新日期2017.7.25 by 任刚");
 });
 //验证短信60秒倒计时
 var wait=60;

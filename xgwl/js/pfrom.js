@@ -32,7 +32,7 @@ $("#pbtn").click(function(){
     $(".pform").fadeOut();
     $(".mask").fadeOut();
     console.log(pdata)
-     $.post("api/pfrom.asp",pdata,
+     $.post("/api/pfrom.asp",pdata,
             function(data,status){
                 if(status=="success"){
 				   if(data=='has'){

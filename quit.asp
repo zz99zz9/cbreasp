@@ -4,6 +4,6 @@
 <%
 response.cookies("username")=""
 response.cookies("usermobile")=""
-Response.Redirect "index.Asp"
+Response.Redirect "index.html"
 Response.End()
 %>

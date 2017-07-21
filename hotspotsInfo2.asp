@@ -1,15 +1,15 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <html>
   <head>
-  <!--#include File="Inc/FuncTion.Asp"-->
-<!--#Include File="Inc/config.Asp"-->
-<!--#Include File="Inc/Inc.Asp"-->
-<!--#include file="inc/head.asp"-->
+  <!--#include File="./Inc/FuncTion.Asp"-->
+<!--#Include File="./Inc/config.Asp"-->
+<!--#Include File="./Inc/Inc.Asp"-->
+<!--#include file="./inc/head.asp"-->
 
-    <link href="xgwl/css/pages/hotspots.css" rel="stylesheet"/>
+    <link href="/xgwl/css/pages/hotspots.css" rel="stylesheet"/>
                <%dim tdkid
 tdkid=5%>
-<!--#include file="inc/tdk.asp"-->
+<!--#include file="./inc/tdk.asp"-->
   </head>
   <body>
     <!--数据链接-->
@@ -26,7 +26,7 @@ if cid="" then cid=21
 	  sqlnew=sqlnew+" order by oid desc,prod_id desc"
 rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
-<!--#include file="inc/header.asp"-->
+<!--#include file="./inc/header.asp"-->
     <div class="led"> 
       <div class="h1">Area Guide</div>
       <div class="h2">投资热区</div>
@@ -35,7 +35,7 @@ rsnew.Open sqlnew,conn,1,1%>
 
         
     <div class="skid">
-            <span class='ctit'><a class=" li" href="hotspotsInfo.asp">伦敦</a><a class="li on"  href="hotspotsInfo2.asp">悉尼</a></span>
+            <span class='ctit'><a class=" li" href="/hotspotsInfo/1.html">伦敦</a><a class="li on"  href="/hotspotsInfo2/1.html">悉尼</a></span>
  
     </div>
     </div>
@@ -56,9 +56,9 @@ rsnew.Open sqlnew,conn,1,1%>
         do while not rsnew.eof and i<rsnew.PageSize
         %>
         <div class="col-md-4">
-        <a class="li tra wow fadeInUp animated row" href="<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>hotspotsview.asp?id=<%=rsnew("prod_id")%><%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
+        <a class="li tra wow fadeInUp animated row" href="/<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>hotspotsview/<%=rsnew("prod_id")%>.html<%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
           
-            <div class="pic tra"><img src="<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></div>
+            <div class="pic tra"><img src="/<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></div>
                         <div class="info tra">
               <div class="tit ellipsis ls1"><%=rsnew("prod_name")%><!--<%=formatdatetime(rsnew("prod_date"),2)%>--></div>
              <!-- <div class="txt ellipsis5 ls1"><%=left(RemoveHTML(rsnew("prod_detailen")),260)%></div>-->
@@ -86,22 +86,22 @@ rsnew.Open sqlnew,conn,1,1%>
                               <%else%>
                               <td width="15%" align="left" valign="middle" >当前页0/0</td>
                               <%end if%>
-                              <td width="70%" align="right" ><%if page>1 then%><a href="?page=1&c=<%=cid%>">首页</a>
+                              <td width="70%" align="right" ><%if page>1 then%><a href="/hotspotsinfo/1.html">首页</a>
 
-                                  <a href="?page=<%=page -1%>&c=<%=cid%>">上一页</a>
+                                  <a href="/hotspotsinfo/<%=page -1%>.html">上一页</a>
                                   <%end if%>
                                 <%if rsnew.PageCount<>1 and page<>rsnew.PageCount then%>
-                                  <a href="?page=<%=page +1%>&c=<%=cid%>">下一页</a>
+                                  <a href="/hotspotsinfo/<%=page +1%>.html">下一页</a>
 
-                                  <a href="?page=<%=rsnew.PageCount%>&c=<%=cid%>">尾页</a>
+                                  <a href="/hotspotsinfo/<%=rsnew.PageCount%>.html">尾页</a>
                                   <%end if%>|转到第
                                 <select name="select" onChange="javascript:location=this.options[this.selectedIndex].value;">
                                     <%
           for i = 1 to rsnew.PageCount
           if i = page then%>
-                                    <option value="?page=<%=i%>&c=<%=cid%>" selected><%=i%></option>
+                                    <option value="/hotspotsinfo/<%=i%>.html" selected><%=i%></option>
                                     <%else%>
-                                    <option value="?page=<%=i%>&c=<%=cid%>"><%=i%></option>
+                                    <option value="/hotspotsinfo/<%=i%>.html"><%=i%></option>
                                     <%
           end if
           next
@@ -115,7 +115,7 @@ rsnew.Open sqlnew,conn,1,1%>
                                     	set rsnew=nothing%>
       </div>
     </div>
-<!--#include file="inc/footer.asp"-->
-<!--#include file="inc/sidebar.asp"-->
+<!--#include file="./inc/footer.asp"-->
+<!--#include file="./inc/sidebar.asp"-->
   </body>
 </html>

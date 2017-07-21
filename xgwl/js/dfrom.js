@@ -29,13 +29,13 @@ $("#regcheckbtn").click(function(){
 	  var mobile=$("#regmobile").val();
 	  var content='您的验证码是"'+code+'".感谢您关注CBRE,请勿将此短信泄露给其他人'
 	//  console.log(mobile)
-	  console.log(content)
-	//   $.post("xgwl/js/sendmobile.asp",{mobile:mobile,content:content},
-    //         function(data,status){
-    //             if(status=="success"){
+	//  console.log(content)
+	   $.post("/xgwl/js/sendmobile.asp",{mobile:mobile,content:content},
+             function(data,status){
+                 if(status=="success"){
 
-    //             }
-    //         });
+                 }
+             });
 	}
 });
 $("#regbtn").click(function(){
@@ -51,7 +51,7 @@ $("#regbtn").click(function(){
 		var regname=$("#regname").val();
 		var regpassword=$("#regpassword").val();
 console.log(regmobile+regname+regpassword)
-		$.post("api/reg.asp",{usermobile:regmobile,username:regname,userpassword:regpassword,Action:'add'},
+		$.post("/api/reg.asp",{usermobile:regmobile,username:regname,userpassword:regpassword,Action:'add'},
             function(data,status){
                 if(status=="success"){
                     //var jsObjstr =JSON.parse(data);
@@ -79,7 +79,7 @@ $("#logbtn").click(function(){
 		var logmobile=$("#logmobile").val();
 		var logpassword=$("#logpassword").val();
 
-		$.post("api/reg.asp",{usermobile:logmobile,userpassword:logpassword,Action:'login'},
+		$.post("/api/reg.asp",{usermobile:logmobile,userpassword:logpassword,Action:'login'},
             function(data,status){
                 if(status=="success"){
                     //var jsObjstr =JSON.parse(data);

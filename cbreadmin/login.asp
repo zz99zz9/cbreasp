@@ -20,7 +20,7 @@
 </head>
   <body class="login-body">
     <div class="container">
-     <form name="Form1" action="Login.Asp" method="post" onsubmit="return checkform();" class="form-signin">
+     <form name="Form1" action="" method="post" onsubmit="return checkform();" class="form-signin">
         <h2 class="form-signin-heading">后台登录</h2>
         <div class="login-wrap">
             <input type="text" class="form-control" placeholder="用户名" autofocus id="UserName" name="UserName">
@@ -34,9 +34,10 @@
     <!--#include file="../inc/config.Asp"-->
     <!--#include file="inc/md5.Asp"-->
 <%
-if Request.Form("Action")="Login" then
+if Request("Action")="Login" then
 adminname=replace(replace(Trim(Request.Form("username")),"'",""),",","")
 adminpass=replace(replace(Trim(Request.Form("userpass")),"'",""),",","")
+
 set rs=server.CreateObject("adodb.recordset")
      sql="select * from [Table_manager] where adminname='"&adminname&"' and adminpass='"&md5(adminpass)&"'"
 '	 response.write sql
