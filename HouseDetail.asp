@@ -1,12 +1,12 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <html>
   <head>
-  <!--#include File="Inc/FuncTion.Asp"-->
-<!--#Include File="Inc/config.Asp"-->
-<!--#Include File="Inc/Inc.Asp"-->
-<!--#include file="inc/head.asp"-->
+  <!--#include File="./Inc/FuncTion.Asp"-->
+<!--#Include File="./Inc/config.Asp"-->
+<!--#Include File="./Inc/Inc.Asp"-->
+<!--#include file="./inc/head.asp"-->
 
-    <link href="xgwl/css/pages/HouseDetail.css" rel="stylesheet"/>
+    <link href="/xgwl/css/pages/HouseDetail.css" rel="stylesheet"/>
     <%id=request.QueryString("id")
 %>
 <%set Rs=Server.CreateObject("ADODB.Recordset")
@@ -36,7 +36,7 @@ d=rs("Description")%>
         </ol>
         <div class="carousel-inner" role="listbox">
 
-           <div class="item active" style="background:url(<%if rs("defaultpicurl2")<>"" then%><%=rs("defaultpicurl2")%><%else%>UploadFiles/201707111951239041.jpg<%end if%>);"></div>
+           <div class="item active" style="background:url(<%if rs("defaultpicurl2")<>"" then%>/<%=rs("defaultpicurl2")%><%else%>/UploadFiles/201707111951239041.jpg<%end if%>);"></div>
 
         </div>
         <div class="baseinfo"> 
@@ -62,12 +62,12 @@ d=rs("Description")%>
       <div class="dinfo" id="f1">
         <div class="dtit">项目介绍
           <ul class="icolist">
-            <li class="li1 b_c hidden-xs hidden"><img src="xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
-            <li class="li3 b_c hidden-xs hidden"><img src="xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
+            <li class="li1 b_c hidden-xs hidden"><img src="/xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
+            <li class="li3 b_c hidden-xs hidden"><img src="/xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
             <%if request.cookies("username")="" then%>
-             <li class="li2 b_c1 hidden" onclick='location.href="register.asp"'><img src="xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
+             <li class="li2 b_c1 hidden" onclick='location.href="register.html"'><img src="/xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
               <%else%>
-               <li class="li2 b_c1 hidden"><img src="xgwl/img/housedetail_ico2.svg"/>资料下载</li>
+               <li class="li2 b_c1 hidden"><img src="/xgwl/img/housedetail_ico2.svg"/>资料下载</li>
           
               <%end if%>
            
@@ -80,7 +80,7 @@ d=rs("Description")%>
         <div class="dtit">项目图片</div>
         <div class="dtxt"> 
           <!--新的轮播样式-->
-          <link href="xgwl/css/lib/swiper-3.4.0.min.css" rel="stylesheet"/>
+          <link href="/xgwl/css/lib/swiper-3.4.0.min.css" rel="stylesheet"/>
           
     <style>
     .pc-slide {
@@ -98,7 +98,7 @@ d=rs("Description")%>
 
 }
 .view .arrow-left {
-	background: url(xgwl/img/index_tab_l.png) no-repeat left top;
+	background: url(/xgwl/img/index_tab_l.png) no-repeat left top;
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -109,7 +109,7 @@ d=rs("Description")%>
 }
 
 .view .arrow-right {
-	background: url(xgwl/img/index_tab_r.png) no-repeat left bottom;
+	background: url(/xgwl/img/index_tab_r.png) no-repeat left bottom;
 	position: absolute;
 	right: 10px;
 	top: 50%;
@@ -141,7 +141,7 @@ d=rs("Description")%>
 }
 
 .preview .arrow-left {
-	background: url(xgwl/img/feel3.png) no-repeat left top;
+	background: url(/xgwl/img/feel3.png) no-repeat left top;
 	position: absolute;
 	left: 10px;
 	top: 50%;
@@ -152,7 +152,7 @@ d=rs("Description")%>
 }
 
 .preview .arrow-right {
-	background: url(xgwl/img/feel4.png) no-repeat left bottom;
+	background: url(/xgwl/img/feel4.png) no-repeat left bottom;
 	position: absolute;
 	right: 10px;
 	top: 50%;
@@ -198,7 +198,7 @@ prs.open psql,conn,1,1%>
 <%do while not prs.eof%>
 
         <div class="swiper-slide">
-					<img src="<%=prs("pic_url")%>" alt="">
+					<img src="/<%=prs("pic_url")%>" alt="">
 				</div>
  <%
 	i=i+1
@@ -224,7 +224,7 @@ i=0%>
 <%do while not prs.eof%>
 
         <div class="swiper-slide smpic <%if i=0 then%>active-nav<%end if%>">
-					<img src="<%=prs("pic_url")%>" alt="">
+					<img src="/<%=prs("pic_url")%>" alt="">
 				</div>
  <%
 	i=i+1
@@ -247,7 +247,7 @@ set prs=nothing
         <div class="dtit">地理位置</div>
         <div class="dtxt"><%=rs("content1")%>
           <!--地图开始-->
-          <script src="xgwl/js/googlemap.js"></script>
+          <script src="/xgwl/js/googlemap.js"></script>
           <style>.tabContent .google_map_Left, .tabContent .google_map_Container, .tabContent #map_canvas{width: 100%;height: 450px;margin-top: 8px;}</style>
     <div class="tabContent_frame">
         <div class="tabContent_frame_left">
@@ -308,7 +308,7 @@ set prs=nothing
         prs.open psql,conn,1,1
         i=0%>
         <%do while not prs.eof%>
-              <div class="swiper-slide hxtpic"><img src="<%=prs("file")%>"/>
+              <div class="swiper-slide hxtpic"><img src="/<%=prs("file")%>"/>
               <div class="tit"><%=prs("tit")%></div>
               <!--<div class="txt"><%=replace(prs("txt"),"&gt;",">")%><br><%=prs("jg")%></div>-->
   </div>
@@ -338,14 +338,14 @@ set prs=nothing
           <%
           rs.close
             	set rs=nothing%>
-     <!--#include file="inc/hothouses.asp"-->
-<!--#include file="inc/pfrom.asp"-->
-<!--#include file="inc/footer.asp"-->
-<!--#include file="inc/sidebar.asp"-->
-<script src="xgwl/js/lib/swiper-2.7.6.jquery.min.js"></script>
-<!--<script src="xgwl/js/lib/swiper-3.4.2.jquery.min.js"></script>-->
-<script src="xgwl/js/dfrom.js"></script>
-<script src="xgwl/js/pfrom.js"></script>
+     <!--#include file="./inc/hothouses.asp"-->
+<!--#include file="./inc/pfrom.asp"-->
+<!--#include file="./inc/footer.asp"-->
+<!--#include file="./inc/sidebar.asp"-->
+<script src="/xgwl/js/lib/swiper-2.7.6.jquery.min.js"></script>
+<!--<script src="/xgwl/js/lib/swiper-3.4.2.jquery.min.js"></script>-->
+<script src="/xgwl/js/dfrom.js"></script>
+<script src="/xgwl/js/pfrom.js"></script>
 <!--新轮播js-->
 
 <script>

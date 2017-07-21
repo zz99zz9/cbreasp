@@ -59,7 +59,7 @@ tdkid=1%>
     </div>
     <div class="part1 featured">
       <div class="container">
-        <div class="plititbor"><span class="etit">FEATURED PROPERTIES</span><a class="more hidden-xs" href="/houseproperty.asp">更多</a><span class="ctit">精选新房</span></div>
+        <div class="plititbor"><span class="etit">FEATURED PROPERTIES</span><a class="more hidden-xs" href="/houseproperty.html">更多</a><span class="ctit">精选新房</span></div>
         <div class="row featured">
         <%'列表
         set rs=Server.CreateObject("ADODB.Recordset")
@@ -72,7 +72,7 @@ i=0
    do while not rs.eof
 %>
 
-          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="housedetail.asp?id=<%=rs("articleid")%>">
+          <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="housedetail/<%=rs("articleid")%>.html">
               <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/>
                 <div class="pmask tra"><span class="ls2"><%=rs("jgjj")%>万/平</span></div>
               </div>
@@ -147,7 +147,7 @@ set rs=nothing
         <div class="row">
           <div class="col-md-6">
             <div class="lean wow fadeInUp animated">
-              <div class="info ls2">从投资交易和租赁服务，<br>为您的资产增值和您的投资收益保驾护航。</div><br/><a class="abtn tra" href="RentalService.asp">租赁服务</a> <a class="abtn tra abtn2" href="ResaleInfo.asp">二 手 房</a>
+              <div class="info ls2">从投资交易和租赁服务，<br>为您的资产增值和您的投资收益保驾护航。</div><br/><a class="abtn tra" href="RentalService.html">租赁服务</a> <a class="abtn tra abtn2" href="ResaleInfo.html">二 手 房</a>
             </div>
           </div>
           <div class="col-md-6 hidden-xs">
@@ -159,21 +159,21 @@ set rs=nothing
     <div class="part4">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li1" href="hotspotsInfo.asp">
+          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li1" href="hotspotsInfo.html">
               <div class="pic"><img src="xgwl/img/Research_Collage 4-17-900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">投资热区</div>
                 <div class="txt">聚焦投资热点，甄选潜力区域</div>
                 <div class="infobtn">了解详情 <span class="arr tra">&gt;</span></div>
               </div></a></div>
-          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li2" href="news.asp">
+          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li2" href="news.html">
               <div class="pic"><img src="xgwl/img/Milestones_Collage 900x660.png"/></div>
               <div class="info ls1">
                 <div class="tit">最新资讯</div>
                 <div class="txt">网罗最新活动资讯，实时分享市场动态</div>
                 <div class="infobtn">了解详情 <span class="arr tra">&gt;</span></div>
               </div></a></div>
-          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li3" href="MarketReport.asp">
+          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li3" href="MarketReport.html">
               <div class="pic"><img src="xgwl/img/2016 Annual Report collage 900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">研究报告</div>

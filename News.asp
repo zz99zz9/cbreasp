@@ -1,14 +1,14 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
 <html>
   <head>
-  <!--#include File="Inc/FuncTion.Asp"-->
-<!--#Include File="Inc/config.Asp"-->
-<!--#Include File="Inc/Inc.Asp"-->
-<!--#include file="inc/head.asp"-->
-    <link href="xgwl/css/pages/news.css" rel="stylesheet"/>
+  <!--#include File="./Inc/FuncTion.Asp"-->
+<!--#Include File="./Inc/config.Asp"-->
+<!--#Include File="./Inc/Inc.Asp"-->
+<!--#include file="./inc/head.asp"-->
+    <link href="/xgwl/css/pages/news.css" rel="stylesheet"/>
                <%dim tdkid
 tdkid=6%>
-<!--#include file="inc/tdk.asp"-->
+<!--#include file="./inc/tdk.asp"-->
   </head>
   <body>
     <!--数据链接-->
@@ -38,7 +38,7 @@ counter=rsc("counter")
 	  sqlnew=sqlnew+" order by oid desc,prod_id desc"
 rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->
-<!--#include file="inc/header.asp"-->
+<!--#include file="./inc/header.asp"-->
     <div class="led"> 
       <div class="h1">News</div>
       <div class="h2">最新资讯</div>
@@ -63,9 +63,9 @@ if key<>"" then%>
         i=0
         do while not rsnew.eof and i<rsnew.PageSize
         %>
-        <a class="li tra wow fadeInUp animated row" href="<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>newsview.asp?id=<%=rsnew("prod_id")%><%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
+        <a class="li tra wow fadeInUp animated row" href="/<%if rsnew("url")<>"" then %><%=rsnew("url")%><%else%>newsview/<%=rsnew("prod_id")%>.html<%end if%>" title="<%=rsnew("prod_name")%>" target="_blank">
           <div class="col-md-4">
-            <div class="pic tra"><img src="<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></div>
+            <div class="pic tra"><img src="/<%if rsnew("prod_pic")="" then%>xgwl/img/nopic.jpg<%else%><%=rsnew("prod_pic")%><%end if%>"/></div>
           </div>
           <div class="col-md-8">
             <div class="info tra">
@@ -93,22 +93,22 @@ if key<>"" then%>
                               <%else%>
                               <td width="15%" align="left" valign="middle" >当前页0/0</td>
                               <%end if%>
-                              <td width="70%" align="right" ><%if page>1 then%><a href="?page=1&c=<%=cid%>">首页</a>
+                              <td width="70%" align="right" ><%if page>1 then%><a href="news/<%=cid%>/1.html">首页</a>
 
-                                  <a href="?page=<%=page -1%>&c=<%=cid%>">上一页</a>
+                                  <a href="news/<%=cid%>/<%=page -1%>.html">上一页</a>
                                   <%end if%>
                                 <%if rsnew.PageCount<>1 and page<>rsnew.PageCount then%>
-                                  <a href="?page=<%=page +1%>&c=<%=cid%>">下一页</a>
+                                  <a href="news/<%=cid%>/<%=page +1%>.html">下一页</a>
 
-                                  <a href="?page=<%=rsnew.PageCount%>&c=<%=cid%>">尾页</a>
+                                  <a href="news/<%=cid%>/<%=rsnew.PageCount%>.html">尾页</a>
                                   <%end if%>|转到第
                                 <select name="select" onChange="javascript:location=this.options[this.selectedIndex].value;">
                                     <%
           for i = 1 to rsnew.PageCount
           if i = page then%>
-                                    <option value="?page=<%=i%>&c=<%=cid%>" selected><%=i%></option>
+                                    <option value="news/<%=cid%>/<%=i%>.html" selected><%=i%></option>
                                     <%else%>
-                                    <option value="?page=<%=i%>&c=<%=cid%>"><%=i%></option>
+                                    <option value="news/<%=cid%>/<%=i%>.html"><%=i%></option>
                                     <%
           end if
           next
@@ -122,7 +122,7 @@ if key<>"" then%>
                                     	set rsnew=nothing%>
       </div>
     </div>
-<!--#include file="inc/footer.asp"-->
-<!--#include file="inc/sidebar.asp"-->
+<!--#include file="./inc/footer.asp"-->
+<!--#include file="./inc/sidebar.asp"-->
   </body>
 </html>

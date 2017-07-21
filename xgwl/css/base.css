@@ -8,6 +8,7 @@ body{background:#ededed;}
 .cbtn1{padding:5px 12px;background-color:#fff;color:#006A4D;text-align:center;font-size:14px;cursor:pointer;}
 .cbtn:hover{background-color:#66C010;}
 .cbtn1:hover{background-color:#66C010;color:#fff;}
+.copyright{color:#fff;clear:both;}
 /* sidebar */
 .sidebar{position:fixed;bottom:50%;right:50px;z-index:102;margin-bottom:-100px;}
 .sidebar li{cursor:pointer;width:43px;height:43px;margin-bottom:2px;line-height:43px;text-align:center;background-color:#d8d8d8;position:relative;}
@@ -49,7 +50,7 @@ body{background:#ededed;}
 .header{height:45px;background-color:#000;}
 .header .logo{margin-top:12px;float:left;margin-right:10px;width:90px;margin-left:20px;}
 /*导航部份*/
-.header .nav1{float:left;margin-top:14px;color:#fff;}
+.header .nav1{float:left;margin-top:14px;color:#fff;font-size:14px;font-weight:100;padding-top:3px;}
 .header .nav1 a.li{float:left;color:#fff;margin-right:50px;}
 .header .nav2{float:right;margin-top:14px;}
 .header .nav2 a.li{float:left;color:#fff;margin-right:30px;}
