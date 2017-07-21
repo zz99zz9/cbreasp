@@ -14,7 +14,8 @@ tdkid=7%>
     <!--数据链接-->
     <%dim cid,key,counter
 cid=request.QueryString("c")
-cid=18
+if cid="" and key="" then cid=18
+
 key=request.QueryString("key")
  set rsc=Server.CreateObject("ADODB.Recordset")
  sqlnew="select count(*) as counter from [prod] where classid="&cid&" and prod_name like '%"&key&"%'"
@@ -47,8 +48,8 @@ if key<>"" then%>
 </div>
 <%end if
 %>
-    <div class="container">
-      <div class="skid"><span class="ctit"> <a class="li on" href="/MarketReport/1.html">澳洲</a><a class="li" href="/MarketReport2/1.html">英国</a><a class="li" href="/MarketReport3/1.html">全球</a></span></div>
+    <div class="container <%if key<>"" then%>hidden<%end if%>">
+      <div class="skid"><span class="ctit"> <a class="li <%if cid=18 then%>on<%end if%>" href="/MarketReport/18/1.html">澳洲</a><a class="li <%if cid=16 then%>on<%end if%>" href="/MarketReport/16/1.html">英国</a><a class="li <%if cid=17 then%>on<%end if%>" href="/MarketReport/17/1.html">全球</a></span></div>
     </div>
     <div class="main"> 
       <div class="container">
@@ -97,22 +98,22 @@ if key<>"" then%>
                               <%else%>
                               <td width="15%" align="left" valign="middle" >当前页0/0</td>
                               <%end if%>
-                              <td width="70%" align="right" ><%if page>1 then%><a href="/marketreport/1.html">首页</a>
+                              <td width="70%" align="right" ><%if page>1 then%><a href="/marketreport/<%=cid%>/1.html">首页</a>
 
-                                  <a href="/marketreport/<%=page -1%>.html">上一页</a>
+                                  <a href="/marketreport/<%=cid%>/<%=page -1%>.html">上一页</a>
                                   <%end if%>
                                 <%if rsnew.PageCount<>1 and page<>rsnew.PageCount then%>
-                                  <a href="/marketreport/<%=page +1%>.html">下一页</a>
+                                  <a href="/marketreport/<%=cid%>/<%=page +1%>.html">下一页</a>
 
-                                  <a href="/marketreport/<%=rsnew.PageCount%>.html">尾页</a>
+                                  <a href="/marketreport/<%=cid%>/<%=rsnew.PageCount%>.html">尾页</a>
                                   <%end if%>|转到第
                                 <select name="select" onChange="javascript:location=this.options[this.selectedIndex].value;">
                                     <%
           for i = 1 to rsnew.PageCount
           if i = page then%>
-                                    <option value="/marketreport/<%=i%>.html" selected><%=i%></option>
+                                    <option value="/marketreport/<%=cid%>/<%=i%>.html" selected><%=i%></option>
                                     <%else%>
-                                    <option value="/marketreport/<%=i%>.html"><%=i%></option>
+                                    <option value="/marketreport/<%=cid%>/<%=i%>.html"><%=i%></option>
                                     <%
           end if
           next

@@ -14,8 +14,9 @@ tdkid=6%>
     <!--数据链接-->
     <%dim cid
 cid=request.QueryString("c")
-cid=25
+
 key=request.QueryString("key")
+if cid="" and key="" then cid=27
     set rsc=Server.CreateObject("ADODB.Recordset")
 
 	  call SafeRequest(cid)
@@ -32,7 +33,7 @@ counter=rsc("counter")
 	  call SafeRequest(cid)
 	  sqlnew="select * from [prod] where classid="&cid
 	  else
-	  sqlnew="select * from [prod] "
+	  sqlnew="select * from [prod] where prod_name<>"""
 	  end if
     sqlnew=sqlnew+" and (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
 	  sqlnew=sqlnew+" order by oid desc,prod_id desc"
@@ -42,6 +43,11 @@ rsnew.Open sqlnew,conn,1,1%>
     <div class="led"> 
       <div class="h1">News</div>
       <div class="h2">最新资讯</div>
+    </div>
+         <div class="container <%if key<>"" then%>hidden<%end if%>">
+    <div class="skid">
+            <span class='ctit'><a class=" li <%if cid=27 then%>on<%end if%>" href="/news/27/1.html">展会活动</a><a class="li <%if cid=26 then%>on<%end if%>"  href="/news/26/1.html">行业动态</a><a class="li <%if cid=25 then%>on<%end if%>"  href="/news/25/1.html">置业指南</a></span>
+    </div>
     </div>
     <div class="main"> 
       <div class="container">
@@ -93,22 +99,22 @@ if key<>"" then%>
                               <%else%>
                               <td width="15%" align="left" valign="middle" >当前页0/0</td>
                               <%end if%>
-                              <td width="70%" align="right" ><%if page>1 then%><a href="news/<%=cid%>/1.html">首页</a>
+                              <td width="70%" align="right" ><%if page>1 then%><a href="/news/<%=cid%>/1.html">首页</a>
 
-                                  <a href="news/<%=cid%>/<%=page -1%>.html">上一页</a>
+                                  <a href="/news/<%=cid%>/<%=page -1%>.html">上一页</a>
                                   <%end if%>
                                 <%if rsnew.PageCount<>1 and page<>rsnew.PageCount then%>
-                                  <a href="news/<%=cid%>/<%=page +1%>.html">下一页</a>
+                                  <a href="/news/<%=cid%>/<%=page +1%>.html">下一页</a>
 
-                                  <a href="news/<%=cid%>/<%=rsnew.PageCount%>.html">尾页</a>
+                                  <a href="/news/<%=cid%>/<%=rsnew.PageCount%>.html">尾页</a>
                                   <%end if%>|转到第
                                 <select name="select" onChange="javascript:location=this.options[this.selectedIndex].value;">
                                     <%
           for i = 1 to rsnew.PageCount
           if i = page then%>
-                                    <option value="news/<%=cid%>/<%=i%>.html" selected><%=i%></option>
+                                    <option value="/news/<%=cid%>/<%=i%>.html" selected><%=i%></option>
                                     <%else%>
-                                    <option value="news/<%=cid%>/<%=i%>.html"><%=i%></option>
+                                    <option value="/news/<%=cid%>/<%=i%>.html"><%=i%></option>
                                     <%
           end if
           next
@@ -122,7 +128,10 @@ if key<>"" then%>
                                     	set rsnew=nothing%>
       </div>
     </div>
+    <!--#include file="inc/pfrom.asp"-->
 <!--#include file="./inc/footer.asp"-->
 <!--#include file="./inc/sidebar.asp"-->
+<script src="/xgwl/js/dfrom.js"></script>
+<script src="/xgwl/js/pfrom.js"></script>
   </body>
 </html>

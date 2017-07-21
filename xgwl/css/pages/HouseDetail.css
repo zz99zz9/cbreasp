@@ -15,7 +15,7 @@
 .baseinfo .infoc{text-align:center;}
 
 /* 项目导航 */
-.housenav{height:80px;line-height:40px;background-color:#fff;padding-top:20px;margin:50px 0;}
+.housenav{height:80px;line-height:40px;background-color:#fff;padding-top:20px;margin:30px 0;}
 .housenav a.topLink{float:left;font-size:20px;color:#9b9b9b;display:block;margin-left:40px;margin-right:10px;cursor:pointer;}
 .housenav a.topLink:hover{color:#66c010;}
 .housenav a.topLink.on{border-bottom:8px solid #006B4C;color:#006B4C;}
@@ -28,6 +28,12 @@
 .dinfo .dtxt{font-size:14px;padding:30px 40px;line-height:180%;position:relative;}
 .dinfo .dtxt img{margin:10px auto;max-width:100%;}
 .dinfo .dtxt h3{font-size:20px;color:#000;line-height:40px;margin:0;padding:0;}
+.col-sm-6 .dinfo{margin-top:0;margin-bottom:0;}
+.col-sm-6 .dinfo .dtit{font-size:18px;}
+.col-sm-6 .dinfo .dtit .more{font-size:14px;float:right;color:#4a4a4a;}
+.col-sm-6 .dinfo .dtit .more:hover{color:#000;}
+.col-sm-6 .dinfo .dtxt .li{display:block;color:#4a4a4a;border-bottom:1px dotted #d4d4d4;line-height:35px;}
+.col-sm-6 .dinfo .dtxt .li:hover{background-color:#f5f5f5;color:#000;}
 /*户型图样式*/
           .swiper-container2{width:100%;position:relative;overflow:hidden;}
           .swiper-container2 .swiper-wrapper{height:320px;text-align:center;}
@@ -75,7 +81,7 @@
 .morehouse a.li:hover .pic .pmask{background-color:rgba(0,107,77,0.7);opacity:1;}
 @media (max-width: 768px) {
     .baseinfo{line-height:200%;height:385px;width:90%;background-color:#fff;opacity:0.9;position:absolute;top:30px;right:50%;margin-right:-45%;padding:25px;}
-    .housenav a.topLink{font-size:0.8em;margin-left:10px;margin-right:10px;}
+    .housenav a.topLink{font-size:0.9em;margin-left:10px;margin-right:10px;}
     .dinfo .dtit{padding:10px;font-size:1.3em;}
     .dinfo .dtxt{padding:10px;}
     .dtit .icolist{top:10px;}

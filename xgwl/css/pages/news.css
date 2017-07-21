@@ -2,7 +2,7 @@
 body{background:#fff;}
 .led{background-image:url('../../img/news/ed.png');}
 .skid{margin-bottom:50px;border-bottom:1px solid #cecece;text-align:center;line-height:50px;position:relative;height:50px;font-size:24px;}
-.skid .ctit{padding:0 20px;background:#fff;position:absolute;bottom:-25px;left:50%;margin-left:-120px;width:240px;font-size:15px;}
+.skid .ctit{padding:0 20px;background:#fff;position:absolute;bottom:-25px;left:50%;margin-left:-120px;width:380px;font-size:15px;}
 .skid .ctit a{color:#000;margin:0 20px;font-size:18px;}
 .skid .ctit a.on{border-bottom:3px solid #006A4D;font-weight:bold;}
 /* 列表区 */

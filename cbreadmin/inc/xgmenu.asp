@@ -78,11 +78,14 @@
                           <span class="arrow"></span>
                       </a>
                       <ul class="sub">
-                     <!-- <li class="nav4-5"><a class="" href="class_prod.asp">新闻类别管理</a></li>-->
+                     <!--<li class="nav4-5"><a class="" href="class_prod.asp">新闻类别管理</a></li>-->
 
-
-<li class="nav4-25"><a class="" href="Prod_list.Asp?Prod_Type=25">新闻资讯列表</a></li>
-                          <li class="nav4-25a"><a class="" href="Prod_add.asp?Prod_Type=25">增添新闻资讯</a></li>
+<li class="nav4-27"><a class="" href="Prod_list.Asp?Prod_Type=27">展会活动列表</a></li>
+                          <li class="nav4-27a"><a class="" href="Prod_add.asp?Prod_Type=27">增添展会活动</a></li>
+                          <li class="nav4-26"><a class="" href="Prod_list.Asp?Prod_Type=26">行业动态列表</a></li>
+                          <li class="nav4-26a"><a class="" href="Prod_add.asp?Prod_Type=26">增添行业动态</a></li>
+<li class="nav4-25"><a class="" href="Prod_list.Asp?Prod_Type=25">置业指南列表</a></li>
+                          <li class="nav4-25a"><a class="" href="Prod_add.asp?Prod_Type=25">增添置业指南</a></li>
 
 
 

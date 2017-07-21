@@ -57,25 +57,15 @@ d=rs("Description")%>
         </div>
       </div>
     </div>
+    <div class="mbx hidden-xs"><div class="container"><a href="/">首页</a> &gt; <a href="/houseproperty.html">新房</a> &gt; <a href="/housedetail/<%=id%>.html"><%=rs("entitle")%></a> <!-- sharebar button begin -->
+<div class="bshare-custom icon-medium" ><div class="bsPromo bsPromo2"></div><a title="分享到微信" class="bshare-weixin" href="javascript:void(0);"></a><a title="分享到新浪微博" class="bshare-sinaminiblog" href="javascript:void(0);"></a><a title="分享到Facebook" class="bshare-facebook" href="javascript:void(0);"></a><a title="分享到Twitter" class="bshare-twitter" href="javascript:void(0);"></a><a title="分享到QQ好友" class="bshare-qqim" href="javascript:void(0);"></a><a title="更多平台" class="bshare-more bshare-more-icon more-style-addthis"></a><span class="BSHARE_COUNT bshare-share-count" style="float: none;">51.7K</span></div><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#style=-1&amp;uuid=&amp;pophcol=2&amp;lang=zh"></script><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/bshareC0.js"></script>
+<!-- sharebar button end --></div></div>
     <div class="container">
-      <ul class="housenav"><a class="on topLink" href="#f1">项目介绍</a><a class="topLink" href="#f2">项目图片</a><a class="topLink" href="#f3">地理位置</a><a class="topLink" href="#f4">主力户型</a><a class="topLink hidden-xs" href="#f5">其他推荐</a></ul>
-      <div class="dinfo" id="f1">
-        <div class="dtit">项目介绍
-          <ul class="icolist">
-            <li class="li1 b_c hidden-xs hidden"><img src="/xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
-            <li class="li3 b_c hidden-xs hidden"><img src="/xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
-            <%if request.cookies("username")="" then%>
-             <li class="li2 b_c1 hidden" onclick='location.href="register.html"'><img src="/xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
-              <%else%>
-               <li class="li2 b_c1 hidden"><img src="/xgwl/img/housedetail_ico2.svg"/>资料下载</li>
-          
-              <%end if%>
-           
-          </ul>
-        </div>
-        <div class="dtxt">
-          <%=rs("content")%></div>
-      </div>
+
+      <ul class="housenav"><a class="topLink on" href="#f2">项目图片</a><a class="topLink" href="#f1">项目介绍</a><a class="topLink" href="#f3">地理位置</a><a class="topLink" href="#f4">主力户型</a><a class="topLink hidden-xs" href="#f5">其他推荐</a></ul>
+      
+
+      
       <div class="dinfo" id="f2">
         <div class="dtit">项目图片</div>
         <div class="dtxt"> 
@@ -243,6 +233,24 @@ set prs=nothing
     <!--轮播结束-->
         </div>
       </div>
+      <div class="dinfo" id="f1">
+        <div class="dtit">项目介绍
+          <ul class="icolist">
+            <li class="li1 b_c hidden-xs hidden"><img src="/xgwl/img/housedetail_ico1.svg"/>房贷计算器</li>
+            <li class="li3 b_c hidden-xs hidden"><img src="/xgwl/img/housedetail_ico3.svg"/>即时汇率</li>
+            <%if request.cookies("username")="" then%>
+             <li class="li2 b_c1 hidden" onclick='location.href="register.html"'><img src="/xgwl/img/housedetail_ico2.svg"/>注册/登录后下载资料</li>
+              <%else%>
+               <li class="li2 b_c1 hidden"><img src="/xgwl/img/housedetail_ico2.svg"/>资料下载</li>
+          
+              <%end if%>
+           
+          </ul>
+        </div>
+        <div class="dtxt">
+         
+          <%=rs("content")%></div>
+      </div>
       <div class="dinfo" id="f3">
         <div class="dtit">地理位置</div>
         <div class="dtxt"><%=rs("content1")%>
@@ -293,6 +301,7 @@ set prs=nothing
           <!--地图结束-->
         </div>
       </div>
+      
       <div class="dinfo" id="f4">
         <div class="dtit">主力户型
           <div class="cbtn">抢购房源</div>
@@ -335,9 +344,55 @@ set prs=nothing
       </div>
       </div>
 
-          <%
+
+              <div class="row">
+        <%key=rs("bigclassname")
+          key2=rs("smallclassname")%>
+      <div class="col-sm-6">
+      <div class="dinfo" >
+        <div class="dtit">市场报告 <a href="/marketreport/1.html" class="more">查看更多 &gt;</a></div>
+        <div class="dtxt">
+          
+          <%	  
+          set rsnew=Server.CreateObject("ADODB.Recordset")
+          sqlnew="select top 5 * from [prod] where (classid=16 or classid=17 or classid=18)"
+    sqlnew=sqlnew+" and (prod_name like '%"&key&"%' or tips like '%"&key&"%' or prod_name like '%"&key2&"%' or tips like '%"&key2&"%')"
+    sqlnew=sqlnew+" order by oid desc,prod_id desc"
+    'response.write sqlnew
+      rsnew.Open sqlnew,conn,1,1
+      do while not rsnew.eof%>
+<a href="/MarketReportMore/<%=rsnew("prod_id")%>.html" target="_blank" class="li ellipsis tra"><%=rsnew("prod_name")%></a>
+      <%rsnew.movenext
+            loop
+      rsnew.close
+      set rsnew=nothing%>
+        </div>
+        </div>
+      </div>
+      <div class="col-sm-6">
+      <div class="dinfo " >
+        <div class="dtit">最新资讯 <a href="/news/25/1.html" class="more">查看更多 &gt;</a></div>
+        <div class="dtxt">
+          <%	  
+          set rsnew=Server.CreateObject("ADODB.Recordset")
+          sqlnew="select top 5 * from [prod] where (classid=25 or classid=26 or classid=27)"
+    sqlnew=sqlnew+" and (prod_name like '%"&key&"%' or tips like '%"&key&"%' or prod_name like '%"&key2&"%' or tips like '%"&key2&"%')"
+    sqlnew=sqlnew+" order by oid desc,prod_id desc"
+    'response.write sqlnew
+      rsnew.Open sqlnew,conn,1,1      
+      do while not rsnew.eof%>
+<a href="/newsview/<%=rsnew("prod_id")%>.html" target="_blank" class="li ellipsis tra"><%=rsnew("prod_name")%></a>
+      <%rsnew.movenext
+            loop
+            rsnew.close
+      set rsnew=nothing%>
+        </div>
+        </div>
+      </div>
+      </div>
+              <%
           rs.close
-            	set rs=nothing%>
+              set rs=nothing%>
      <!--#include file="./inc/hothouses.asp"-->
 <!--#include file="./inc/pfrom.asp"-->
 <!--#include file="./inc/footer.asp"-->
