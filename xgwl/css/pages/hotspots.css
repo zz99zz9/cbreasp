@@ -2,14 +2,34 @@ body{background-color:#fff;}
 ul.nav{margin-bottom:10px;}
 ul.nav a{float:left;margin-left:35px;height:50px;line-height:65px;font-size:14px;color:#000;}
 ul.nav a.on{color:#006A4D;font-weight:bold;border-bottom:5px solid #006A4D;}
-.map{border:1px solid #f5f5f5;}
+.map{border:1px solid #f1f1f1;position:relative;}
 .map img{width:100%;}
-.info{padding:20px;text-align:center;height:65px;background-size:cover;background-color:#f5f5f5;}
+.map .point{display:block;background-image:url("/xgwl/img/point.png");height:30px;width:30px;position:absolute;cursor:pointer;margin-left:-15px;margin-top:-15px;z-index:1;}
+.map .point:hover,.map .point.on{-webkit-filter: hue-rotate(-105deg);z-index:2;}
+.map .pt1{top:264px;left:32px;}
+.map .pt2{top:337px;left:78px;}
+.map .pt3{top:223px;left:210px;}
+.map .pt4{top:189px;left:222px;}
+.map .pt5{top:334px;left:230px;}
+.map .pt6{top:206px;left:260px;}
+.map .pt7{top:250px;left:293px;}
+.map .pt8{top:200px;left:329px;}
+.map .pt9{top:223px;left:382px;}
+.map .pt10{top:241px;left:494px;}
+.map .xn1{top:218px;left:428px;}
+.map .xn2{top:277px;left:484px;}
+.map .xn3{top:262px;left:327px;}
+.map .xn4{top:311px;left:354px;}
+.map .xn5{top:71px;left:323px;}
+.info{padding:20px;text-align:center;min-height:65px;background-size:cover;background-color:rgba(0,0,0,0.5);background-blend-mode: darken;}/*filter:brightness(0.5);*/
 .info .tit{font-size:24px;color:#fff;}
 .info .txt{font-size:12px;color:#fff;font-weight:200;margin-bottom:20px;}
 .info .cbtn{font-weight:200;}
 .info .cbtn:hover{color:#fff;}
 
+/*底部热区列表*/
+.requ{display:block;float:left;margin-right:20px;color:#333;}
+.requ:hover{color:#000;}
 
 /**/
 .hlist{margin-top:20px;height:310px;overflow:auto;}
@@ -25,7 +45,7 @@ ul.nav a.on{color:#006A4D;font-weight:bold;border-bottom:5px solid #006A4D;}
 /*列表9宫格*/
 /*  */
 body{background:#fff;}
-.led{background-image:url('../../img/news/ed.png');}
+.led{background-image:url('/xgwl/img/news/ed.png');}
 .skid{margin-bottom:50px;border-bottom:1px solid #cecece;text-align:center;line-height:50px;position:relative;height:50px;font-size:24px;}
 .skid .ctit{padding:0 20px;background:#fff;position:absolute;bottom:-25px;left:50%;margin-left:-120px;width:240px;font-size:15px;}
 .skid .ctit a{color:#000;margin:0 20px;font-size:18px;}

@@ -46,7 +46,7 @@ rsnew.Open sqlnew,conn,1,1%>
     </div>
          <div class="container <%if key<>"" then%>hidden<%end if%>">
     <div class="skid">
-            <span class='ctit'><a class=" li <%if cid=27 then%>on<%end if%>" href="/news/27/1.html">展会活动</a><a class="li <%if cid=26 then%>on<%end if%>"  href="/news/26/1.html">行业动态</a><a class="li <%if cid=25 then%>on<%end if%>"  href="/news/25/1.html">置业指南</a></span>
+            <span class='ctit'><a class=" li <%if cid=27 then%>on<%end if%>" href="/news/27/1.html">展会活动</a><a class="li <%if cid=25 then%>on<%end if%>"  href="/news/25/1.html">置业指南</a><a class="li <%if cid=26 then%>on<%end if%>"  href="/news/26/1.html">行业动态</a></span>
     </div>
     </div>
     <div class="main"> 
