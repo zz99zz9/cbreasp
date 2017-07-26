@@ -44,7 +44,7 @@ d=rs("Description")%>
           <div class="country"><%=rs("bigclassname")%> / <%=rs("smallclassname")%><span class="status1"><%=rs("clxname")%></span></div>
           <div class="txt">所属热区：<span class="txtv"><%=rs("ctdname")%></span></div>
           <div class="txt">物业类型：<span class="txtv"><%=rs("ckfsname")%></span></div>
-          <div class="txt">面积均价：<span class="txtv"><%=rs("jgjj")%>万元/平</span></div>
+          <div class="txt">面积均价：<span class="txtv"><%=rs("jgjj")%>元/平</span></div>
           <div class="txt">项目地址：<span class="txtv"><%=rs("qt")%></span></div>
           <div class="infoc">
             <%if rs("jgzj2")="0" or rs("jgzj2")="" then%>
