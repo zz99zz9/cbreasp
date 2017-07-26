@@ -2,7 +2,7 @@
 body{background:#fff;}
 .led{background-image:url('../../img/news/ed.png');}
 .skid{margin-bottom:50px;border-bottom:1px solid #cecece;text-align:center;line-height:50px;position:relative;height:50px;font-size:24px;}
-.skid .ctit{padding:0 20px;background:#fff;position:absolute;bottom:-25px;left:50%;margin-left:-120px;width:380px;font-size:15px;}
+.skid .ctit{padding:0 20px;background:#fff;position:absolute;bottom:-25px;left:50%;margin-left:-190px;width:380px;font-size:15px;}
 .skid .ctit a{color:#000;margin:0 20px;font-size:18px;}
 .skid .ctit a.on{border-bottom:3px solid #006A4D;font-weight:bold;}
 /* 列表区 */
@@ -47,3 +47,8 @@ body{background:#fff;}
 .tipsinfo{border:#e7e7e7 1px solid;background-color:#f8f8f8;padding:6px 12px;color:#006a4d;margin-right:10px;}
 .tipsinfo:hover{color:#006a4d;}
 .main{padding-top:20px;}
+@media (max-width: 768px) {
+.skid .ctit a{margin:0 10px;}
+.main a.li .col-md-4{padding-right:0 !important;}
+.skid{margin-bottom:0;}
+}

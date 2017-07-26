@@ -21,15 +21,15 @@ $(".lsave").click(function(){
 	var file=$("#lfile").val();
 	var oid=$("#loid").val();
 	var url=$("#lurl").val();
-	console.log(tit);
-	console.log(stit);
-	console.log(stxt);
-	console.log(file);
-	console.log(url);
-	console.log(id);
-	console.log(wid);
-	console.log(oid);
-	console.log(action);
+	// console.log(tit);
+	// console.log(stit);
+	// console.log(stxt);
+	// console.log(file);
+	// console.log(url);
+	// console.log(id);
+	// console.log(wid);
+	// console.log(oid);
+	// console.log(action);
 	links(tit,stit,stxt,file,url,id,wid,oid,action);
 
 })

@@ -42,6 +42,7 @@ rs.open sql,conn,1,1
             <th width="40" class="hidden-phone"><strong>ID</strong></td>
  <!--           <th width="60" class="hidden-phone"><strong>国家</strong></td>-->
                  <th width="70" class="hidden-phone"><strong>类别</strong></td>
+                    <th width="200" ><strong>地区</strong></td>
             <th width="200" ><strong>项目名称</strong></td>
             <th width="80" class="hidden-phone"><strong>加入时间</strong></td>
             <th width="40" class="hidden-phone"><strong>排序</strong></td>
@@ -56,6 +57,7 @@ rs.open sql,conn,1,1
             <td class="hidden-phone"><%=rs("articleid")%></td>
             <!--<td class="hidden-phone"><%=rs("bigclassname")%></td>-->
                             <td class="hidden-phone"><%=rs("clbname")%></td>
+                            <td ><%=rs("bigclassname")%>,<%=rs("smallclassname")%>,<%=rs("ctdname")%></td>
             <td><%=rs("title")%><%=rs("entitle")%><%if rs("Passed")=false then%>(草稿)<%end if%></td>
             <td class="hidden-phone"><%= FormatDateTime(rs("UpdateTime"),2) %></td>
             <td class="hidden-phone"><%=rs("orderid")%></td>

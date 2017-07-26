@@ -14,8 +14,8 @@ tdkid=5%>
   <body>
     <!--数据链接-->
     <%dim cid
-cid=request.QueryString("c")
-if cid="" then cid=20
+    cid=request.QueryString("c")
+    if cid="" then cid=20
     set rsnew=Server.CreateObject("ADODB.Recordset")
 	  if cid<>"" then
 	  call SafeRequest(cid)

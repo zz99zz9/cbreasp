@@ -35,3 +35,14 @@ body{background:#fff;}
 .main a.li .info .price{color:#006A4D;font-size:24px;}
 
 .main a.li:hover .pic .pmask{background-color:rgba(0,107,77,0.7);opacity:1;}
+
+.txt3{color:#9b9b9b;font-size:12px;padding:10px 0 0 0;line-height:180%;}
+/*房源*/
+.left .txt3 .info{font-size:13px;color:#4a4a4a;line-height:100%;}
+.left .txt3 .city{margin-top:10px;}
+.left .txt3 .price{margin-top:10px;}
+/*资讯*/
+.left .txt3 .li2{font-size:14px;color:#4a4a4a;width:100%;overflow:hidden;display:block;padding-left:10px;padding-right:10px;line-height:250%;border-bottom:1px dotted #9b9b9b;}
+.left .txt3 .li2:hover{color:#006a4d;}
+.left .txt3 .xmore{display:block;color:#4a4a4a;text-align:right;line-height:250%;}
+.left .txt3 .xmore:hover{color:#006a4d;}
