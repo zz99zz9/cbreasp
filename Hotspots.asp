@@ -77,7 +77,7 @@ rs.Open sql,conn,1,1
 i=0
    do while not rs.eof
 %>
-              <a class="b_c" href="housedetail.asp?id=<%=rs("articleid")%>" title="<%=rs("entitle")%>">
+              <a class="b_c" href="/housedetail/<%=rs("articleid")%>.html" title="<%=rs("entitle")%>">
                 <div class="pic"><img src="/<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/></div>
                 <div class="hinfo">
                   <div class="tit ellipsis"><%=rs("entitle")%></div>
