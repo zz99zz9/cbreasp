@@ -74,7 +74,7 @@ i=0
 
           <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="housedetail/<%=rs("articleid")%>.html">
               <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/>
-                <div class="pmask tra"><span class="ls2"><%=rs("jgjj")%>万/平</span></div>
+                <div class="pmask tra"><span class="ls2"><%=rs("jgjj")%>元/平</span></div>
               </div>
               <div class="info tra">
                 <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
