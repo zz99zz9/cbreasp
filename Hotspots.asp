@@ -53,12 +53,12 @@ cid=request.QueryString("c")%>
 <%if cid=1 then%>
           <div class="info" style="background-image:url('/xgwl/img/hotspots/ldbg.png');">
             <div class="tit">伦敦</div>
-            <div class="txt ellipsis2">伦敦是工商业和住宅混合区，港口指伦敦塔桥至泰晤士河河口之间的地区。整个大伦敦面积1580平方公里。</div><a class="cbtn " href="/hotspotsinfo/1.html" target="_blank">了解更多</a>
+            <div class="txt ellipsis2"></div><a class="cbtn " href="/hotspotsinfo/1.html" target="_blank">了解更多</a>
           </div>
 <%elseif cid=2 then%>
 <div class="info" style="background-image:url('/xgwl/img/hotspots/ldbg.png');">
             <div class="tit ">悉尼</div>
-            <div class="txt ellipsis2">悉尼是工商业和住宅混合区，港口指悉尼塔桥至泰晤士河河口之间的地区。整个大悉尼面积1580平方公里。</div><a class="cbtn " href="/hotspotsinfo2/1.html" target="_blank">了解更多</a>
+            <div class="txt ellipsis2"></div><a class="cbtn " href="/hotspotsinfo2/1.html" target="_blank">了解更多</a>
           </div>
 <%end if%>
           <div class="hinfo">
@@ -82,10 +82,9 @@ i=0
                 <div class="hinfo">
                   <div class="tit ellipsis"><%=rs("entitle")%></div>
                   <div class="country"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
-                  <div class="txt ellipsis"> 均价 <%=rs("jgjj")%>万/平 总价<%=rs("jgzj")%>万起</div>
+                  <div class="txt ellipsis"> 均价 <%=rs("jgjj")%>元/平 总价<%=rs("jgzj")%>万起</div>
                 </div>
               </a>
-          
               <%
               rs.movenext
 i=i+1

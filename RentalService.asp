@@ -57,7 +57,7 @@ i=0
               <div class="info tra col-md-6 col-xs-6" style="padding-left:0;">
                 <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
                 <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
-                <div class="price ls2"><%=rs("jgjj")%>万/平</div>
+                <div class="price ls2"><%=rs("jgjj")%>元/平</div>
               </div></a></div>
 
               <%

@@ -29,7 +29,7 @@ state="ok"
 msg="读取成功"
 tit=key
 do while not rs.eof
-pushlist="{'tit':'"&rs("entitle")&"','cc':'"&rs("bigclassname")&"/"&rs("smallclassname")&"','jg':'均价 "&rs("jgjj")&"万\平 总价"&rs("jgzj")&"万起','img':'/"&rs("defaultpicurl")&"','url':'/housedetail/"&rs("articleid")&".html'}"
+pushlist="{'tit':'"&rs("entitle")&"','cc':'"&rs("bigclassname")&"/"&rs("smallclassname")&"','jg':'均价 "&rs("jgjj")&"元\平 总价"&rs("jgzj")&"万起','img':'/"&rs("defaultpicurl")&"','url':'/housedetail/"&rs("articleid")&".html'}"
 '{"tit":rs("entitle"),"cc":rs("bigclassname")&"、"&rs("smallclassname"),"jg":rs("jjzj")&"、"&rs("jgjj"),"img":rs("defaultpicurl"),"url":"/housedetail/"&rs("articleid")&".html"}
 if i>1 then pushlist=","&pushlist
 list=list+pushlist
