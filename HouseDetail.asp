@@ -39,18 +39,27 @@ d=rs("Description")%>
            <div class="item active" style="background:url(<%if rs("defaultpicurl2")<>"" then%>/<%=rs("defaultpicurl2")%><%else%>/UploadFiles/201707111951239041.jpg<%end if%>);"></div>
 
         </div>
+          <%if rs("jgjj")=0 then
+   jgjj="待定"
+   else
+   jgjj=rs("jgjj")&"元/m²"
+   end if%>
         <div class="baseinfo"> 
           <div class="tit"><%=rs("entitle")%></div>
           <div class="country"><%=rs("bigclassname")%> / <%=rs("smallclassname")%><span class="status1"><%=rs("clxname")%></span></div>
           <div class="txt">所属热区：<span class="txtv"><%=rs("ctdname")%></span></div>
           <div class="txt">物业类型：<span class="txtv"><%=rs("ckfsname")%></span></div>
-          <div class="txt">面积均价：<span class="txtv"><%=rs("jgjj")%>元/平</span></div>
+          <div class="txt">面积均价：<span class="txtv"><%=jgjj%></span></div>
           <div class="txt">项目地址：<span class="txtv"><%=rs("qt")%></span></div>
           <div class="infoc">
+            <%if rs("jgzj")="0" or rs("jgzj")="" then%>
+<div class="price">价格待定</div>
+            <%else%>
             <%if rs("jgzj2")="0" or rs("jgzj2")="" then%>
             <div class="price"><%=rs("jgzj")%><em>万起</em><!---<%=rs("jgzj2")%><em>万</em>--></div>
             <%else%>
             <div class="price"><%=rs("jgzj")%><em>万</em>~<%=rs("jgzj2")%><em>万</em></div>
+            <%end if%>
             <%end if%>
             <span class="cbtn tra" onclick="openPform(1);"><%if rs("clxid")=7 then%>抢购房源<%else%>联系我们<%end if%></span>
           </div>
