@@ -50,6 +50,11 @@ sql=sql+"OrderId desc,articleid desc"
 rs.Open sql,conn,1,1
 i=0
    do while not rs.eof
+      if rs("jgjj")=0 then
+   jgjj="待定"
+   else
+   jgjj=rs("jgjj")&"元/m²"
+   end if
 %>
 
           <div class="row" style="margin:20px 0;"><a class="li tra wow fadeInUp animated b_c" href="/housedetail/<%=rs("articleid")%>.html">
@@ -57,7 +62,7 @@ i=0
               <div class="info tra col-md-6 col-xs-6" style="padding-left:0;">
                 <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
                 <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
-                <div class="price ls2"><%=rs("jgjj")%>元/平</div>
+                <div class="price ls2"><%=jgjj%></div>
               </div></a></div>
 
               <%

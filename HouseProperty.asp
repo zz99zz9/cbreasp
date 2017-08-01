@@ -282,6 +282,16 @@ if key<>"0" then%>
     do while not rs.eof and i<rs.PageSize
     if rs("clxid")=11 then sss=1
     if rs("clxid")=12 then sss=2
+   if rs("jgjj")=0 then
+   jgjj="待定"
+   else
+   jgjj="<span class='pn'>"&rs("jgjj")&"</span>元/m²"
+   end if
+      if rs("jgzj")=0 then
+   jgzj="待定"
+   else
+   jgzj="<span class='pn'>"&rs("jgzj")&"</span>万元/套起"
+   end if
     %>
     <!------------>
         <a class="li tra wow fadeInUp animated row" href="/housedetail/<%=rs("articleid")%>.html">
@@ -292,14 +302,14 @@ if key<>"0" then%>
             <div class="info tra">
               <div class="tit ellipsis ls1"><%=rs("entitle")%></div>
               
-              <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%>-<%=rs("clxid")%></div>
+              <div class="city ellipsis ls1"><%=rs("bigclassname")%>/<%=rs("smallclassname")%></div>
               <div class="city ellipsis ls1">热点区域：<%=rs("ctdname")%></div>
               <div class="city ellipsis ls1">物业类型：<%=rs("ckfsname")%> </div>
               <div class="city ellipsis ls1"><%=rs("qt")%></div>
             </div>
           </div>
           <div class="col-md-3">
-            <div class="price ls2">均价  <span class="pn"><%=rs("jgjj")%></span>元/m²<br>总价  <span class="pn"><%=rs("jgzj")%></span>万元/套起</div>
+            <div class="price ls2">均价  <%=jgjj%><br>总价  <%=jgzj%></div>
              
           </div></a>
 <!------------>

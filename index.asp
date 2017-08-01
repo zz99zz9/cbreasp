@@ -70,11 +70,17 @@ sql=sql+"OrderId desc,articleid desc"
 rs.Open sql,conn,1,1
 i=0
    do while not rs.eof
+   if rs("jgjj")=0 then
+   jgjj="价格待定"
+   else
+   jgjj=rs("jgjj")&"元/平"
+   end if
 %>
 
           <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="housedetail/<%=rs("articleid")%>.html">
               <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/>
-                <div class="pmask tra"><span class="ls2"><%=rs("jgjj")%>元/平</span></div>
+                <span class="status1"><%=rs("clxname")%></span>
+                <div class="pmask tra"><span class="ls2"><%=jgjj%></span></div>
               </div>
               <div class="info tra">
                 <div class="tit ellipsis ls1"><%=rs("entitle")%></div>

@@ -1,6 +1,7 @@
 /* 首页新房 */
 .part1 a.li{width:100%;display:block;min-height:100px;margin-bottom:40px;}
-.part1 a.li .pic{position:relative;}
+.part1 a.li .pic{position:relative;overflow:hidden;}
+.part1 a.li .pic .status1{position:absolute;top:5px;right:-50px;width:150px;height:40px;text-align:center;line-height:40px;color:#fff;font-size:16px;display:block;transform:rotate(45deg);-ms-transform:rotate(45deg); 	/* IE 9 */-moz-transform:rotate(45deg); 	/* Firefox */-webkit-transform:rotate(45deg); /* Safari å’Œ Chrome */-o-transform:rotate(45deg); 	/* Opera */background-color:#006A4D;}
 .part1 a.li .pic .pmask{text-align:center;line-height:200px;opacity:0;height:100%;width:100%;background-color:rgba(0,107,77,0);position:absolute;top:0;left:0;}
 .part1 a.li .pic .pmask span{color:#fff;font-size:24px;font-weight:100;}
 .part1 a.li .info{padding:20px;background-color:#3E3E3E;}
