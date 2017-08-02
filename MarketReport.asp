@@ -89,6 +89,7 @@ if key<>"" then%>
           <style>
           .pages{color:#898989;margin-top:40px;margin-bottom:40px;}
           .pages a{padding:5px 13px;border:1px solid #ebebeb;color:#898989;margin-right:10px;}
+          .pages a.on{color:#fff;background-color:#898989;}
           .pages select{border:1px solid #ebebeb;}
 </style>
            <table width="95%" height="25"  border="0" align="center" cellpadding="0" cellspacing="0" class="pages wow fadeInUp">
@@ -102,6 +103,12 @@ if key<>"" then%>
 
                                   <a href="/marketreport/<%=cid%>/<%=page -1%>.html">上一页</a>
                                   <%end if%>
+<%
+          for i = 1 to rsnew.PageCount%>
+          <a href="/news/<%=cid%>/<%=i%>.html" class="<%if page=i then%>on<%end if%>"><%=i%></a>
+          <%
+          next
+          %>
                                 <%if rsnew.PageCount<>1 and page<>rsnew.PageCount then%>
                                   <a href="/marketreport/<%=cid%>/<%=page +1%>.html">下一页</a>
 
