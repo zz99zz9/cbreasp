@@ -31,6 +31,7 @@ d=rsnew("Description")%>
       <div class="h1">Area Guide</div>
       <div class="h2">投资热区</div>
     </div>
+    <div class="mbx hidden-xs"><div class="container"><a href="/">首页</a> &gt; <a href="/hotspotsinfo/1.html">投资热区</a> &gt; <a href="/newsview/<%=pro_id%>.html"><%=rsnew("prod_name")%></a></div></div>
     <div class="main"> 
       <div class="container">
 
