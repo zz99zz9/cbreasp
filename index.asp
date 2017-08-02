@@ -28,7 +28,7 @@ tdkid=1%>
         <%do while not prs.eof%>
            <div class="item <%if i=0 then%>active<%end if%>" onclick="window.location.href='<%=prs("url")%>';" style="background:url(<%=prs("file")%>);">
 <div class="carousel-caption">
-             <h1><%=prs("stit")%></h1>
+             <h2><%=prs("stit")%></h2>
              </div>
               <!--<p class="tra"><%=prs("stxt")%></p>
                <a href="<%=prs("url")%>" class="tra a"><span>查看详情</span><em class="more-arr">&gt;</em></a>
