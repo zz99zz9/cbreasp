@@ -33,7 +33,7 @@ cid=request.QueryString("c")%>
             <i class="point pt3" title="Mayfair 梅菲尔"></i>
             <i class="point pt4" title="Fitzrovia 费兹罗维亚"></i>
             <i class="point pt5" title="Nine Elms 九榆树"></i>
-            <i class="point pt6" title="Covent Garden 科文特花园"></i>
+            <i class="point pt6 on" title="Covent Garden 科文特花园"></i>
             <i class="point pt7" title="Southbank 泰晤士河南岸"></i>
             <i class="point pt8" title="The City 伦敦金融城"></i>
             <i class="point pt9" title="Wapping 沃平"></i>
@@ -41,7 +41,7 @@ cid=request.QueryString("c")%>
           </div>
           <%elseif cid=2 then%>
           <div class="map"><img src="/xgwl/img/xini2.0.jpg"/>
-            <i class="point xn1" title="Sydney CBD 悉尼中心商务区"></i>
+            <i class="point xn1 on" title="Sydney CBD 悉尼中心商务区"></i>
             <i class="point xn2" title="Eastern Sydney 悉尼东区"></i>
             <i class="point xn3" title="Sydney Inner West 悉尼内西区"></i>
             <i class="point xn4" title="South Sydney 悉尼南区"></i>
@@ -52,23 +52,29 @@ cid=request.QueryString("c")%>
         <div class="col-md-5">
 <%if cid=1 then%>
           <div class="info" style="background-image:url('/xgwl/img/hotspots/ldbg.png');">
-            <div class="tit">伦敦</div>
-            <div class="txt ellipsis2"></div><a class="cbtn " href="/hotspotsinfo/1.html" target="_blank">了解更多</a>
+            <div class="tit">Covent Garden 科文特花园</div>
+            <div class="txt ellipsis2"></div><a class="cbtn " href="/hotspotsview/609.html" target="_blank">了解更多</a>
           </div>
 <%elseif cid=2 then%>
 <div class="info" style="background-image:url('/xgwl/img/hotspots/ldbg.png');">
-            <div class="tit ">悉尼</div>
-            <div class="txt ellipsis2"></div><a class="cbtn " href="/hotspotsinfo2/1.html" target="_blank">了解更多</a>
+            <div class="tit ">Sydney CBD 悉尼中心商务区</div>
+            <div class="txt ellipsis2"></div><a class="cbtn " href="/hotspotsview/604.html" target="_blank">了解更多</a>
           </div>
 <%end if%>
           <div class="hinfo">
             <ul class="hlist">
               <%'列表
-            if cid=1 then scid=24
-            if cid=2 then scid=28
-            if cid="" then scid=24
+            if cid=1 or cid="" then 
+            scid=24
+            defaultname="Covent Garden 科文特花园"
+            end if
+            if cid=2 then 
+            scid=28
+            defaultname="Sydney CBD 悉尼中心商务区"
+            end if
+
         set rs=Server.CreateObject("ADODB.Recordset")
-sql="select * from [Table_Product] where Passed=1 "
+sql="select * from [Table_Product] where Passed=1 and ctdname='"&defaultname&"'"
 sql=sql+" and clbid='11'"
 sql=sql+" and smallclassid='"&scid&"'"
 sql=sql+" order by "
