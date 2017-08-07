@@ -33,6 +33,7 @@
                           <li class="nav2-1"><a class="" href="single.asp?nav=1">二手房介绍</a></li>
             <!---->              <li class="nav2-2"><a class="" href="single.asp?nav=2">租赁服务</a></li>
                                          <!-- <li class="nav2-3"><a class="" href="single.asp?nav=9">海外地产中心</a></li><!----class_links.asp---->
+                                         <li class="nav2-3"><a class="" href="singlelist.asp">列表</a></li>
                       </ul>
                   </li>
                    <li class="sub-menu nav3">

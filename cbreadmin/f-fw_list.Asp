@@ -10,7 +10,6 @@ fid=request.QueryString("ArticleID")
       <section id="main-content">
           <section class="wrapper">
               <!-- page start -->
-
                             <!--成功失败提示-->
 <div class="alert" id="alert" style="display:none;">
                                   <button class="close close-sm" type="button">
@@ -18,18 +17,14 @@ fid=request.QueryString("ArticleID")
                                   </button>
                                   <strong>操作成功！</strong> <span>产品类别修改成功。</span>
                               </div>
- 
                           <!----> 
               <div class="row">
                   <div class="col-lg-12">
                       <section class="panel">
                           <header class="panel-heading">
                           <%call showName("Table_Product",fid,"ArticleID","entitle")%> 设施服务列表 <button data-toggle="modal" class="btn btn-success mod"  data-ftable="<%=tablename%>" data-action="add" data-ffid="<%=fid%>"><i class="icon-picture"></i> 添加设施服务</button>
-
                           </header>
-                          
 <!--列表开始-->
-
 <div id="tablee"></div>
 <!--列表结束-->
                       </section>

@@ -32,10 +32,16 @@ rsnew.Open sqlnew,conn,1,1%>
       <div class="h2">投资热区</div>
     </div>
      <div class="container">
-
+          <ul class="nav">
+            <a  href="/hotspotsInfo/1.html">伦敦</a>
+            <a class="on" href="/hotspotsInfo2/1.html">悉尼</a>
+            <!--<a href="hotspots2.asp">墨尔本</a>-->
+          
+          <a class='hotright' href='/hotspots/2.html'>进入热区地图</a>
+          </ul>
         
     <div class="skid">
-            <span class='ctit'><a class=" li" href="/hotspotsInfo/1.html">伦敦</a><a class="li on"  href="/hotspotsInfo2/1.html">悉尼</a></span>
+     
  
     </div>
     </div>

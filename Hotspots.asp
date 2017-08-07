@@ -21,6 +21,8 @@ cid=request.QueryString("c")%>
             <a class="<%if cid=1 then%>on<%end if%>" href="/hotspots/1.html">伦敦</a>
             <a class="<%if cid=2 then%>on<%end if%>" href="/hotspots/2.html">悉尼</a>
             <!--<a href="hotspots2.asp">墨尔本</a>-->
+          
+          <a class='hotright' href='/hotspotsinfo<%if cid=1 then%><%else%>2<%end if%>/1.html'>进入热区列表</a>
           </ul>
         </div>
       </div>
@@ -38,6 +40,7 @@ cid=request.QueryString("c")%>
             <i class="point pt8" title="The City 伦敦金融城"></i>
             <i class="point pt9" title="Wapping 沃平"></i>
             <i class="point pt10" title="The Docklands 码头区"></i>
+            <span class='note'>提示：可通过绿色圆点切换热区</span>
           </div>
           <%elseif cid=2 then%>
           <div class="map"><img src="/xgwl/img/xini2.0.jpg"/>
@@ -46,6 +49,7 @@ cid=request.QueryString("c")%>
             <i class="point xn3" title="Sydney Inner West 悉尼内西区"></i>
             <i class="point xn4" title="South Sydney 悉尼南区"></i>
             <i class="point xn5" title="Sydney Upper North Shore 悉尼上北区"></i>
+            <span class='note'>提示：可通过绿色圆点切换热区</span>
           </div>
           <%end if%>
         </div>
