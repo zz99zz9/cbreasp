@@ -9,7 +9,7 @@
             </div>
             <div class="sns"><a class="fa fa-twitter fa-stack-1x tra" href="https://twitter.com/CBRE" target="_blank" rel="nofollow"></a><a class="fa fa-facebook fa-stack-1x tra" href="https://www.facebook.com/cbre" target="_blank" rel="nofollow"></a><a class="fa fa-google-plus fa-stack-1x tra" href="https://plus.google.com/+cbre" target="_blank" rel="nofollow"></a><a class="fa fa-linkedin fa-stack-1x tra" href="https://www.linkedin.com/company/2319" target="_blank" rel="nofollow"></a></div>
             <div class='c'></div>
-            <div class="copyright"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033781" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src='/xgwl/img/logo.png' style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"/> 京公网安备11010502033781号</a>&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow" style="color:#fff;">京ICP备17042425号</a>&nbsp;&nbsp;&copy; 2017 CBRESI.COM.CN </div>
+            <div class="copyright"> <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11010502033781" style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"><img src='/xgwl/img/logo.png' style="display:inline-block;text-decoration:none;height:20px;line-height:20px;color:#fff;"/> 京公网安备11010502033781号</a>&nbsp;&nbsp;<a href="http://www.miitbeian.gov.cn" target="_blank" rel="nofollow" style="color:#fff;">京ICP备17042425号</a><!--&nbsp;&nbsp;联系电话：010-85880515-->&nbsp;&nbsp;&copy; 2017 CBRESI.COM.CN </div>
           </div>
          
         </div>

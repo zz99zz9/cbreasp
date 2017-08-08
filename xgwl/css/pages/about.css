@@ -1,0 +1,11 @@
+/*  */
+body{background:#fff;}
+.led{background-image:url('../../img/resale/ed.png');}
+.skid{margin-bottom:50px;border-bottom:1px solid #cecece;text-align:center;line-height:50px;position:relative;height:50px;font-size:24px;}
+.skid .ctit{padding:0 20px;background:#fff;position:absolute;bottom:-25px;left:50%;margin-left:-150px;width:300px;}
+.skid .ctit a{color:#000;margin:0 20px;}
+.skid .ctit a.on{border-bottom:3px solid #006A4D;font-weight:bold;}
+.txt h3{font-size:1.5em;color:#333;text-align:left;}
+.amenu{margin-top:20px;}
+.amenu a{display:block;height:30px;line-height:30px;background:#f0f0f0;margin-bottom:5px;padding-left:15px;color:#333;}
+.amenu a.on{background:#006A4D;color:#fff;}
