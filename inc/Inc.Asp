@@ -307,7 +307,21 @@ oRs.close
 set oRs=Nothing
 Response.write Content
 End sub
+'----------------------------显示公司相关信息-----------------------
+Sub sHowInfotit(typee)
+set oRs=Server.CreateObject("ADODB.Recordset")
+sql="select * from [GsJs] where gsjsid="&typee
+oRs.Open sql,conn,1,1
+If Not oRs.eof Then
+Content=Content & oRs("type_wj")
 
+Else
+Content="<span style='color:#FFFFFF;background-color:#E53333;'>需提供内容</span> "
+End if
+oRs.close
+set oRs=Nothing
+Response.write Content
+End sub
 '----------------------------显示公司相关英文信息-----------------------
 Sub sHowInfoen(typee)
 set oRs=Server.CreateObject("ADODB.Recordset")
