@@ -33,8 +33,8 @@
                           <li class="nav2-1"><a class="" href="single.asp?nav=1">二手房介绍</a></li>
             <!---->              <li class="nav2-2"><a class="" href="single.asp?nav=2">租赁服务</a></li>
                                          <!-- <li class="nav2-3"><a class="" href="single.asp?nav=9">海外地产中心</a></li><!----class_links.asp---->
-                                         <li class="nav2-3"><a class="" href="singlelist.asp">列表</a></li>
-                                         <li class="nav2-9"><a class="" href="single.asp?nav=9">公司概述</a></li>
+                                         <!--<li class="nav2-3"><a class="" href="singlelist.asp">列表</a></li>-->
+                                         <li class="nav2-9"><a class="" href="single.asp?nav=9">概览</a></li>
                                          <li class="nav2-12"><a class="" href="single.asp?nav=12">企业信息</a></li>
                                          <li class="nav2-13"><a class="" href="single.asp?nav=13">愿景和价值观</a></li>
                                          <li class="nav2-14"><a class="" href="single.asp?nav=14">案例分析</a></li>
