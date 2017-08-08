@@ -8,7 +8,7 @@
     <link href="/xgwl/css/pages/about.css" rel="stylesheet"/>
    <%dim tdkid,id
    id=request.QueryString("id")
-   if id<>9 or id<>12 or id<>13 or id<>14 or id<>27 then id=9
+   if id<>9 and id<>12 and id<>13 and id<>14 and id<>27 then id=9
 tdkid=3%>
 <!--#include file="./inc/tdk.asp"-->
   </head>
