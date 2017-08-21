@@ -9,3 +9,9 @@ body{background:#fff;}
 .amenu{margin-top:20px;}
 .amenu a{display:block;height:30px;line-height:30px;background:#f0f0f0;margin-bottom:5px;padding-left:15px;color:#333;}
 .amenu a.on{background:#006A4D;color:#fff;}
+
+.f404{text-align:center;margin-bottom:80px;}
+.f404 h2{font-size:50px !important;text-align:center;color:#999;margin-top:80px;margin-bottom:40px;line-height:80px;}
+.f404 h3{font-size:25px !important;color:#999;text-align:center;line-height:40px;margin-bottom:20px;}
+.f404 a{font-size:14px;color:#fff;padding:5px 10px;background:#006A4D;margin-left:2px;}
+.f404 a:hover{background:#66c010;}
