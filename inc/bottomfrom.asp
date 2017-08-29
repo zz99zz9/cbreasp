@@ -15,6 +15,6 @@
     </div>
         <div class='openbform b_h hidden-xs'>成为会员</div>
         <div class='boottomtel'>
-        <a href='tel:4008209899' class='tel'>4008 209 899</a>
+        <a href='tel:4008209889' class='tel'>4008 209 889</a>
         <a href='javascript:openPform(1)' class='fd'>成为VIP</a>
         </div>
