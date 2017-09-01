@@ -52,6 +52,11 @@ if (url.indexOf(".asp") >= 0){
 url=url.replace(".asp",".html")
 window.location.href=url
 }
+
+if (url.indexOf("http://cbresi.com.cn") >= 0){
+url=url.replace("http://cbresi.com.cn","http://www.cbresi.com.cn")
+window.location.href=url
+}
 if (url.indexOf("index.asp") >= 0 || url.indexOf("index.html") >= 0){
 window.location.href="/"
 }
