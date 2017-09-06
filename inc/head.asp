@@ -52,12 +52,17 @@ if (url.indexOf(".asp") >= 0){
 url=url.replace(".asp",".html")
 window.location.href=url
 }
-
-if (url.indexOf("http://cbresi.com.cn") >= 0){
-url=url.replace("http://cbresi.com.cn","http://www.cbresi.com.cn")
-window.location.href=url
-}
 if (url.indexOf("index.asp") >= 0 || url.indexOf("index.html") >= 0){
 window.location.href="/"
 }
 </script>
+<script>
+	var _hmt = _hmt || [];
+	(function() {
+		var hm = document.createElement("script");
+		hm.src = "https://hm.baidu.com/hm.js?8c7ede428a253dcf70931e97081e0d64";
+		var s = document.getElementsByTagName("script")[0]; 
+		s.parentNode.insertBefore(hm, s);
+	})();
+	</script>
+
