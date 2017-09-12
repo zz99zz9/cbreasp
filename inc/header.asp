@@ -17,7 +17,7 @@
 		            <a href="/hotspotsInfo/1.html">投资热区</a>
 		            <a href="/news/27/1.html">最新资讯</a>
                 <a href="/MarketReport/18/1.html">市场报告</a>
-                <a href="http://www.cbre.com" onfollow>CBRE官网</a>
+                <a href="/about/9.html" >CBRE官网</a>
 		          </div>
 
 <!--效果html结束-->
