@@ -25,6 +25,7 @@
     <script src="/xgwl/js/lib/swiper-2.7.6.jquery.min.js"></script>
     <script src="/xgwl/js/lib/wow.min.js"></script>
     <script src="/xgwl/js/base.js"></script>
+    <script src="/xgwl/js/dfrom.js"></script>
     	<script>
 	$(window).load(function () {
 	  $(".mobile-inner-header-icon").click(function(){
