@@ -1,5 +1,5 @@
 <%@LANGUAGE="VBSCRIPT" CODEPAGE="65001"%>
-<!--#include file="../inc/config.asp"-->
+<!--#include file="/inc/config.asp"-->
         <%
         lyname=request("lyname")
         lytel=request("lytel")
