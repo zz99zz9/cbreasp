@@ -72,9 +72,7 @@ d=rs("Description")%>
     <div class="container">
 
       <ul class="housenav"><a class="topLink on" href="#f2">项目图片</a><a class="topLink" href="#f1">项目介绍</a><a class="topLink" href="#f3">地理位置</a><a class="topLink" href="#f4">主力户型</a><a class="topLink hidden-xs" href="#f5">其他推荐</a></ul>
-      
 
-      
       <div class="dinfo" id="f2">
         <div class="dtit">项目图片</div>
         <div class="dtxt"> 

@@ -9,4 +9,4 @@ set tdkrs=nothing
 %>
     <title><%=t%></title>
     <meta name="Keywords" content="<%=k%>"/>
-    <meta name="Decription" content="<%=d%>"/>
+    <meta name="Description" content="<%=d%>"/>
