@@ -27,11 +27,11 @@ $("#pbtn").click(function(){
 
     }
     	if ($("#pmobile").hasClass("no")||$("#pname").hasClass("no")||$("#pmail").hasClass("no")||$("#ptxt").hasClass("no")){
-		console.log("信息不完善，无法提交")
+	//	console.log("信息不完善，无法提交")
 	}else{
     $(".pform").fadeOut();
     $(".mask").fadeOut();
-    console.log(pdata)
+  //  console.log(pdata)
      $.post("/api/pfrom.asp",pdata,
             function(data,status){
                 if(status=="success"){
@@ -46,7 +46,7 @@ $("#pbtn").click(function(){
 				   }
                 }
             });
-    alert("提交成功，我们将尽快和您联系！");
+   // alert("提交成功，我们将尽快和您联系！");
     }
 
 })
