@@ -51,7 +51,7 @@ rs.open sql,conn,1,1
           <tbody>
           <%do while not rs.eof%>
           <tr > 
-            <td ><a href="../housedetail.asp?id=<%=rs("lysex")%>" target="_blank"><%=rs("lysex")%></a></td>
+            <td ><a href="http://www.cbresi.com.cn/housedetail/<%=rs("lysex")%>.html" target="_blank"><%=rs("lysex")%></a></td>
             <td ><%=rs("lyname")%></td>
             <td ><%=rs("lytel")%></td>
             <td class="hidden-phone"><%=rs("lyemail")%></td>
