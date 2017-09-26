@@ -104,7 +104,7 @@ $(document).ready(function () {
         new WOW().init();
     };
   $('[data-toggle="tooltip"]').tooltip()
-  console.log("最后更新日期2017.9.1 by 任刚");
+  console.log("最后更新日期2017.9.26 by 任刚");
 });
 //验证短信60秒倒计时
 var wait=60;

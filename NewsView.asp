@@ -57,7 +57,7 @@ mystr=replace(mystr,"，",",")
 mystr=split(mystr,",")
 for i=0 to ubound(mystr)
 'if i>0 then response.write" \ "
-response.write "<a href='news.html?key="&mystr(i)&"' class='tipsinfo' target='_blank'>"&mystr(i)&"</a>"
+response.write "<a href='/news.html?key="&mystr(i)&"' class='tipsinfo' target='_blank'>"&mystr(i)&"</a>"
 next
 end if  %>
 </div>

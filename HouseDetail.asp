@@ -297,7 +297,7 @@ set prs=nothing
         var qualityValue = 80;
         var showMap = +'1';
         var mapZoom = 12;
-        var propertyLocation = '<%=rs("qt")%>';
+        var propertyLocation = "<%=rs("qt")%>";
         //51.515123，
         var property_LAT = <%=wz(0)%>;
         var property_LONG = <%=wz(1)%>;
@@ -311,7 +311,7 @@ set prs=nothing
       
       <div class="dinfo" id="f4">
         <div class="dtit">主力户型
-          <div class="cbtn">抢购房源</div>
+          <div class="cbtn"  onclick="openPform(1);">抢购房源</div>
         </div>
         <div class="dtxt"> 
           <!--户型列表-->
