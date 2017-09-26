@@ -25,7 +25,6 @@ d=rsnew("Description")%>
 <!--数据链接结束-->
   </head>
   <body>
-
 <!--#include file="inc/header.asp"-->
     <div class="led"> 
       <div class="h1">Area Guide</div>

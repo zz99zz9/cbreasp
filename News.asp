@@ -20,9 +20,12 @@ if cid="" and key="" then cid=27
     set rsc=Server.CreateObject("ADODB.Recordset")
 
 	  call SafeRequest(cid)
-	  sqlnew="select count(*) as counter from [prod] where classid="&cid
+	  sqlnew="select count(*) as counter from [prod] where"
+    if cid<>"" then
+     sqlnew=" classid="&cid&" and "
+     end if
 	
-    sqlnew=sqlnew+" and (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
+    sqlnew=sqlnew+" (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
 
 rsc.Open sqlnew,conn,1,1
 counter=rsc("counter")
@@ -31,11 +34,11 @@ counter=rsc("counter")
     set rsnew=Server.CreateObject("ADODB.Recordset")
 	  if cid<>"" then
 	  call SafeRequest(cid)
-	  sqlnew="select * from [prod] where classid="&cid
+	  sqlnew="select * from [prod] where classid="&cid&" and"
 	  else
-	  sqlnew="select * from [prod] where prod_name<>"""
+	  sqlnew="select * from [prod] where "
 	  end if
-    sqlnew=sqlnew+" and (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
+    sqlnew=sqlnew+" (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
 	  sqlnew=sqlnew+" order by oid desc,prod_id desc"
 rsnew.Open sqlnew,conn,1,1%>
 <!--数据链接结束-->

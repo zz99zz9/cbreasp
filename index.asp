@@ -19,7 +19,6 @@ tdkid=1%>
           <li data-target="#carousel-example-generic" data-slide-to="1"></li>
           <li data-target="#carousel-example-generic" data-slide-to="2"></li>
         </ol>
-
         <div class="carousel-inner" role="listbox">
           <%Set prs= Server.CreateObject("ADODB.Recordset")
         psql="select top 3 * From [links] where wid=1 order by oid desc,ID desc"
@@ -75,7 +74,6 @@ i=0
    jgjj=rs("jgjj")&"元/平"
    end if
 %>
-
           <div class="col-md-4 col-sm-4"><a class="li tra wow fadeInUp animated" href="housedetail/<%=rs("articleid")%>.html">
               <div class="pic tra"><img src="<%if rs("defaultpicurl")="" then%>xgwl/img/nopic.jpg<%else%><%=rs("defaultpicurl")%><%end if%>"/>
                 <span class="status1"><%=rs("clxname")%></span>
@@ -192,7 +190,6 @@ set rs=nothing
 <!--#include file="inc/pfrom.asp"-->
     <!--#include file="./inc/footer.asp"-->
 <!--#include file="./inc/sidebar.asp"-->
-
 <script src="xgwl/js/pfrom.js"></script>
   </body>
 </html>
