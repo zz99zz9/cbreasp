@@ -20,12 +20,13 @@ if cid="" and key="" then cid=27
     set rsc=Server.CreateObject("ADODB.Recordset")
 
 	  call SafeRequest(cid)
-	  sqlnew="select count(*) as counter from [prod] where"
+	  sqlnew="select count(*) as counter from [prod] where classid<>0 "
     if cid<>"" then
-     sqlnew=" classid="&cid&" and "
+     sqlnew=sqlnew+" and classid="&cid
      end if
-	
-    sqlnew=sqlnew+" (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
+	if key<>"" then
+    sqlnew=sqlnew+" and (prod_detail like '%"&key&"%' or title2 like '%"&key&"%' or prod_name like '%"&key&"%' or tips like '%"&key&"%')"
+  end if
 
 rsc.Open sqlnew,conn,1,1
 counter=rsc("counter")
