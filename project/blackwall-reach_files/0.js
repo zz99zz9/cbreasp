@@ -1,6 +1,6 @@
 /*! no_rails_asset_compression */
 
-webpackJsonp([0],{360:function(){!function(t,e,n){"use strict"
+webpackJsonp([0],{358:function(){!function(t,e,n){"use strict"
 function o(t){var e=t.currentTarget,o=t.data?t.data.options:{},i=t.data?t.data.items:[],s="",a=0
 t.preventDefault()
 t.stopPropagation()
