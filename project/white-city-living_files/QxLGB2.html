@@ -13,7 +13,7 @@
 
   
   <link rel="shortcut icon" type="image/x-icon" href="https://cdn.jinshuju.net/assets/favicon-62fe2f27ea9d532a13fc76ed0e8b5e68bc2f61dde4a7935f54ff5dc3e3a727b2.ico">
-  <link rel="stylesheet" media="screen" href="QxLGB2_data/published-c33e96b02488ebd839fe6a0aad215621329dbe1550dcd8500b.css" debug="false">
+  <link rel="stylesheet" media="screen" href="QxLGB2_data/published-8168db7ae7c48164f279da731788a60e4f2da331912ca7b888.css" debug="false">
   <style type="text/css">
   body.entry-container {
     background: none;
@@ -51,11 +51,11 @@
     
   </style>
 
-  <script src="QxLGB2_data/application-c5bfdf9491267c286d144e347d0419ad4a5676ee8d9fc52ba.js" debug="false"></script>
+  <script src="QxLGB2_data/application-128048dc638a55f99a192545b18f8628b54b93a779476742b.js" debug="false"></script>
 
   
   <meta name="csrf-param" content="authenticity_token">
-<meta name="csrf-token" content="GqFHGngj+kNcnTMlIpUeS9zW/yLHYJdIZqLoQHmzNCkkQPyPDE1ncNx1ykE3IQcoSrcia3PNlX/vBCsOUUwd8g==">
+<meta name="csrf-token" content="yZxWFCupxgaU16S7fVUofQ4EoLHlV9psBxzjyBZPqlQXSaDpaEnHaphTDz9ORm9fzijijNLrRnBfs/a55VJujw==">
 <style id="mailListAppendCss" type="text/css">.mailListBox{border:1px solid #369; background:#fff; }.mailListDefault{padding:0 5px;cursor:pointer;white-space:nowrap;}.mailListFocus{padding:0 5px;cursor:pointer;white-space:nowrap;background:#369;color:white;}.mailListHlignt{color:red;}.mailListFocus .mailListHlignt{color:#fff;}</style></head>
 <body class="entry-container published_forms-show-page browser-firefox" data-locale="zh-CN">
   <div class="entry-container-inner">
@@ -154,7 +154,7 @@ border-color: transparent;
 
 
 
-<form class="center with-shadow indent-on-large-phone" data-form-token="QxLGB2" data-validate-url="/f/QxLGB2/validate_fields" id="new_entry" action="/f/QxLGB2?x_field_1=undefined" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="GqFHGngj+kNcnTMlIpUeS9zW/yLHYJdIZqLoQHmzNCkkQPyPDE1ncNx1ykE3IQcoSrcia3PNlX/vBCsOUUwd8g==" type="hidden">
+<form class="center with-shadow indent-on-large-phone" data-form-token="QxLGB2" data-validate-url="/f/QxLGB2/validate_fields" id="new_entry" action="/f/QxLGB2?x_field_1=undefined" accept-charset="UTF-8" method="post"><input name="utf8" value="✓" type="hidden"><input name="authenticity_token" value="yZxWFCupxgaU16S7fVUofQ4EoLHlV9psBxzjyBZPqlQXSaDpaEnHaphTDz9ORm9fzijijNLrRnBfs/a55VJujw==" type="hidden">
     <div class="form-header">
     <div class="banner font-family-inherit">
           <div class="banner-text"></div>
@@ -245,19 +245,19 @@ border-color: transparent;
 
     <div class="choices font-family-heiti">
         <label onclick="" class="radio ">
-          <div class="radio-button-wrapper"><input value="ew4J" name="entry[field_17]" class="field-transformed" type="radio"><i class="selected-icon"></i></div>
+          <div class="radio-button-wrapper"><input class="needsclick field-transformed" value="ew4J" name="entry[field_17]" type="radio"><i class="selected-icon"></i></div>
           <div class="choice-description">
             上海
           </div>
         </label>
         <label onclick="" class="radio ">
-          <div class="radio-button-wrapper"><input value="TX8i" name="entry[field_17]" class="field-transformed" type="radio"><i class="selected-icon"></i></div>
+          <div class="radio-button-wrapper"><input class="needsclick field-transformed" value="TX8i" name="entry[field_17]" type="radio"><i class="selected-icon"></i></div>
           <div class="choice-description">
             北京
           </div>
         </label>
         <label onclick="" class="radio ">
-          <div class="radio-button-wrapper"><input value="5H0P" name="entry[field_17]" class="field-transformed" type="radio"><i class="selected-icon"></i></div>
+          <div class="radio-button-wrapper"><input class="needsclick field-transformed" value="5H0P" name="entry[field_17]" type="radio"><i class="selected-icon"></i></div>
           <div class="choice-description">
             深圳
           </div>
@@ -333,11 +333,15 @@ border-color: transparent;
   <script>
 //<![CDATA[
 
+
   $(function() {
-    var formContainer = $("form[data-form-token='QxLGB2']:visible");
-    if (formContainer.length > 0 && $('.entry').length == 0) {
-      GD.initFormPagination(formContainer);
-    }
+    // setTimeout 0 保证下面的代码在(为填写者缓存所填内容，下次自动填写功能)cache.coffee之后执行
+    setTimeout(function() {
+      var formContainer = $("form[data-form-token='QxLGB2']:visible");
+      if (formContainer.length > 0 && $('.entry').length == 0) {
+        GD.initFormPagination(formContainer);
+      }
+    }, 0)
   });
 
 //]]>
