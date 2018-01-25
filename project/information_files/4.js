@@ -233,11 +233,12 @@ var t={}
 if(null!=e)for(var n in e)Object.prototype.hasOwnProperty.call(e,n)&&(t[n]=e[n])
 t.default=e
 return t}Object.defineProperty(t,"__esModule",{value:!0})
-var o=n(28),a=function(e){return e&&e.__esModule?e:{default:e}}(o),r=n(3),s=i(r),l=n(16),c=i(l),u=(n(708),void 0),d=s.assign({},a.default.prototype,{emitChange:function(){this.emit("element_measurements_event_id")},init:function(e){e.set(new c.Map)
-u=e},hydrate:function(){u.set("navHeight",0)
-return},getBinding:function(){return u},set:function(e,t){u.set(e,t)
+var o=n(28),a=function(e){return e&&e.__esModule?e:{default:e}}(o),r=n(3),s=i(r),l=n(16),c=i(l),u=n(708),d=void 0,p=s.assign({},a.default.prototype,{emitChange:function(){this.emit("element_measurements_event_id")},init:function(e){e.set(new c.Map)
+d=e},hydrate:function(e,t){if("s5-theme"===t){var n=(0,u.getNavThemeDesignPropsFromPageData)(e),i=0
+i=n.navObject.estimateNavHeight?n.navObject.estimateNavHeight(n):50+2*n.padding
+d.set("navHeight",i)}},getBinding:function(){return d},set:function(e,t){d.set(e,t)
 this.emitChange()}})
-t.default=d
+t.default=p
 e.exports=t.default},2073:function(e,t,n){e.exports=n(10)(381)},2074:function(e,t,n){"use strict"
 function i(e){return e&&e.__esModule?e:{default:e}}Object.defineProperty(t,"__esModule",{value:!0})
 var o=n(2169),a=i(o),r=n(2171),s=i(r),l=n(743)
