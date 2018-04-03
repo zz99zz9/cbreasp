@@ -162,7 +162,7 @@ set rs=nothing
     <div class="part4">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li1" href="hotspotsInfo.html">
+          <div class="col-md-4 wow fadeInUp animated b_c1 tra"><a class="li1" href="hotspots/1.html">
               <div class="pic"><img src="xgwl/img/Research_Collage 4-17-900x660.jpg"/></div>
               <div class="info ls1">
                 <div class="tit">投资热区</div>
